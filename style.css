@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h2.subtitle {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.dynamic-text-box {
+  width: 100%;
+  margin: 15px 0;
+  background-color: rgb(210, 247, 213);
+  padding: 10px;
+  border-radius: 14px;
+}
+
+#quote {
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+.start-btn {
+  width: max-content;
+  margin: auto;
+}
+
+.start-btn>button {
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: green;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+#message, #speed{
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+#speed{
+  color: green;
+}
+.user-input-box {
+  width: 80%;
+  margin: 10px auto;
+  padding: 14px;
+  text-align: center;
+  border-radius: 14px;
+  background-color: antiquewhite;
+}
+
+#userInput {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+  padding: 5px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+}
