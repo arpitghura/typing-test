@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Typing Test</title>
+    <title>Typing Test - Practice your typing skills at ease</title>
 </head>
 
 <body>
     <div class="container">
         <h1 class="heading">Typing Test</h1>
+        <div class="userDetails">
+            <h2 id="greetUser"></h2>
+        </div>
         <h2 class="subtitle">Practice your typing skills!</h2>
         <div class="dynamic-text-box">
             <p id="quote"></p>
@@ -30,6 +33,12 @@
     </div>
     <div class="user-input-box" id="userInputBox">
         <input type="text" name="user-input" id="userInput">
+    </div>
+
+    <div class="nameModal">
+        <span class="prompt">Enter Your Username: </span>
+        <input type="text" name="userName" id="userName">
+        <input type="submit" value="Save and Go" id="nameSubmitBtn">
     </div>
     <script src="index.js"></script>
 </body>

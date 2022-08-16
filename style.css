@@ -94,3 +94,48 @@ h2.subtitle {
   background-color: lightcoral;
   border: red;
 }
+
+#greetUser{
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  margin: 10px;
+}
+
+.nameModal{
+  background-color: antiquewhite;
+  height: 40%;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+}
+
+.nameModal input[type="text"]{
+  border: 2px solid grey;
+  border-radius: 15px;
+  padding:10px;
+  margin: 0 10px;
+
+}
+
+.nameModal input[type="submit"]{
+  display: block;
+  background-color: green;
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  padding: 12px;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  margin: 10px auto;
+  border:1px solid green;
+}
+
+.nameModal input[type="submit"]:hover{
+  background-color: rgba(0, 128, 0, 0.829);
+  cursor: pointer;
+  border: 1px solid black;
+}

@@ -4,10 +4,15 @@ const userInput = document.getElementById("userInput");
 const messageEle = document.getElementById("message");
 const speedEle = document.getElementById("speed");
 const quoteEle = document.getElementById("quote");
+const greetEle = document.getElementById("greetUser");
 
+const nameModalEle = document.querySelector(".nameModal");
+
+nameModalEle.style.display='none';
 userInputBox.style.display = 'none';
 messages.style.display = 'none';
 resetBtn.style.display = 'none';
+startBtn.style.display='none';
 
 let extracted_words = [];
 let words = "";
@@ -102,3 +107,28 @@ resetBtn.addEventListener("click", () => {
     userInputBox.style.display = 'none';
     messages.style.display = 'none';
 })
+
+// Popup to ask for Name of user 
+// if not entered before & display name from local Storage
+
+const nameInput = document.getElementById("userName");
+const nameSubmitBtn = document.getElementById("nameSubmitBtn");
+
+const getAndSetUserName = () => {
+    const name = localStorage.getItem("typerName");
+    if (name) {
+        greetEle.innerText = `Hello, ${name}!`;
+    }
+    else{
+        nameModalEle.style.display="block";
+    }
+};
+
+nameSubmitBtn.addEventListener("click", () => {
+    localStorage.setItem("typerName", nameInput.value);
+    nameModalEle.style.display="none";
+    startBtn.style.display="block";
+    getAndSetUserName();
+})
+
+getAndSetUserName();
