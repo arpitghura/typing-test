@@ -118,6 +118,7 @@ const getAndSetUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
         greetEle.innerText = `Hello, ${name}!`;
+        startBtn.style.display="block";
     }
     else{
         nameModalEle.style.display="block";
