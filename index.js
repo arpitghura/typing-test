@@ -16,8 +16,7 @@ startBtn.style.display='none';
 
 let extracted_words = [];
 let words = "";
-let wordIndex = 0;
-let quoteLength = 0;
+let wordIndex = 0, extracted_words_length = 0, quoteLength = 0;
 let startTime = Date.now();
 
 // generating words
@@ -40,6 +39,7 @@ const makequote = () => {
     for (let i = 0; i < quoteLength; i++) {
         words += makeword(Math.floor(Math.random() * 10) + 1) + " ";
     }
+    words_length = words.length;
     return words;
 };
 
@@ -47,6 +47,7 @@ const makequote = () => {
 startBtn.addEventListener("click", () => {
     const quote = makequote();
     extracted_words = quote.split(' ');
+    extracted_words_length = extracted_words.length;
     wordIndex = 0;
 
     userInputBox.style.display = 'block';
@@ -70,15 +71,17 @@ userInput.addEventListener('input', () => {
     const input = userInput.value;
 
     if (input === curWord && wordIndex === (extracted_words.length - 2)) {
+        console.log(new Date().getTime() - startTime);
         const timeTaken = (new Date().getTime() - startTime) / 1000;
         const speed_char = words.length / timeTaken;
-        const speed_word = extracted_words.length / timeTaken;
+        const speed_word_pm = Math.ceil(extracted_words.length / (timeTaken / 60));
         const message = `Congratulations! You have typed in ${timeTaken} seconds`;
-        const speedMessage = `Your speed is ${speed_char.toFixed(3)} characters per second OR ${speed_word.toFixed(3)} words per second`;
+        const speedMessage = `Your speed is ${speed_word_pm} words per minutes OR ${speed_char.toFixed(3)} characters per second`;
         messages.style.display = 'inline';
         messageEle.innerText = message;
         speedEle.innerText = speedMessage;
         userInput.style.display = 'none';
+        saveHistory();
     }
     else if (input.endsWith(' ') && input.trim() === curWord) {
         userInput.value = '';
@@ -133,3 +136,40 @@ nameSubmitBtn.addEventListener("click", () => {
 })
 
 getAndSetUserName();
+
+// History Saver
+const saveHistory = () =>{
+    const history = localStorage.getItem("typerHistory");
+    if(history){
+        const historyArray = JSON.parse(history);
+        historyArray.push({extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000});
+        localStorage.setItem("typerHistory", JSON.stringify(historyArray));
+    }
+    else{
+        localStorage.setItem("typerHistory", JSON.stringify([{extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000}]));
+    }
+    showHistory();
+}
+
+// History Viewer
+const historyBody = document.getElementById("historyTableBody");
+
+const showHistory = () =>{
+    const history = localStorage.getItem("typerHistory");
+    const userName = localStorage.getItem("typerName");
+    if(history){
+        document.getElementsByClassName("history")[0].style.display = "block";
+        const historyArray = JSON.parse(history);
+        historyBody.innerHTML = "";
+        historyArray.forEach((item) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `<td>${userName}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td>`;
+            historyBody.appendChild(row);
+        });
+    }
+    else{
+        document.getElementsByClassName("history")[0].style.display = "none";
+    }
+};
+
+showHistory();

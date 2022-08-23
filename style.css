@@ -116,8 +116,8 @@ h2.subtitle {
   border: 2px solid grey;
   border-radius: 15px;
   padding:10px;
-  margin: 0 10px;
-
+  margin: 0 auto;
+  width: 80%;
 }
 
 .nameModal input[type="submit"]{
@@ -137,5 +137,25 @@ h2.subtitle {
 .nameModal input[type="submit"]:hover{
   background-color: rgba(0, 128, 0, 0.829);
   cursor: pointer;
+  border: 1px solid black;
+}
+
+.history{
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.history-table{
+  width: max-content;
+  margin: 5px auto;
+  border-collapse: collapse;
+}
+
+th,td{
+  padding:  0 20px;
   border: 1px solid black;
 }
