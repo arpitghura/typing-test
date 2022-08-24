@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Typing Test : Test and practice your typing skills</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Typing Test - Practice your typing skills at ease</title>
 </head>
-
 <body>
-    <div class="container">
-        <h1 class="heading">Typing Test</h1>
-        <div class="userDetails">
-            <h2 id="greetUser"></h2>
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <h1 class="brand-name">Typing Test</h1>
+            </div>
+            <div class="navigation">
+                <ul class="main-menu">
+                    <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-link">Typing Test</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-link">Practice</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-link">Profile</a></li>
+                </ul>
+            </div>
         </div>
-        <h2 class="subtitle">Practice your typing skills!</h2>
-        <div class="dynamic-text-box">
-            <p id="quote"></p>
-        </div>
-        <div class="start-btn">
-            <button id="startBtn">START</button>
-            <button id="resetBtn">RESET</button>
-        </div>
-        <div id="messages">
-            <p id="message"></p><br>
-            <p id="speed"></p>
-        </div>
-    </div>
-    <div class="user-input-box" id="userInputBox">
-        <input type="text" name="user-input" id="userInput">
-    </div>
+    </nav>
 
-    <div class="nameModal">
-        <span class="prompt">Enter Your Username: </span>
-        <input type="text" name="userName" id="userName">
-        <input type="submit" value="Save and Go" id="nameSubmitBtn">
-    </div>
-
-    <div class="history">
-        <h2>History</h2>
-        <div class="history-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Speed (wpm)</th>
-                        <th>Time Taken (sec)</th>
-                    </tr>
-                </thead>
-                <tbody id="historyTableBody">
-                </tbody>
-            </table>
+    <section id="hero">
+        <div class="left-section">
+            <h1>Master Your Typing Skills in 1 minute</h1>
+            <p class="subtitle">We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
+            <a href="/test.html" class="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a>
+            <a href="/practice.html" class="heroBtn practice"> Practice </a>
         </div>
-    </div>
-    <script src="index.js"></script>
+        <div class="right-section">
+            <img src="./assets/images/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo">
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="feature">
+            <img src="./assets/images/timer.png" alt="Time Based Practice Sessions">
+            <h3>Time Based Practice</h3>
+            <p>You can quantify your skills in a certain interval of time by using timed practise and testing sessions.</p>
+        </div>
+        <div class="feature">
+            <img src="./assets/images/file.png" alt="Paragraph Based Practice Sessions">
+            <h3>Paragraph Based Practice</h3>
+            <p>You can assess your typing abilities without any time constraints with a paragraph-based session. </p>
+        </div>
+        <div class="feature">
+            <img src="./assets/images/growth-graph.png" alt="Difficulty and Case Selection Sessions">
+            <h3>Difficulty and Case Selection</h3>
+            <p>There are several alternatives available to test your typing abilities based on the amount of difficulty you choose.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &hearts; by Arpit Ghura. All Right Reserved</p>
+    </footer>
 </body>
-
 </html>

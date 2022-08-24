@@ -6,7 +6,15 @@ On the App, there are automatically generating words and sentences so that there
 
 The Web App can be accessible from [https://www.arpitghura.me/Typing-test/](https://www.arpitghura.me/Typing-test/)
 
-Technology Used to create the App : 
+## Features 
+<ul>
+    <li>Time Based Test and Practice Sessions</li>
+    <li>Paragraph Based Test and Practice Sessions</li>
+    <li>Change Difficulty Level as per you.</li>
+    <li>History Saver with Username</li>
+</ul>
+
+## Tech Stack : 
 
 1. HTML5
 
@@ -16,14 +24,18 @@ Technology Used to create the App :
 
 > Test your Typing skills NOW!
 
-### Here are some Screenshots of the App: 
+## Here are some Screenshots of the App: 
 
 Home Page:
 
 <img src="./assets/Homepage.png">
 
-During Typing:
+Practice Page:
 
-<img src="./assets/During-typing.png">
+<img src="./assets/PracticePage.png">
+
+Report Generates on Completion:
+
+<img src="./assets/Report.png">
 
 ### Give a star if you liked this!
