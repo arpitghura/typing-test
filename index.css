@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
     background-color: #E6E4E4;
@@ -35,7 +37,7 @@ li.nav-item{
 }
 .nav-item-link:hover{
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: antiquewhite;
 }
 #hero,#features{
@@ -51,16 +53,17 @@ li.nav-item{
     height:max-content;
 }
 .left-section,.right-section {
-    width: 40vw;
+    padding: 5vw;
+    width: 35vw;
     margin: auto ;
 }
 .left-section h1{
-    font-family:Geneva, sans-serif;
     font-size: xxx-large; 
     font-weight: bolder;
 }
 .subtitle{
-    font-family: Geneva, sans-serif;
+    padding-block: 10px;
+    font-weight: 400;
     font-size:large;
 }
 .right-section img{
@@ -109,7 +112,33 @@ li.nav-item{
 
 
 footer p{
-    font-family: Geneva, sans-serif;
     font-size:large;
     margin: 10px 40px;
+}
+
+/* ============ Media Queries ============ */
+
+@media screen and (max-width:650px){
+    .nav-item{
+        display: inline-flex;
+    }
+    .brand-name{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .left-section,.right-section{
+        width: 60vw;
+    }
+    .feature{
+        width: 60vw;
+        margin-block-end: 10px;
+    }
+    .navbar{
+        padding: 15px 20px;
+    }
+    #hero,#features{
+        margin: 20px;
+    }
 }
