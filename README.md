@@ -28,7 +28,7 @@ The Web App can be accessible from [https://www.arpitghura.me/Typing-test/](http
 
 Home Page:
 
-<img src="./assets/homepage.png">
+<img src="./assets/Homepage.png">
 
 Practice Page:
 
@@ -36,6 +36,6 @@ Practice Page:
 
 Report Generates on Completion:
 
-<img src="./assets/report.png">
+<img src="./assets/Report.png">
 
 ### Give a star if you liked this!
