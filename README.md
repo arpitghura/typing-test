@@ -28,14 +28,14 @@ The Web App can be accessible from [https://www.arpitghura.me/Typing-test/](http
 
 Home Page:
 
-<img src="./assets/Homepage.png">
+<img src="./assets/homepage.png">
 
 Practice Page:
 
-<img src="./assets/PracticePage.png">
+<img src="./assets/practice.png">
 
 Report Generates on Completion:
 
-<img src="./assets/Report.png">
+<img src="./assets/report.png">
 
 ### Give a star if you liked this!
