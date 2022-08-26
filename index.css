@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: #E6E4E4;
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/* ScrollBar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #00c6ff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0072ff;
+  }
+
 .navbar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 15px 40px;
     align-items: center;
+    color: white;
 }
 .brand-name{
     margin-left: 10px;
@@ -28,17 +47,17 @@ li.nav-item{
     margin: 5px;
 }
 .nav-item-link{
-    color: black;
     text-decoration: none;
     width: 100%;
     padding: 10px;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
     border: 1px solid transparent;
+    color: white;
 }
 .nav-item-link:hover{
     border: 1px solid black;
     border-radius: 40px;
-    background-color: antiquewhite;
+    background-color: black;
 }
 #hero,#features{
     display: flex;
@@ -74,7 +93,7 @@ li.nav-item{
 }
 .heroBtn{
     padding: 10px;
-    margin: 20px 0px;
+    margin: 20px 0 10px 0;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -98,6 +117,7 @@ li.nav-item{
 #features{
     justify-content: space-around;
     text-align: center;
+    padding-block: 20px;
 }
 .feature{
     width: 25vw;
@@ -113,17 +133,24 @@ li.nav-item{
 
 footer p{
     font-size:large;
-    margin: 10px 40px;
+    margin: 10px 50px;
+    font-weight: 500;
 }
 
 /* ============ Media Queries ============ */
 
-@media screen and (max-width:650px){
+@media screen and (max-width:670px){
     .nav-item{
         display: inline-flex;
     }
+    .navigation{
+        margin: auto;
+    }
     .brand-name{
         margin-bottom: 10px;
+    }
+    .brand{
+        margin: auto;
     }
 }
 
