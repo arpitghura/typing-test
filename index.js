@@ -8,11 +8,11 @@ const greetEle = document.getElementById("greetUser");
 
 const nameModalEle = document.querySelector(".nameModal");
 
-nameModalEle.style.display='none';
+nameModalEle.style.display = 'none';
 userInputBox.style.display = 'none';
 messages.style.display = 'none';
 resetBtn.style.display = 'none';
-startBtn.style.display='none';
+startBtn.style.display = 'none';
 
 let extracted_words = [];
 let words = "";
@@ -71,7 +71,6 @@ userInput.addEventListener('input', () => {
     const input = userInput.value;
 
     if (input === curWord && wordIndex === (extracted_words.length - 2)) {
-        console.log(new Date().getTime() - startTime);
         const timeTaken = (new Date().getTime() - startTime) / 1000;
         const speed_char = words.length / timeTaken;
         const speed_word_pm = Math.ceil(extracted_words.length / (timeTaken / 60));
@@ -121,32 +120,35 @@ const getAndSetUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
         greetEle.innerText = `Hello, ${name}!`;
-        startBtn.style.display="block";
+        startBtn.style.display = "block";
     }
-    else{
-        nameModalEle.style.display="block";
+    else {
+        nameModalEle.style.display = "block";
     }
 };
 
 nameSubmitBtn.addEventListener("click", () => {
     localStorage.setItem("typerName", nameInput.value);
-    nameModalEle.style.display="none";
-    startBtn.style.display="block";
+    nameModalEle.style.display = "none";
+    startBtn.style.display = "block";
     getAndSetUserName();
 })
 
 getAndSetUserName();
 
+let history = [];
+let historyArray = [];
+
 // History Saver
-const saveHistory = () =>{
-    const history = localStorage.getItem("typerHistory");
-    if(history){
-        const historyArray = JSON.parse(history);
-        historyArray.push({extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000});
+const saveHistory = () => {
+    history = localStorage.getItem("typerHistory");
+    if (history) {
+        historyArray = JSON.parse(history);
+        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
     }
-    else{
-        localStorage.setItem("typerHistory", JSON.stringify([{extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000}]));
+    else {
+        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 }]));
     }
     showHistory();
 }
@@ -154,12 +156,12 @@ const saveHistory = () =>{
 // History Viewer
 const historyBody = document.getElementById("historyTableBody");
 
-const showHistory = () =>{
-    const history = localStorage.getItem("typerHistory");
-    const userName = localStorage.getItem("typerName");
-    if(history){
+const showHistory = () => {
+    history = localStorage.getItem("typerHistory");
+    userName = localStorage.getItem("typerName");
+    if (history != null) {
         document.getElementsByClassName("history")[0].style.display = "block";
-        const historyArray = JSON.parse(history);
+        historyArray = JSON.parse(history);
         historyBody.innerHTML = "";
         historyArray.forEach((item) => {
             const row = document.createElement("tr");
@@ -167,9 +169,18 @@ const showHistory = () =>{
             historyBody.appendChild(row);
         });
     }
-    else{
+    else {
         document.getElementsByClassName("history")[0].style.display = "none";
     }
 };
 
 showHistory();
+
+// History Reset Button
+const historyResetBtn = document.getElementById("historyResetBtn");
+historyResetBtn.addEventListener("click", () => {
+    localStorage.removeItem("typerName");
+    localStorage.removeItem("typerHistory");
+    showHistory();
+    window.location.reload();
+})

@@ -112,6 +112,7 @@ h2.subtitle {
   border-radius: 10px;
   margin: auto;
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 .nameModal input[type="text"]{
@@ -160,4 +161,22 @@ h2.subtitle {
 th,td{
   padding:  0 20px;
   border: 1px solid black;
+}
+
+#historyResetBtn{
+  width: max-content;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0072ff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#historyResetBtn:hover{
+  background-color: transparent;
+  color: #0072ff;
 }
