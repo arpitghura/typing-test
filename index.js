@@ -128,10 +128,16 @@ const getAndSetUserName = () => {
 };
 
 nameSubmitBtn.addEventListener("click", () => {
-    localStorage.setItem("typerName", nameInput.value);
-    nameModalEle.style.display = "none";
-    startBtn.style.display = "block";
-    getAndSetUserName();
+    console.log(nameInput.value);
+    if (nameInput.value != null && nameInput.value != "") {
+        localStorage.setItem("typerName", nameInput.value);
+        nameModalEle.style.display = "none";
+        startBtn.style.display = "block";
+        getAndSetUserName();
+    }
+    else {
+        console.log("Enter Username");
+    }
 })
 
 getAndSetUserName();
