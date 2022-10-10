@@ -4,7 +4,7 @@ Typing Test is a webapp to test and practice your typing skills in order to enha
 
 On the App, there are automatically generating words and sentences so that there will be no repetition of sentences or words.
 
-The Web App can be accessible from [https://www.arpitghura.me/Typing-test/](https://www.arpitghura.me/Typing-test/)
+The Web App can be accessible from [https://typing-test-project.vercel.app/](https://typing-test-project.vercel.app/)
 
 ## Features 
 <ul>
