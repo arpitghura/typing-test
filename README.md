@@ -1,10 +1,12 @@
 #  Typing Test - Practice Your Typing Skills
 
-Typing Test is a webapp to test and practice your typing skills in order to enhance them. 
+Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence.
 
-On the App, there are automatically generating words and sentences so that there will be no repetition of sentences or words.
+The Web App can be accessible from [https://typing-test-project.vercel.app/](https://typing-test-project.vercel.app/)</br></br>
+![Typing test](https://img.shields.io/badge/Contribute-red?style=round-square&logo=Github&logoColor=black&link=https://github.com/arpitghura/typing-test)
+[![Typing Test](https://img.shields.io/badge/Typing-Test-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+<a href="https://github.com/codemistic/hacktoberfest/blob/master/LICENSE"><img src="https://img.shields.io/github/license/codemistic/hacktoberfest?color=2b9348" alt="License Badge"/></a>
 
-The Web App can be accessible from [https://typing-test-project.vercel.app/](https://typing-test-project.vercel.app/)
 
 ## Features 
 <ul>
