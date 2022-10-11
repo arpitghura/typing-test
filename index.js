@@ -19,6 +19,13 @@ let words = "";
 let wordIndex = 0, extracted_words_length = 0, quoteLength = 0;
 let startTime = Date.now();
 
+// To encode the string
+function htmlEncode(str) {
+    return String(str).replace(/[^\w. ]/gi, function(c) {
+        return '&#' + c.charCodeAt(0) + ';';
+    });
+  }
+
 // generating words
 const makeword = (length) => {
     let result = '';
@@ -171,7 +178,7 @@ const showHistory = () => {
         historyBody.innerHTML = "";
         historyArray.forEach((item) => {
             const row = document.createElement("tr");
-            row.innerHTML = `<td>${userName}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td>`;
+            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td>`;
             historyBody.appendChild(row);
         });
     }
