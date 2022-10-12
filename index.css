@@ -130,12 +130,18 @@ li.nav-item{
     padding: 5px;
 }
 
-
-footer p{
-    font-size:large;
-    margin: 10px 50px;
+footer {
+    padding: 20px 0px;
     font-weight: 500;
-}
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: rgb(2,0,36);
+background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
+  }
 
 /* ============ Media Queries ============ */
 
@@ -151,6 +157,9 @@ footer p{
     }
     .brand{
         margin: auto;
+    }
+    footer{
+        font-size: 12px;
     }
 }
 
