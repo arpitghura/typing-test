@@ -26,6 +26,9 @@ function htmlEncode(str) {
     });
   }
 
+// stopping user from copying and pasting the quote text
+userInput.addEventListener('paste', e=>e.preventDefault());
+
 // generating words
 const makeword = (length) => {
     let result = '';

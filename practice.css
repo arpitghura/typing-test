@@ -36,6 +36,7 @@ h2.subtitle {
   font-size: larger;
   font-weight: 600;
   text-align: center;
+  user-select: none;
 }
 
 .start-btn {
