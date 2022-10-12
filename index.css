@@ -134,7 +134,7 @@ footer {
     padding: 20px 0px;
     font-weight: 500;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     font-size: 18px;
     color: white;
     display: flex;
@@ -157,6 +157,10 @@ background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(
     }
     .brand{
         margin: auto;
+    }
+    footer{
+        justify-content: center;
+        font-size: 12px;
     }
 }
 
