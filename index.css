@@ -159,7 +159,6 @@ background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(
         margin: auto;
     }
     footer{
-        justify-content: center;
         font-size: 12px;
     }
 }
