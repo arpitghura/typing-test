@@ -42,8 +42,3 @@ Report Generated on Completion:
 
 Thanks for coming here!
 ### Give a star if you liked this!
-#### Regards,</br>
-Team ![Typing test](https://img.shields.io/badge/typing-test-red?style=?style=for-the-badge&logo=Github&logoColor=black&link=https://github.com/arpitghura/typing-test)
-<br/>
-<br/> By
-![Typing test](https://img.shields.io/badge/arpitghura-red?style=?style=for-the-badge&logo=Github&logoColor=black&link=https://github.com/arpitghura/)
