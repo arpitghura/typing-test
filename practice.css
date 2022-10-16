@@ -150,6 +150,11 @@ h2.subtitle {
   border-radius: 10px;
   background-color: antiquewhite;
   text-align: center;
+  overflow: scroll;
+}
+
+.history::-webkit-scrollbar {
+  display: none;
 }
 
 .history-table{
