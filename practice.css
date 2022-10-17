@@ -150,17 +150,16 @@ h2.subtitle {
   border-radius: 10px;
   background-color: antiquewhite;
   text-align: center;
-  overflow: scroll;
-}
-
-.history::-webkit-scrollbar {
-  display: none;
 }
 
 .history-table{
-  width: max-content;
+  /* width: max-content; */
   margin: 5px auto;
   border-collapse: collapse;
+  overflow-x: auto;
+}
+.history-table table{
+  margin: 0 auto;
 }
 
 th,td{
