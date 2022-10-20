@@ -5,9 +5,14 @@ const messageEle = document.getElementById("message");
 const speedEle = document.getElementById("speed");
 const quoteEle = document.getElementById("quote");
 const greetEle = document.getElementById("greetUser");
+const levelSelector = document.getElementById("levelSelector");
+const levelOneBtn = document.getElementById("levelOne");
+const levelTwoBtn = document.getElementById("levelTwo");
+const levelThreeBtn = document.getElementById("levelThree");
 
 const nameModalEle = document.querySelector(".nameModal");
 
+levelSelector.style.display = 'none';
 nameModalEle.style.display = 'none';
 userInputBox.style.display = 'none';
 messages.style.display = 'none';
@@ -29,7 +34,16 @@ function htmlEncode(str) {
 // generating words
 const makeword = (length) => {
     let result = '';
-    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let characters = '';
+
+    if (levelOneBtn.checked) {
+        characters = 'abcdefghijklmnopqrstuvwxyz';
+    } else if (levelTwoBtn.checked) {
+        characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    } else if (levelThreeBtn.checked) {
+        characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    }
+
     let charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -57,6 +71,7 @@ startBtn.addEventListener("click", () => {
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
 
+    levelSelector.style.display = 'none';
     userInputBox.style.display = 'block';
     userInput.style.display = 'inline';
     startBtn.style.display = 'none';
@@ -107,6 +122,7 @@ userInput.addEventListener('input', () => {
 
 // Reset the typing game
 resetBtn.addEventListener("click", () => {
+    levelSelector.style.display = 'block';
     startBtn.style.display = 'block';
     resetBtn.style.display = 'none';
     quoteEle.innerText = "";
@@ -127,7 +143,7 @@ const getAndSetUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
         greetEle.innerText = `Hello, ${name}!`;
-        startBtn.style.display = "block";
+        levelSelector.style.display = "block";
     }
     else {
         nameModalEle.style.display = "block";
@@ -139,11 +155,17 @@ nameSubmitBtn.addEventListener("click", () => {
     if (nameInput.value != null && nameInput.value != "") {
         localStorage.setItem("typerName", nameInput.value);
         nameModalEle.style.display = "none";
-        startBtn.style.display = "block";
         getAndSetUserName();
     }
     else {
         console.log("Enter Username");
+    }
+})
+
+// Listen for level select
+document.getElementById("levelSelector").addEventListener("click", (e) => {
+    if (e.target.name === "radio-button") {
+        startBtn.style.display = 'block';
     }
 })
 

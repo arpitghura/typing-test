@@ -104,6 +104,10 @@ h2.subtitle {
   margin: 10px;
 }
 
+#levelSelector {
+  text-align: center;
+}
+
 .nameModal{
   background-color: antiquewhite;
   height: 40%;
@@ -156,6 +160,11 @@ h2.subtitle {
   width: max-content;
   margin: 5px auto;
   border-collapse: collapse;
+}
+
+.button-group{
+  display: inline-block;
+  margin: 25px 15px 25px;
 }
 
 th,td{
