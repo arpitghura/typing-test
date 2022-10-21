@@ -10,51 +10,75 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="heading">Typing Test</h1>
-        <div class="userDetails">
-            <h2 id="greetUser"></h2>
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <h1 class="brand-name">Typing Test</h1>
+            </div>
+            <div class="navigation">
+                <ul class="main-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-item-link">Home</a></li>
+                    <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
+                    <li class="nav-item"><a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a></li>
+                </ul>
+            </div>
         </div>
-        <h2 class="subtitle">Practice your typing skills!</h2>
-        <div class="dynamic-text-box">
-            <p id="quote"></p>
-        </div>
-        <div class="start-btn">
-            <button id="startBtn">START</button>
-            <button id="resetBtn">RESET</button>
-        </div>
-        <div id="messages">
-            <p id="message"></p><br>
-            <p id="speed"></p>
-        </div>
-    </div>
-    <div class="user-input-box" id="userInputBox">
-        <input type="text" name="user-input" id="userInput">
-    </div>
+    </nav>
 
-    <div class="nameModal">
-        <span class="prompt">Enter Your Username: </span>
-        <input type="text" name="userName" id="userName" required>
-        <input type="submit" value="Save and Go" id="nameSubmitBtn">
-    </div>
-
-    <div class="history">
-        <h2>History</h2>
-        <div class="history-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Speed (wpm)</th>
-                        <th>Time Taken (sec)</th>
-                    </tr>
-                </thead>
-                <tbody id="historyTableBody">
-                </tbody>
-            </table>
+    <div class="content">
+        <div class="container">
+            <h1 class="heading">Typing Test</h1>
+            <div class="userDetails">
+                <h2 id="greetUser"></h2>
+            </div>
+            <h2 class="subtitle">Practice your typing skills!</h2>
+            <div class="dynamic-text-box">
+                <p id="quote"></p>
+            </div>
+            <div class="start-btn">
+                <button id="startBtn">START</button>
+                <button id="resetBtn">RESET</button>
+            </div>
+            <div id="messages">
+                <p id="message"></p><br>
+                <p id="speed"></p>
+            </div>
         </div>
-        <button id="historyResetBtn">Reset Data</button>
+        <div class="user-input-box" id="userInputBox">
+            <input type="text" name="user-input" id="userInput">
+        </div>
+    
+        <div class="nameModal">
+            <span class="prompt">Enter Your Username: </span>
+            <input type="text" name="userName" id="userName" required>
+            <input type="submit" value="Save and Go" id="nameSubmitBtn">
+        </div>
+    
+        <div class="history">
+            <h2>History</h2>
+            <div class="history-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Speed (wpm)</th>
+                            <th>Time Taken (sec)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <button id="historyResetBtn">Reset Data</button>
+        </div>
     </div>
+    
+    <footer>
+        <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;</p>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 
