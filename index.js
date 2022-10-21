@@ -6,9 +6,9 @@ const speedEle = document.getElementById("speed");
 const quoteEle = document.getElementById("quote");
 const greetEle = document.getElementById("greetUser");
 const levelSelector = document.getElementById("levelSelector");
-const levelOneBtn = document.getElementById("levelOne");
-const levelTwoBtn = document.getElementById("levelTwo");
-const levelThreeBtn = document.getElementById("levelThree");
+const easyLvlBtn = document.getElementById("easyLvlBtn");
+const interLvlBtn = document.getElementById("interLvlBtn");
+const hardLvlBtn = document.getElementById("hardLvlBtn");
 
 const nameModalEle = document.querySelector(".nameModal");
 
@@ -36,11 +36,11 @@ const makeword = (length) => {
     let result = '';
     let characters = '';
 
-    if (levelOneBtn.checked) {
+    if (easyLvlBtn.checked) {
         characters = 'abcdefghijklmnopqrstuvwxyz';
-    } else if (levelTwoBtn.checked) {
+    } else if (interLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    } else if (levelThreeBtn.checked) {
+    } else if (hardLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     }
 
