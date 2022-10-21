@@ -6,8 +6,64 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  align-items: center;
+  color: white;
+}
+.brand-name{
+  margin-left: 10px;
+}
+ul.main-menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+li.nav-item{
+  margin: 5px;
+}
+.nav-item-link{
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  color: white;
+}
+.nav-item-link:hover{
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  margin: 20px 40px;
+  padding: 10px;
+  height:max-content;
+  min-height: 73vh;
+}
+
 .container {
-  width: 70vw;
+  width: 90%;
   margin: auto;
   padding: 20px;
 }
@@ -72,7 +128,7 @@ h2.subtitle {
   color: green;
 }
 .user-input-box {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   padding: 14px;
   text-align: center;
@@ -107,7 +163,7 @@ h2.subtitle {
 .nameModal{
   background-color: antiquewhite;
   height: 40%;
-  width: 50%;
+  width: 90%;
   text-align: center;
   border-radius: 10px;
   margin: auto;
@@ -144,7 +200,7 @@ h2.subtitle {
 }
 
 .history{
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 10px;
   border-radius: 10px;
@@ -183,4 +239,18 @@ th,td{
 #historyResetBtn:hover{
   background-color: transparent;
   color: #0072ff;
+}
+
+footer {
+  padding: 20px 0px;
+  position: relative;
+  font-weight: 500;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background: rgb(2,0,36);
+background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
 }
