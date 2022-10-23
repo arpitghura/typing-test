@@ -1,10 +1,20 @@
 const userNameEle = document.getElementById("userName");
+const navigateEle = document.getElementById("navigate-user-text");
+
+// Navigate to practice.html if no data in local storage
+const checkIfUserData = () => {
+    const name = localStorage.getItem("typerName");
+    if(!name){
+        navigateEle.innerHTML = "<a href='./practice.html'>Click here</a> to set up your profile";
+    }
+}
 
 const getUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
         userNameEle.innerText = "Full Name: " + `${name}`;
-        console.log(`Full Name: ${name}`);
+    }else{
+        checkIfUserData();
     }
 };
 
