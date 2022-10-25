@@ -152,6 +152,10 @@ h2.subtitle {
   margin: 10px;
 }
 
+#levelSelector {
+  text-align: center;
+}
+
 .nameModal{
   background-color: antiquewhite;
   height: 40%;
@@ -208,6 +212,11 @@ h2.subtitle {
 }
 .history-table table{
   margin: 0 auto;
+}
+
+.button-group{
+  display: inline-block;
+  margin: 25px 20px 25px;
 }
 
 th,td{
