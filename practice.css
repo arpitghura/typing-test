@@ -6,6 +6,53 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  align-items: center;
+  color: white;
+  background: #0072ff;
+}
+
+.brand-name {
+  margin-left: 10px;
+}
+
+ul.main-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+li.nav-item {
+  margin: 5px;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.nav-item-link:hover {
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+
 .container {
   width: 70vw;
   margin: auto;
@@ -71,6 +118,7 @@ h2.subtitle {
 #speed{
   color: green;
 }
+
 .user-input-box {
   width: 80%;
   margin: 10px auto;
@@ -149,7 +197,7 @@ h2.subtitle {
 
 .history{
   width: 80%;
-  margin: auto;
+  margin: 20px auto;
   padding: 10px;
   border-radius: 10px;
   background-color: antiquewhite;
@@ -192,4 +240,17 @@ th,td{
 #historyResetBtn:hover{
   background-color: transparent;
   color: #0072ff;
+}
+
+footer {
+  padding: 20px 0px;
+  font-weight: 500;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
 }
