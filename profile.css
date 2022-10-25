@@ -21,6 +21,10 @@ h2.subtitle {
     font-size: 18pt;
 }
 
+#navigate-user-text{
+    font-size: 20px;
+}
+
 #profile-details{
     padding: 30px;
 }

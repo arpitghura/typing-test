@@ -5,7 +5,11 @@ const navigateEle = document.getElementById("navigate-user-text");
 const checkIfUserData = () => {
     const name = localStorage.getItem("typerName");
     if(!name){
-        navigateEle.innerHTML = "<a href='./practice.html'>Click here</a> to set up your profile";
+        const linktoprofile = document.createElement('a');
+        linktoprofile.innerText = "Click here";
+        linktoprofile.href = "./practice.html";
+        navigateEle.innerText = " to set up your profile";
+        navigateEle.insertAdjacentElement('afterbegin', linktoprofile);
     }
 }
 
