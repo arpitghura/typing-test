@@ -169,6 +169,16 @@ document.getElementById("levelSelector").addEventListener("click", (e) => {
     }
 })
 
+document.addEventListener('keypress', (e)=>{
+    if(e.code === "Space"){
+        if(startBtn.style.display !== "none")
+            startBtn.click();
+        else if(userInput.style.display === "none")
+            resetBtn.click();
+
+    }
+})
+
 getAndSetUserName();
 
 let history = [];
