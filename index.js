@@ -23,6 +23,7 @@ let extracted_words = [];
 let words = "";
 let wordIndex = 0, extracted_words_length = 0, quoteLength = 0;
 let startTime = Date.now();
+let selectedDifficultyLevel = "";
 
 // To encode the string
 function htmlEncode(str) {
@@ -38,10 +39,13 @@ const makeword = (length) => {
 
     if (easyLvlBtn.checked) {
         characters = 'abcdefghijklmnopqrstuvwxyz';
+        selectedDifficultyLevel = "Easy";
     } else if (interLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        selectedDifficultyLevel = "Medium";
     } else if (hardLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        selectedDifficultyLevel = "Hard";
     }
 
     let charactersLength = characters.length;
@@ -179,11 +183,11 @@ const saveHistory = () => {
     history = localStorage.getItem("typerHistory");
     if (history) {
         historyArray = JSON.parse(history);
-        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 });
+        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
     }
     else {
-        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 }]));
+        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel}]));
     }
     showHistory();
 }
@@ -200,7 +204,7 @@ const showHistory = () => {
         historyBody.innerHTML = "";
         historyArray.forEach((item) => {
             const row = document.createElement("tr");
-            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td>`;
+            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td><td>${item.difficultyLevel}</td>`;
             historyBody.appendChild(row);
         });
     }
