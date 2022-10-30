@@ -214,6 +214,16 @@ h2.subtitle {
   margin: 0 auto;
 }
 
+.history-avg{
+  /* width: max-content; */
+  margin: 5px auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+.history-avg table{
+  margin: 0 auto;
+}
+
 .button-group{
   display: inline-block;
   margin: 25px 20px 25px;
