@@ -11,6 +11,7 @@ const interLvlBtn = document.getElementById("interLvlBtn");
 const hardLvlBtn = document.getElementById("hardLvlBtn");
 
 const nameModalEle = document.querySelector(".nameModal");
+const startInstruction =  document.querySelector(".startIns")
 
 levelSelector.style.display = 'none';
 nameModalEle.style.display = 'none';
@@ -18,6 +19,7 @@ userInputBox.style.display = 'none';
 messages.style.display = 'none';
 resetBtn.style.display = 'none';
 startBtn.style.display = 'none';
+startInstruction.style.display = 'none';
 
 let extracted_words = [];
 let words = "";
@@ -79,6 +81,8 @@ startBtn.addEventListener("click", () => {
     userInputBox.style.display = 'block';
     userInput.style.display = 'inline';
     startBtn.style.display = 'none';
+    startInstruction.style.display = 'none';
+    
     resetBtn.style.display = 'inline-block';
 
     const spanWords = extracted_words.map(word => {
@@ -128,6 +132,8 @@ userInput.addEventListener('input', () => {
 resetBtn.addEventListener("click", () => {
     levelSelector.style.display = 'block';
     startBtn.style.display = 'block';
+    startInstruction.style.display = 'block';
+    
     resetBtn.style.display = 'none';
     quoteEle.innerText = "";
     words = "";
@@ -170,7 +176,23 @@ nameSubmitBtn.addEventListener("click", () => {
 document.getElementById("levelSelector").addEventListener("click", (e) => {
     if (e.target.name === "radio-button") {
         startBtn.style.display = 'block';
+        startInstruction.style.display = 'block'
     }
+})
+
+
+document.addEventListener('keypress', (e)=>{
+    if(e.code === "Space"){
+        if(startBtn.style.display !== "none")
+            startBtn.click();
+        else if(userInput.style.display === "none")
+            resetBtn.click();
+    }
+})
+
+nameInput.addEventListener('keypress', (e)=>{
+    if(e.code === "Enter")
+        nameSubmitBtn.click()
 })
 
 getAndSetUserName();
