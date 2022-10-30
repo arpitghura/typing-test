@@ -218,7 +218,6 @@ const showHistory = () => {
         });
         avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
         avgTime = (avgTime / historyArray.length).toFixed(3);;
-        console.log(avgSpeed);
         avgRow.innerHTML = `<td>${avgSpeed}</td><td>${avgTime}</td>`;
         avgHistoryBody.appendChild(avgRow);
     }
