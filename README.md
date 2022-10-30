@@ -16,7 +16,7 @@ The Web App can be accessible from [https://typing-test-project.vercel.app/](htt
 <ul>
     <li>Time Based Test and Practice Sessions</li>
     <li>Paragraph Based Test and Practice Sessions</li>
-    <li>Change Difficulty Level as per your choice</li>
+    <li>Change Difficulty Level as per your choice: Easy, Medium & Hard</li>
     <li>History Saver with Username</li>
 </ul>
 
