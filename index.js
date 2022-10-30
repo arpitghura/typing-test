@@ -39,7 +39,7 @@ const makeword = (length) => {
 
     if (easyLvlBtn.checked) {
         characters = 'abcdefghijklmnopqrstuvwxyz';
-        selectedDifficultyLevel = "easy";
+        selectedDifficultyLevel = "Easy";
     } else if (interLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         selectedDifficultyLevel = "Medium";
