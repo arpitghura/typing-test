@@ -99,6 +99,7 @@ h2.subtitle {
   letter-spacing: 2px;
   font-size: medium;
   cursor: pointer;
+  margin: auto;
 }
 
 #startBtn {
@@ -253,4 +254,15 @@ footer {
   justify-content: center;
   background: rgb(2,0,36);
   background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+.startIns{
+  animation: Blink 1s linear infinite;
+  color: red;
+}
+
+@keyframes Blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
