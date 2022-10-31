@@ -132,18 +132,160 @@ li.nav-item{
 }
 
 footer {
-    padding: 20px 0px;
-    font-weight: 500;
+    background-color: black;
     bottom: 0;
-    width: 100%;
-    font-size: 18px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    background: rgb(2,0,36);
-background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
   }
-
+  
+  .footer-content {
+    color: white;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .about {
+    max-width: 30%;
+  }
+  
+  .quick-links > li,
+  .contact-details > li {
+    list-style-type: none;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 30px;
+  }
+  
+  .text {
+    color: #b3b3b3;
+  }
+  
+  .quick-links > li > a {
+    text-decoration: none;
+    color: #b3b3b3;
+  }
+  
+  .quick-links > li > a:hover {
+    color: #fd7014;
+  }
+  footer{
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+ }
+  
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .footer-socials .icon {
+    color: #fff;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-socials .icon span a {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-socials .icon span a i {
+    line-height: 60px;
+    font-size: 25px;
+  }
+  
+  .footer-socials .icon .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-socials .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-socials .icon:hover span a {
+    color: #fff;
+  }
+  
+  .footer-socials .icon:hover span,
+  .footer-socials .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(255, 250, 250, 0.4);
+  }
+  
+  .footer-socials .linkedin:hover span > a,
+  .footer-socials .linkedin:hover .tooltip,
+  .footer-socials .linkedin:hover .tooltip:before {
+    background: #fd7014;
+  }
+  
+  .footer-socials .instagram:hover span a,
+  .footer-socials .instagram:hover .tooltip,
+  .footer-socials .instagram:hover .tooltip:before {
+    background: #fd7014;
+  }
+  
+  .footer-socials .discord:hover span a,
+  .footer-socials .discord:hover .tooltip,
+  .footer-socials .discord:hover .tooltip:before {
+    background: #fd7014;
+  }
+  
+  .footer-socials .github:hover span a,
+  .footer-socials .github:hover .tooltip,
+  .footer-socials .github:hover .tooltip:before {
+    background: #fd7014;
+  }
+  
+  .footer-socials .email:hover span a,
+  .footer-socials .email:hover .tooltip,
+  .footer-socials .email:hover .tooltip:before {
+    background: #fd7014;
+  }
 /* ============ Media Queries ============ */
 
 @media screen and (max-width:670px){
@@ -163,6 +305,7 @@ background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(
         font-size: 12px;
     }
 }
+ 
 
 @media screen and (max-width: 768px){
     .left-section,.right-section{
