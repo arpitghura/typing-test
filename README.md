@@ -66,6 +66,13 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/alexsam29>
+            <img src=https://avatars.githubusercontent.com/u/69481177?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Alexander Samaniego/>
+            <br />
+            <sub style="font-size:14px"><b>Alexander Samaniego</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/iharshka>
             <img src=https://avatars.githubusercontent.com/u/106887668?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Harsh Gautam/>
             <br />
@@ -79,6 +86,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Sibayan Misra</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mdhinesh>
             <img src=https://avatars.githubusercontent.com/u/58901210?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dhinesh M/>
@@ -86,8 +95,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Dhinesh M</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/harshyadavcs>
             <img src=https://avatars.githubusercontent.com/u/108284583?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=harshyadavcs/>
@@ -123,6 +130,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Emerson</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ImgBotApp>
             <img src=https://avatars.githubusercontent.com/u/31427850?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Imgbot/>
@@ -130,8 +139,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Imgbot</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/priyanshu2k3>
             <img src=https://avatars.githubusercontent.com/u/100031428?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Priyanshu/>
