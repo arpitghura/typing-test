@@ -25,17 +25,26 @@ body{
   ::-webkit-scrollbar-thumb {
     background: #0072ff;
   }
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 15px 40px;
-    align-items: center;
-    color: white;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  align-items: center;
+  color: white;
+  background: #0072ff;
+  box-shadow: 20px 10px 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(74, 126, 205, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 15;
+  padding: 1rem 0.2rem;
 }
 .brand-name{
     margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
 }
 ul.main-menu{
     list-style: none;
