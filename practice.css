@@ -27,6 +27,21 @@ body {
   z-index: 15;
   padding: 1rem 0.2rem;
 }
+#easyLvlBtn, #interLvlBtn,#hardLvlBtn{
+  cursor: pointer;
+}
+#easy:hover{
+  cursor: pointer;
+  background-color: rgb(208, 255, 98);
+}
+#intermed:hover{
+  cursor: pointer;
+  background-color: rgb(123, 255, 130);
+}
+#hard:hover{
+  cursor: pointer;
+  background-color: rgb(0, 198, 139);
+}
 .bxl-github:before {
   content: "\e93a";
 }
