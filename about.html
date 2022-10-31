@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Typing Test</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
 </head>
 <body>
     <nav>
@@ -34,14 +36,69 @@
             <a href="./practice.html" class="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a>
             <a href="./practice.html" class="heroBtn practice"> Practice </a>
         </div>
-        
     </section>
-     <footer>
-        <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;
-            <span id="copyright">
-            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-    </span>
-        </p>
+    <footer>
+        <div class="main-content">
+            <div class="about" style="margin-top: 20px">
+              <h3 class="heading footer-content text-center"style="color: #000;">Typing Test</h3>
+              <br />
+              <p class="footer-content text"style="color: #000;">
+                  Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence.
+            </div>
+            <div class="quick-links footer-content" style="margin-top: 20px;color:#000">
+              <h3 class="heading">Quick Navigate</h3>
+              <br />
+              <li><a href="#" class="text"style="color: #000;"> Home </a></li>
+              <li>
+                <a href="about.html" onclick="resetScrollMarginTop()" class="text"style="color: #000;">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="practice.html" onclick="resetScrollMarginTop()" class="text"style="color: #000;">
+                  Practice
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" onclick="resetScrollMarginTop()" class="text"style="color: #000;">
+                  Profile
+                </a>
+              </li>
+            </div>
+            <!--Social media icon starts-->
+            <div class="footer-socials">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span
+                  ><a href="https://www.linkedin.com/in/arpitghura/"
+                    ><i class="bi bi-linkedin"></i></a
+                ></span>
+              </div>
+              <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span
+                  ><a href="https://www.instagram.com/ghura.arpit/"
+                    ><i class="bi bi-instagram"></i></a
+                ></span>
+              </div>
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span
+                  ><a href="https://github.com/arpitghura"
+                    ><i class="bi bi-github"></i></a
+                ></span>
+              </div>
+              <div class="icon email">
+                <div class="tooltip">Twitter</div>
+                <span
+                  ><a href="https://twitter.com/arpitghura"
+                    ><i class="bi bi-twitter"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="text-center">
+            <p><b> Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;</b></p>
+          </div>
     </footer>
 </body>
 </html>

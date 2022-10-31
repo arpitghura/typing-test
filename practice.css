@@ -259,7 +259,6 @@ footer {
   animation: Blink 1s linear infinite;
   color: red;
 }
-
 @keyframes Blink {
   0% { opacity: 0; }
   50% { opacity: 1; }
