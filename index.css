@@ -36,6 +36,10 @@ body{
 }
 .brand-name{
     margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
 }
 ul.main-menu{
     list-style: none;
