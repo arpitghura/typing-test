@@ -216,6 +216,7 @@ const saveHistory = () => {
 
 // History Viewer
 const historyBody = document.getElementById("historyTableBody");
+const avgHistoryBody = document.getElementById("avgTableBody");
 
 const showHistory = () => {
     history = localStorage.getItem("typerHistory");
@@ -224,11 +225,23 @@ const showHistory = () => {
         document.getElementsByClassName("history")[0].style.display = "block";
         historyArray = JSON.parse(history);
         historyBody.innerHTML = "";
+        avgHistoryBody.innerHTML="";
+        const avgRow = document.createElement("tr");
+        let avgSpeed = 0;
+        let avgTime = 0;
         historyArray.forEach((item) => {
             const row = document.createElement("tr");
-            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${Math.ceil(item.extracted_words_length / (item.timeTaken / 60))}</td><td>${item.timeTaken}</td><td>${item.difficultyLevel}</td>`;
+            let speed = Math.ceil(item.extracted_words_length / (item.timeTaken / 60));
+            let time = item.timeTaken;
+            avgSpeed += speed;
+            avgTime += time;
+            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${speed}</td><td>${time}</td><td>${item.difficultyLevel}</td>`;
             historyBody.appendChild(row);
         });
+        avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
+        avgTime = (avgTime / historyArray.length).toFixed(3);
+        avgRow.innerHTML = `<td>${avgSpeed}</td><td>${avgTime}</td>`;
+        avgHistoryBody.appendChild(avgRow);
     }
     else {
         document.getElementsByClassName("history")[0].style.display = "none";
