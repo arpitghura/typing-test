@@ -124,14 +124,21 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/mallickboy>
+            <img src=https://avatars.githubusercontent.com/u/96945731?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TAMAL MALLICK/>
+            <br />
+            <sub style="font-size:14px"><b>TAMAL MALLICK</b></sub>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/dissyulina>
             <img src=https://avatars.githubusercontent.com/u/80319559?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dissy Ulina/>
             <br />
             <sub style="font-size:14px"><b>Dissy Ulina</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/emday4prez>
             <img src=https://avatars.githubusercontent.com/u/35363144?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Emerson/>
