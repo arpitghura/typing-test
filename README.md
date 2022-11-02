@@ -6,7 +6,7 @@
 [![Typing Test](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
 
 
-<img src="./assets/Homepage.png">
+<img src="./assets/images/Homepage.png">
 
 Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence.
 
@@ -34,11 +34,11 @@ The Web App can be accessible from [https://typing-test-project.vercel.app/](htt
 
 Practice Page:
 
-<img src="./assets/practice.png">
+<img src="./assets/images/practice.png">
 
 Report Generated on Completion:
 
-<img src="./assets/Report.png">
+<img src="./assets/images/Report.png">
 
 ---
 ## Contributors
