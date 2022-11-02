@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-body{
+main{
+    padding: 20px;
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -77,7 +79,7 @@ li.nav-item{
     flex-direction: row;
     background-color: white;
     border-radius: 30px;
-    margin: 20px 40px;
+    margin: 0 30px 20px 30px;
     padding: 10px;
     height:max-content;
 }
@@ -185,6 +187,6 @@ background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(
         padding: 15px 20px;
     }
     #hero,#features{
-        margin: 20px;
+        margin: 0 20px 10px 20px;
     }
 }

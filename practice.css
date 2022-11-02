@@ -1,31 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px 40px;
-  align-items: center;
-  color: white;
-  background: #0072ff;
-  box-shadow: 20px 10px 40px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(74, 126, 205, 0.5);
-  backdrop-filter: blur(5px);
-  z-index: 15;
-  padding: 1rem 0.2rem;
+.content {
+  min-height: 80vh;
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr auto; */
 }
 
 .difficultyLevelSelectorBtn {
@@ -55,41 +31,6 @@ body {
 
 .bxl-github:before {
   content: "\e93a";
-}
-
-.brand-name {
-  margin-left: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-ul.main-menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-li.nav-item {
-  margin: 5px;
-}
-
-.nav-item-link {
-  text-decoration: none;
-  width: 100%;
-  padding: 10px;
-  transition: all 0.15s ease;
-  border: 1px solid transparent;
-  color: white;
-}
-
-.nav-item-link:hover {
-  border: 1px solid black;
-  border-radius: 40px;
-  background-color: black;
 }
 
 .container {
