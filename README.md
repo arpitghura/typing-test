@@ -40,7 +40,10 @@ Report Generated on Completion:
 
 <img src="./assets/Report.png">
 
-### Contributors
+---
+## Contributors
+
+### Thanks to all the contributors for their efforts 💖
 
 <table>
 <tr>

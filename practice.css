@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-
 
 .navbar {
   display: flex;
@@ -27,37 +27,36 @@ body {
   z-index: 15;
   padding: 1rem 0.2rem;
 }
-#easyLvlBtn, #interLvlBtn,#hardLvlBtn{
+
+.difficultyLevelSelectorBtn {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
   cursor: pointer;
 }
-#easy:hover{
+
+.difficultyLevelSelectorBtn label:hover,
+.difficultyLevelSelectorBtn input:hover {
   cursor: pointer;
-  background-color: rgb(208, 255, 98);
 }
-#intermed:hover{
-  cursor: pointer;
-  background-color: rgb(123, 255, 130);
-}
-#hard:hover{
-  cursor: pointer;
+
+#easy:hover {
   background-color: rgb(0, 198, 139);
 }
+
+#intermed:hover {
+  background-color: rgb(255, 216, 44);
+}
+
+#hard:hover {
+  background-color: rgb(255, 144, 52);
+}
+
 .bxl-github:before {
   content: "\e93a";
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 15px #00c6ff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0072ff;
-}
 .brand-name {
   margin-left: 10px;
   text-decoration: none;
@@ -150,13 +149,14 @@ h2.subtitle {
   background-color: red;
 }
 
-#message, #speed{
+#message,
+#speed {
   font-size: larger;
   font-weight: bold;
   text-align: center;
 }
 
-#speed{
+#speed {
   color: green;
 }
 
@@ -186,7 +186,7 @@ h2.subtitle {
   border: red;
 }
 
-#greetUser{
+#greetUser {
   text-align: center;
   font-weight: bold;
   color: green;
@@ -197,7 +197,7 @@ h2.subtitle {
   text-align: center;
 }
 
-.nameModal{
+.nameModal {
   background-color: antiquewhite;
   width: 50%;
   text-align: center;
@@ -207,35 +207,35 @@ h2.subtitle {
   margin-bottom: 10px;
 }
 
-.nameModal input[type="text"]{
+.nameModal input[type="text"] {
   border: 2px solid grey;
   border-radius: 15px;
-  padding:10px;
+  padding: 10px;
   margin: 0 auto;
   width: 80%;
 }
 
-.nameModal input[type="submit"]{
+.nameModal input[type="submit"] {
   display: block;
   background-color: green;
   font-size: 15px;
   font-weight: bold;
-  color:white;
+  color: white;
   padding: 12px;
   outline: none;
   border-radius: 15px;
   border: none;
   margin: 10px auto;
-  border:1px solid green;
+  border: 1px solid green;
 }
 
-.nameModal input[type="submit"]:hover{
+.nameModal input[type="submit"]:hover {
   background-color: rgba(0, 128, 0, 0.829);
   cursor: pointer;
   border: 1px solid black;
 }
 
-.history{
+.history {
   width: 80%;
   margin: 20px auto;
   padding: 10px;
@@ -244,37 +244,40 @@ h2.subtitle {
   text-align: center;
 }
 
-.history-table{
+.history-table {
   /* width: max-content; */
   margin: 5px auto;
   border-collapse: collapse;
   overflow-x: auto;
 }
-.history-table table{
+
+.history-table table {
   margin: 0 auto;
 }
 
-.history-avg{
+.history-avg {
   /* width: max-content; */
   margin: 5px auto;
   border-collapse: collapse;
   overflow-x: auto;
 }
-.history-avg table{
+
+.history-avg table {
   margin: 0 auto;
 }
 
-.button-group{
+.button-group {
   display: inline-block;
   margin: 25px 20px 25px;
 }
 
-th,td{
-  padding:  0 20px;
+th,
+td {
+  padding: 0 20px;
   border: 1px solid black;
 }
 
-#historyResetBtn{
+#historyResetBtn {
   width: max-content;
   margin: 10px auto;
   padding: 10px;
@@ -287,7 +290,7 @@ th,td{
   transition: 0.3s ease;
 }
 
-#historyResetBtn:hover{
+#historyResetBtn:hover {
   background-color: transparent;
   color: #0072ff;
 }
@@ -301,17 +304,25 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(279deg, rgba(2,0,36,1) 0%, rgba(5,5,85,1) 52%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
 }
 
-.startIns{
+.startIns {
   animation: Blink 1s linear infinite;
   color: red;
 }
 
 @keyframes Blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
