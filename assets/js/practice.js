@@ -11,21 +11,8 @@ const interLvlBtn = document.getElementById("interLvlBtn");
 const hardLvlBtn = document.getElementById("hardLvlBtn");
 
 const nameModalEle = document.querySelector(".nameModal");
-const startInstruction =  document.querySelector(".startIns")
-const links = document.querySelector(".navigation");
-const mobileNav = document.querySelector(".fa-bars");
+const startInstruction =  document.querySelector(".startIns");
 
-
-function displayFunction() {
-    if (links.style.display === "none") {
-        links.style.display = "block";
-    } else {
-        links.style.display = "none";
-        mobileNav.style.display = "block";
-    }
-}
-
-mobileNav.addEventListener("click", displayFunction);
 
 levelSelector.style.display = 'none';
 nameModalEle.style.display = 'none';

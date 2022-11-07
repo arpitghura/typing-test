@@ -1,19 +1,5 @@
 const userNameEle = document.getElementById("userName");
 const navigateEle = document.getElementById("navigate-user-text");
-const links = document.querySelector(".navigation");
-const mobileNav = document.querySelector(".fa-bars");
-
-
-function displayFunction() {
-    if (links.style.display === "none") {
-        links.style.display = "block";
-    } else {
-        links.style.display = "none";
-        mobileNav.style.display = "block";
-    }
-}
-
-mobileNav.addEventListener("click", displayFunction);
 
 // Navigate to practice.html if no data in local storage
 const checkIfUserData = () => {

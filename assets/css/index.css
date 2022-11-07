@@ -1,25 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
 
-* {
+*{
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-
-main {
+main{
   padding: 20px;
   background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #0072ff,
-    #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #0072ff,
-    #00c6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* ScrollBar */
 /* width */
@@ -36,7 +27,6 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #0072ff;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -51,26 +41,24 @@ main {
   z-index: 15;
   padding: 1rem 0.2rem;
 }
-
-.brand-name {
+.brand-name{
   margin-left: 10px;
   text-decoration: none;
   color: white;
   font-weight: 700;
   font-size: 25px;
 }
-
-ul.main-menu {
+ul.main-menu{
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-li.nav-item {
+li.nav-item{
   margin: 5px;
 }
-.nav-item-link {
+.nav-item-link{
   text-decoration: none;
   width: 100%;
   padding: 10px;
@@ -78,23 +66,16 @@ li.nav-item {
   border: 1px solid transparent;
   color: white;
 }
-.nav-item-link:hover {
+.nav-item-link:hover{
   border: 1px solid black;
   border-radius: 40px;
   background-color: black;
 }
-
-.mobile-nav {
+.mobile-nav{
   display: none;
   cursor: pointer;
 }
-.cancel {
-    display: none;
-    cursor: pointer;
-}
-
-#hero,
-#features {
+#hero,#features{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,28 +87,27 @@ li.nav-item {
   padding: 10px;
   height: max-content;
 }
-.left-section,
-.right-section {
+.left-section,.right-section {
   padding: 5vw;
   width: 35vw;
   margin: auto;
 }
-.left-section h1 {
+.left-section h1{
   font-size: xxx-large;
   font-weight: bolder;
 }
-.subtitle {
+.subtitle{
   padding-block: 10px;
   font-weight: 400;
   font-size: large;
 }
-.right-section img {
+.right-section img{
   width: 100%;
   height: 100%;
   background-position: center;
   background-size: contain;
 }
-.heroBtn {
+.heroBtn{
   padding: 10px;
   margin: 20px 0 10px 0;
   color: white;
@@ -137,36 +117,36 @@ li.nav-item {
   transition: background 0.3s ease;
   margin-right: 5px;
 }
-.test {
+.test{
   background-color: #f9a826;
 }
-.practice {
+.practice{
   background-color: #0198e1;
 }
-.test:hover {
+.test:hover{
   background-color: #f9a826d5;
 }
-.practice:hover {
+.practice:hover{
   background-color: #0196e1c7;
 }
 
-#features {
+#features{
   justify-content: space-around;
   text-align: center;
   padding-block: 20px;
 }
-.feature {
+.feature{
   width: 25vw;
 }
-.feature img {
+.feature img{
   height: 96px;
   width: 96px;
 }
-.feature p {
+.feature p{
   padding: 5px;
 }
 
-footer {
+footer{
   padding: 20px 0px;
   font-weight: 500;
   bottom: 0;
@@ -176,18 +156,13 @@ footer {
   display: flex;
   justify-content: center;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    279deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(5, 5, 85, 1) 52%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
 }
 
 /* ============ Media Queries ============ */
 
-@media screen and (max-width: 513px) {
-  .navigation {
+@media screen and (max-width: 525px) {
+  .navigation{
     display: none;
     position: absolute;
     background-color: #0072ff;
@@ -195,47 +170,45 @@ footer {
     left: 0;
     width: 100%;
   }
-  ul.main-menu {
+  ul.main-menu{
     flex-direction: column;
   }
-  .cancel {
+  .cancel{
     font-size: 25px;
   }
-  .mobile-nav {
+  .mobile-nav{
     display: block;
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 670px) {
-  .nav-item {
+  .nav-item{
     display: inline-flex;
   }
-  .navigation {
+  .navigation{
     margin: auto;
   }
-  .brand-name {
+  .brand-name{
     margin-bottom: 10px;
   }
-  footer {
+  footer{
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .left-section,
-  .right-section {
+  .left-section,.right-section{
     width: 60vw;
   }
-  .feature {
+  .feature{
     width: 60vw;
     margin-block-end: 10px;
   }
-  .navbar {
+  .navbar{
     padding: 15px 20px;
   }
-  #hero,
-  #features {
+  #hero,#features{
     margin: 0 20px 10px 20px;
   }
 }
