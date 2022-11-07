@@ -173,8 +173,8 @@ footer{
   ul.main-menu{
     flex-direction: column;
   }
-  .cancel{
-    font-size: 25px;
+  .brand{
+    flex-grow: 1;
   }
   .mobile-nav{
     display: block;
