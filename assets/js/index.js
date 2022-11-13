@@ -1,9 +1,6 @@
 const links = document.querySelector(".navigation");
 const mobileNav = document.querySelector(".mobile-nav");
 
-console.log(mobileNav);
-
-
 function displayFunction() {
     if (links.style.display === "block") {
         links.style.display = "none";
