@@ -1,13 +1,17 @@
 const links = document.querySelector(".navigation");
-const mobileNav = document.querySelector(".bx-menu");
+const mobileNav = document.querySelector(".mobile-nav");
+
+console.log(mobileNav);
 
 
 function displayFunction() {
-    if (links.style.display === "none") {
-        links.style.display = "block";
-    } else {
+    if (links.style.display === "block") {
         links.style.display = "none";
+        mobileNav.classList.remove("change");
+    } else {
+        links.style.display = "block";
         mobileNav.style.display = "block";
+        mobileNav.classList.add("change");
     }
 }
 
