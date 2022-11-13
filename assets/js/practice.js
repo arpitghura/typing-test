@@ -11,7 +11,8 @@ const interLvlBtn = document.getElementById("interLvlBtn");
 const hardLvlBtn = document.getElementById("hardLvlBtn");
 
 const nameModalEle = document.querySelector(".nameModal");
-const startInstruction =  document.querySelector(".startIns")
+const startInstruction =  document.querySelector(".startIns");
+
 
 levelSelector.style.display = 'none';
 nameModalEle.style.display = 'none';
