@@ -60,6 +60,13 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Jideotetic>
+            <img src=https://avatars.githubusercontent.com/u/53506936?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Yusuf Abdulbasit/>
+            <br />
+            <sub style="font-size:14px"><b>Yusuf Abdulbasit</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Giriraj-Roy>
             <img src=https://avatars.githubusercontent.com/u/88903134?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Giriraj Roy/>
             <br />
@@ -80,6 +87,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Harsh Gautam</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/sibayanmisra2002>
             <img src=https://avatars.githubusercontent.com/u/88418750?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sibayan Misra/>
@@ -87,8 +96,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Sibayan Misra</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mdhinesh>
             <img src=https://avatars.githubusercontent.com/u/58901210?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dhinesh M/>
@@ -124,6 +131,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Maciek S</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/imThiyagu>
             <img src=https://avatars.githubusercontent.com/u/27724580?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thiyagarajan Ravichandran/>
@@ -131,8 +140,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Thiyagarajan Ravichandran</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mallickboy>
             <img src=https://avatars.githubusercontent.com/u/96945731?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TAMAL MALLICK/>
@@ -168,6 +175,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Subham Choudhury</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/V35HR4J>
             <img src=https://avatars.githubusercontent.com/u/54109630?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Veshraj Ghimire/>
