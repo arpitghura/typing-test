@@ -66,7 +66,7 @@ li.nav-item{
   border: 1px solid transparent;
   color: white;
 }
-.nav-item-link:hover{
+.nav-item-link:hover {
   border: 1px solid black;
   border-radius: 40px;
   background-color: black;
@@ -177,7 +177,7 @@ footer{
 
 /* ============ Media Queries ============ */
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 524px) {
   .navigation{
     display: none;
     position: absolute;
@@ -195,6 +195,12 @@ footer{
   .mobile-nav{
     display: block;
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .navigation {
+    display: block;
   }
 }
 
