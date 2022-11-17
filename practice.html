@@ -23,7 +23,8 @@
                     <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
                     <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
-                    <li class="nav-item"><a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class="fa fa-github" style="font-size:24px"></i></a></li>
+                    <li class="nav-item"><a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i
+                                class="fa fa-github" style="font-size:24px"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -31,11 +32,13 @@
 
     <div class="content">
         <div class="container">
-            <h1 class="heading">Typing Test</h1>
-            <div class="userDetails">
-                <h2 id="greetUser"></h2>
+            <div id="user-header">
+                <h1 class="heading">Typing Test</h1>
+                <div class="userDetails">
+                    <h2 id="greetUser"></h2>
+                </div>
+                <h2 class="subtitle">Practice your typing skills!</h2>
             </div>
-            <h2 class="subtitle">Practice your typing skills!</h2>
             <div class="dynamic-text-box">
                 <p id="quote"></p>
             </div>
@@ -54,6 +57,24 @@
                     <label for="hardLvlBtn" class="radio-label">Hard</label>
                 </div>
             </div>
+            <div id="timingSessionChoose">
+                <h2>Choose Time Duration</h1>
+                    <div class="timerSelector">
+                        <input type="radio" id="onemin" name="time-button">
+                        <label for="onemin" class="radio-label">1 minute</label>
+                    </div>
+                    <div class="timerSelector">
+                        <input type="radio" id="twomin" name="time-button">
+                        <label for="twomin" class="radio-label">2 minute</label>
+                    </div>
+                    <div class="timerSelector">
+                        <input type="radio" id="fivemin" name="time-button">
+                        <label for="fivemin" class="radio-label">5 minute</label>
+                    </div>
+            </div>
+            <!-- <div class="time-not-selector-message text-center">
+                <p>If you don't choose any time, you are not bind with time duration</p>
+            </div> -->
             <div class="start-btn">
                 <button id="startBtn">START</button><br>
                 <h3 class="startIns"> Press Space to Start</h3>
@@ -67,14 +88,14 @@
         <div class="user-input-box" id="userInputBox">
             <input type="text" name="user-input" id="userInput">
         </div>
-    
+
         <div class="nameModal">
             <span class="prompt">Enter Your Username: </span>
             <input type="text" name="userName" id="userName" required>
             <input type="submit" value="Save and Go" id="nameSubmitBtn">
         </div>
-    
-        <div class="history">
+
+        <!-- <div class="history">
             <h2>History</h2>
             <div class="history-table">
                 <table>
@@ -103,9 +124,9 @@
                 </table>
             </div>
             <button id="historyResetBtn">Reset Data</button>
-        </div>
+        </div> -->
     </div>
-    
+
     <footer>
         <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;</p>
     </footer>

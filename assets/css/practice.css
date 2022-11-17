@@ -63,6 +63,9 @@ h2.subtitle {
   font-size: larger;
   font-weight: 600;
   text-align: center;
+  line-height: 2;
+  letter-spacing: 1.1px;
+  color: rgb(61, 61, 61);
 }
 
 .start-btn {
@@ -120,6 +123,7 @@ h2.subtitle {
 
 .highlight {
   background-color: yellow;
+  color: black;
 }
 
 .error {
@@ -266,4 +270,29 @@ footer {
   100% {
     opacity: 0;
   }
+}
+
+/* ----------------Timimg session css ---------------- */
+#timingSessionChoose{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:30px 10px ;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  flex-wrap: wrap;
+}
+
+.timerSelector{
+  background-color: rgb(0, 198, 139);
+  padding: 15px 20px;
+  margin: 0;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1.1em;
+}
+.text-center{
+  text-align: center;
 }
