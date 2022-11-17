@@ -39,24 +39,27 @@
                 </div>
                 <h2 class="subtitle">Practice your typing skills!</h2>
             </div>
+
             <div class="dynamic-text-box">
                 <p id="quote"></p>
             </div>
+
             <div id="levelSelector">
                 <h3>Choose difficulty level:</h3>
-                <div class="difficultyLevelSelectorBtn" id="easy">
+                <label class="difficultyLevelSelectorBtn" id="easy">
                     <input type="radio" id="easyLvlBtn" name="radio-button">
-                    <label for="easyLvlBtn" class="radio-label">Easy</label>
-                </div>
-                <div class="difficultyLevelSelectorBtn" id="intermed">
+                    <span for="easyLvlBtn" class="radio-label">Easy</span>
+                </label>
+                <label class="difficultyLevelSelectorBtn" id="intermed">
                     <input type="radio" id="interLvlBtn" name="radio-button">
-                    <label for="interLvlBtn" class="radio-label">Intermediate</label>
-                </div>
-                <div class="difficultyLevelSelectorBtn" id="hard">
+                    <span for="interLvlBtn" class="radio-label">Intermediate</span>
+                </label>
+                <label class="difficultyLevelSelectorBtn" id="hard">
                     <input type="radio" id="hardLvlBtn" name="radio-button">
-                    <label for="hardLvlBtn" class="radio-label">Hard</label>
-                </div>
+                    <span for="hardLvlBtn" class="radio-label">Hard</span>
+                </label>
             </div>
+
             <div id="timingSessionChoose">
                 <h2>Choose Time Duration</h1>
                     <ul class="timerListUL">
@@ -73,11 +76,8 @@
                             <span for="fivemin" class="radio-label">5 minute</span>
                         </label>
                     </ul>
-
             </div>
-            <!-- <div class="time-not-selector-message text-center">
-                <p>If you don't choose any time, you are not bind with time duration</p>
-            </div> -->
+        
             <div class="start-btn">
                 <button id="startBtn">START</button><br>
                 <h3 class="startIns"> Press Space to Start</h3>
@@ -88,6 +88,7 @@
                 <p id="speed"></p>
             </div>
         </div>
+        
         <div class="user-input-box" id="userInputBox">
             <input type="text" name="user-input" id="userInput">
         </div>

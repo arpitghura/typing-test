@@ -10,6 +10,9 @@ const easyLvlBtn = document.getElementById("easyLvlBtn");
 const interLvlBtn = document.getElementById("interLvlBtn");
 const hardLvlBtn = document.getElementById("hardLvlBtn");
 const userHeader = document.getElementById("user-header");
+const onemin = document.getElementById("onemin");
+const twomin = document.getElementById("twomin");
+const fivemin = document.getElementById("fivemin");
 
 const nameModalEle = document.querySelector(".nameModal");
 const startInstruction = document.querySelector(".startIns")
@@ -54,7 +57,6 @@ const makequote = () => {
         selectedDifficultyLevel = "Easy";
         length = 4
         quoteLength = 30
-
     } else if (interLvlBtn.checked) {
         characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         selectedDifficultyLevel = "Medium";
@@ -206,7 +208,13 @@ nameSubmitBtn.addEventListener("click", () => {
 
 // Listen for timer select
 document.getElementById("timingSessionChoose").addEventListener("click", (e) => {
-    if (e.target.name === "time-button") {
+    if (e.target.name === "time-button" && (easyLvlBtn.checked || interLvlBtn.checked || hardLvlBtn.checked)) {
+        startBtn.style.display = 'block';
+        startInstruction.style.display = 'block'
+    }
+})
+document.getElementById("levelSelector").addEventListener("click", (e) => {
+    if (e.target.name === "radio-button" && (onemin.checked || twomin.checked || fivemin.checked)) {
         startBtn.style.display = 'block';
         startInstruction.style.display = 'block'
     }

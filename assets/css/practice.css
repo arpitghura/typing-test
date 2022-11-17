@@ -180,66 +180,6 @@ h2.subtitle {
   border: 1px solid black;
 }
 
-.history {
-  width: 80%;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: antiquewhite;
-  text-align: center;
-}
-
-.history-table {
-  /* width: max-content; */
-  margin: 5px auto;
-  border-collapse: collapse;
-  overflow-x: auto;
-}
-
-.history-table table {
-  margin: 0 auto;
-}
-
-.history-avg {
-  /* width: max-content; */
-  margin: 5px auto;
-  border-collapse: collapse;
-  overflow-x: auto;
-}
-
-.history-avg table {
-  margin: 0 auto;
-}
-
-.button-group {
-  display: inline-block;
-  margin: 25px 20px 25px;
-}
-
-th,
-td {
-  padding: 0 20px;
-  border: 1px solid black;
-}
-
-#historyResetBtn {
-  width: max-content;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #0072ff;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-#historyResetBtn:hover {
-  background-color: transparent;
-  color: #0072ff;
-}
-
 footer {
   padding: 20px 0px;
   font-weight: 500;
@@ -255,20 +195,20 @@ footer {
 
 .startIns {
   animation: Blink 1s linear infinite;
-  color: red;
+  color: rgb(4, 211, 14);
 }
 
 @keyframes Blink {
   0% {
-    opacity: 0;
+    opacity: 0.2;
   }
 
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
 
   100% {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 
@@ -292,7 +232,7 @@ footer {
 
 .timerSelector{
   border-radius: 10px;
-  background-color: rgba(0, 198, 139,0.7);
+  background-color: rgba(0, 198, 139,0.8);
   margin: 10px;
   padding: 15px 20px;
   font-size: 1.1em;
