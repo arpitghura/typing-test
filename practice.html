@@ -59,18 +59,21 @@
             </div>
             <div id="timingSessionChoose">
                 <h2>Choose Time Duration</h1>
-                    <div class="timerSelector">
-                        <input type="radio" id="onemin" name="time-button">
-                        <label for="onemin" class="radio-label">1 minute</label>
-                    </div>
-                    <div class="timerSelector">
-                        <input type="radio" id="twomin" name="time-button">
-                        <label for="twomin" class="radio-label">2 minute</label>
-                    </div>
-                    <div class="timerSelector">
-                        <input type="radio" id="fivemin" name="time-button">
-                        <label for="fivemin" class="radio-label">5 minute</label>
-                    </div>
+                    <ul class="timerListUL">
+                        <label class="timerSelector">
+                            <input type="radio" id="onemin" name="time-button">
+                            <span for="onemin" class="radio-label">1 minute</span>
+                        </label>
+                        <label class="timerSelector">
+                            <input type="radio" id="twomin" name="time-button">
+                            <span for="twomin" class="radio-label">2 minute</span>
+                        </label>
+                        <label class="timerSelector">
+                            <input type="radio" id="fivemin" name="time-button">
+                            <span for="fivemin" class="radio-label">5 minute</span>
+                        </label>
+                    </ul>
+
             </div>
             <!-- <div class="time-not-selector-message text-center">
                 <p>If you don't choose any time, you are not bind with time duration</p>
@@ -94,37 +97,6 @@
             <input type="text" name="userName" id="userName" required>
             <input type="submit" value="Save and Go" id="nameSubmitBtn">
         </div>
-
-        <!-- <div class="history">
-            <h2>History</h2>
-            <div class="history-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Username</th>
-                            <th>Speed (wpm)</th>
-                            <th>Time Taken (sec)</th>
-                            <th>Difficulty Level</th>
-                        </tr>
-                    </thead>
-                    <tbody id="historyTableBody">
-                    </tbody>
-                </table>
-            </div>
-            <div class="history-avg">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Average Speed (wpm)</th>
-                            <th>Average Time Taken (sec)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="avgTableBody">
-                    </tbody>
-                </table>
-            </div>
-            <button id="historyResetBtn">Reset Data</button>
-        </div> -->
     </div>
 
     <footer>

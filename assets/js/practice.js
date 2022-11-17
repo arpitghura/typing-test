@@ -49,11 +49,6 @@ const makeword = (length, charactersLength, characters) => {
 
 // making the quote from the words
 const makequote = () => {
-    // const characters = [10,11,12,13,14,16,20,22,25,30,35];
-    // quoteLength = characters[Math.floor(Math.random() * characters.length)];
-    // quoteLength = Number(quoteLength);
-    // console.log(quoteLength);
-
     if (easyLvlBtn.checked) {
         characters = 'abcdefghijklmnopqrstuvwxyz';
         selectedDifficultyLevel = "Easy";
@@ -80,6 +75,7 @@ const makequote = () => {
     return words;
 };
 
+// getting time choosed by user
 const getTime = () => {
     if (onemin.checked)
         return (1 * 60 * 1000);
@@ -89,6 +85,7 @@ const getTime = () => {
         return (5 * 60 * 1000);
 };
 
+// flag after time goes off
 const startTimer = (time) => {
     setTimeout(() => {
         timeout = true
@@ -131,7 +128,7 @@ userInput.addEventListener('input', () => {
 
     if (timeout || (input === curWord && wordIndex === (extracted_words.length - 2))) {
         const timeTaken = (new Date().getTime() - startTime) / 1000; // in seconds
-        const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60));
+        const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
         const message = `Congratulations! You have typed in ${timeTaken} seconds`;
         const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;
 
@@ -170,7 +167,7 @@ resetBtn.addEventListener("click", () => {
     timeout = false;
     words = "";
     userInput.value = '';
-    
+
     resetBtn.style.display = 'none';
     userInput.style.display = 'none';
     userInputBox.style.display = 'none';
@@ -207,14 +204,13 @@ nameSubmitBtn.addEventListener("click", () => {
     }
 })
 
-// Listen for level select
+// Listen for timer select
 document.getElementById("timingSessionChoose").addEventListener("click", (e) => {
     if (e.target.name === "time-button") {
         startBtn.style.display = 'block';
         startInstruction.style.display = 'block'
     }
 })
-
 
 document.addEventListener('keypress', (e) => {
     if (e.code === "Space") {
@@ -246,67 +242,4 @@ const saveHistory = () => {
     else {
         localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel }]));
     }
-    // showHistory();
 }
-
-// // History Viewer
-// const historyBody = document.getElementById("historyTableBody");
-// const avgHistoryBody = document.getElementById("avgTableBody");
-
-// const showHistory = () => {
-//     history = localStorage.getItem("typerHistory");
-//     userName = localStorage.getItem("typerName");
-//     if (history != null) {
-//         document.getElementsByClassName("history")[0].style.display = "block";
-//         historyArray = JSON.parse(history);
-//         historyBody.innerHTML = "";
-//         avgHistoryBody.innerHTML="";
-//         const avgRow = document.createElement("tr");
-//         let avgSpeed = 0;
-//         let avgTime = 0;
-//         historyArray.forEach((item) => {
-//             const row = document.createElement("tr");
-//             let speed = Math.ceil(item.extracted_words_length / (item.timeTaken / 60));
-//             let time = item.timeTaken;
-//             avgSpeed += speed;
-//             avgTime += time;
-//             row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${speed}</td><td>${time}</td><td>${item.difficultyLevel}</td>`;
-//             historyBody.appendChild(row);
-//         });
-//         avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
-//         avgTime = (avgTime / historyArray.length).toFixed(3);
-//         avgRow.innerHTML = `<td>${avgSpeed}</td><td>${avgTime}</td>`;
-//         avgHistoryBody.appendChild(avgRow);
-//     }
-//     else {
-//         document.getElementsByClassName("history")[0].style.display = "none";
-//     }
-// };
-
-// showHistory();
-
-// // History Reset Button
-// const historyResetBtn = document.getElementById("historyResetBtn");
-// historyResetBtn.addEventListener("click", () => {
-//     localStorage.removeItem("typerName");
-//     localStorage.removeItem("typerHistory");
-//     showHistory();
-//     window.location.reload();
-// })
-
-// -------- timimg based sessions
-
-min1session = document.getElementById("onemin")
-min2session = document.getElementById("twomin")
-min5session = document.getElementById("fivemin")
-
-// min1session.addEventListener("click",()=>{
-//     console.log("function called");
-//     setTimeout(() => {
-//         console.log("Session Completed");
-//         userInput.disabled = true
-//         userInput.style.display="none"
-//         userInputBox.style.display="none"
-//     }, (3600));
-//     min1session.disabled=true
-// })
