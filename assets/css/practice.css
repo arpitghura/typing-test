@@ -105,7 +105,7 @@ h2.subtitle {
 }
 
 .user-input-box {
-  width: 80%;
+  width: 70vw;
   margin: 10px auto;
   padding: 14px;
   text-align: center;
@@ -119,6 +119,7 @@ h2.subtitle {
   font-size: medium;
   text-align: center;
   padding: 5px;
+  min-width: 50%;
 }
 
 .highlight {

@@ -91,6 +91,7 @@ const getTime = () => {
 const startTimer = (time) => {
     setTimeout(() => {
         timeout = true
+        completedSession();
     }, time);
 }
 
@@ -122,6 +123,19 @@ startBtn.addEventListener("click", () => {
     startTimer(time);
 });
 
+const completedSession = () => {
+    const timeTaken = (new Date().getTime() - startTime) / 1000; // in seconds
+    const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
+    const message = `Congratulations! You have typed in ${timeTaken} seconds`;
+    const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;
+
+    messages.style.display = 'inline';
+    messageEle.innerText = message;
+    speedEle.innerText = speedMessage;
+    userInput.style.display = 'none';
+    saveHistory();
+}
+
 let char_you_typed = 0
 // change the highlight class to the next word on user input
 userInput.addEventListener('input', () => {
@@ -129,16 +143,7 @@ userInput.addEventListener('input', () => {
     const input = userInput.value;
 
     if (timeout || (input === curWord && wordIndex === (extracted_words.length - 2))) {
-        const timeTaken = (new Date().getTime() - startTime) / 1000; // in seconds
-        const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
-        const message = `Congratulations! You have typed in ${timeTaken} seconds`;
-        const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;
-
-        messages.style.display = 'inline';
-        messageEle.innerText = message;
-        speedEle.innerText = speedMessage;
-        userInput.style.display = 'none';
-        saveHistory();
+        completedSession();
     }
     else if (input.endsWith(' ') && input.trim() === curWord) {
         userInput.value = '';
@@ -164,7 +169,7 @@ resetBtn.addEventListener("click", () => {
     startInstruction.style.display = 'block';
     timingSessionChoose.style.display = "flex";
     userHeader.style.display = "block"
-    
+
     quoteEle.innerText = "";
     timeout = false;
     words = "";
