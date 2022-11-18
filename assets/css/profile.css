@@ -7,6 +7,7 @@
     padding: 20px;
     text-align: center;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,8 @@
     backdrop-filter: blur(5px);
     z-index: 15;
     padding: 1rem 0.2rem;
-  }
+}
+
 .heading {
     width: max-content;
     margin: auto;
@@ -34,22 +36,81 @@ h2.subtitle {
     font-size: 1.5em;
 }
 
-#navigate-user-text{
+#navigate-user-text {
     font-size: 20px;
 }
 
-#profile-details{
+#profile-details {
     padding: 30px;
 }
 
-.history{
-    margin-bottom: 30px !important;
+
+.history {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: center;
 }
 
-.history-table{
-    margin: 40px 0px 30px 0px !important;
+.history-table {
+    /* width: max-content; */
+    margin: 5px auto;
+    border-collapse: collapse;
+    overflow-x: auto;
 }
 
-.history-heading{
-    margin-top: 20px;
+.history-table table {
+    margin: 0 auto;
+}
+
+.history-avg {
+    /* width: max-content; */
+    margin: 5px auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.history-avg table {
+    margin: 0 auto;
+}
+
+.button-group {
+    display: inline-block;
+    margin: 25px 20px 25px;
+}
+
+th,
+td {
+    padding: 0 20px;
+    border: 1px solid rgb(26, 26, 26);
+}
+
+#historyResetBtn {
+    width: max-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:rgba(0, 198, 139,0.7);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+#historyResetBtn:hover {
+    background-color: rgb(0, 198, 139);
+}
+.history,.history-heading,.history-table {
+    margin-block: 30px;
+}
+
+.hr{
+    height: 1px;
+    background-color: rgba(32, 32, 32, 0.774);
+    content: "";
+    margin-bottom: 20px;
 }

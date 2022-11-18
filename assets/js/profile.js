@@ -16,7 +16,7 @@ const checkIfUserData = () => {
 const getUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
-        userNameEle.innerText = "Full Name: " + `${name}`;
+        userNameEle.innerText = "User Name: " + `${name}`;
     }else{
         checkIfUserData();
     }
@@ -39,11 +39,11 @@ const saveHistory = () => {
     history = localStorage.getItem("typerHistory");
     if (history) {
         historyArray = JSON.parse(history);
-        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel});
+        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel, timeSession: selectedTime });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
     }
     else {
-        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel}]));
+        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000 , difficultyLevel : selectedDifficultyLevel, timeSession: selectedTime }]));
     }
     showHistory();
 }
@@ -69,11 +69,11 @@ const showHistory = () => {
             let time = item.timeTaken;
             avgSpeed += speed;
             avgTime += time;
-            row.innerHTML = `<td>${htmlEncode(userName)}</td><td>${speed}</td><td>${time}</td><td>${item.difficultyLevel}</td>`;
+            row.innerHTML = `<td>${speed}</td><td>${item.timeSession} Minutes</td><td>${item.difficultyLevel}</td>`;
             historyBody.appendChild(row);
         });
         avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
-        avgTime = (avgTime / historyArray.length).toFixed(3);
+        avgTime = (avgTime / historyArray.length / 60).toFixed(2);
         avgRow.innerHTML = `<td>${avgSpeed}</td><td>${avgTime}</td>`;
         avgHistoryBody.appendChild(avgRow);
     }

@@ -32,6 +32,8 @@ let timeout = false
 let wordIndex = 0, extracted_words_length = 0, quoteLength = 0;
 let startTime = Date.now();
 let selectedDifficultyLevel = "";
+let selectedTime = 0;
+let char_you_typed = 0
 
 // To encode the string
 function htmlEncode(str) {
@@ -52,6 +54,7 @@ const makeword = (length, charactersLength, characters) => {
 
 // making the quote from the words
 const makequote = () => {
+    // setting up difficulty level 
     if (easyLvlBtn.checked) {
         characters = 'abcdefghijklmnopqrstuvwxyz';
         selectedDifficultyLevel = "Easy";
@@ -68,7 +71,7 @@ const makequote = () => {
         length = 8
         quoteLength = 60
     }
-
+    // making word and returning it 
     let charactersLength = characters.length;
     for (let i = 0; i < quoteLength; i++) {
         words += makeword(length, charactersLength, characters) + " ";
@@ -79,12 +82,18 @@ const makequote = () => {
 
 // getting time choosed by user
 const getTime = () => {
-    if (onemin.checked)
+    if (onemin.checked){
+        selectedTime = 1
         return (1 * 60 * 1000);
-    else if (twomin.checked)
+    }
+    else if (twomin.checked){
+        selectedTime = 2
         return (2 * 60 * 1000);
-    else if (fivemin.checked)
+    }
+    else if (fivemin.checked){
+        selectedTime = 5
         return (5 * 60 * 1000);
+    }
 };
 
 // flag after time goes off
@@ -97,13 +106,13 @@ const startTimer = (time) => {
 
 // start the typing game
 startBtn.addEventListener("click", () => {
-    userHeader.style.display = "none"
     const quote = makequote();
     const time = getTime();
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
-
+    
+    userHeader.style.display = "none";
     levelSelector.style.display = 'none';
     userInputBox.style.display = 'block';
     userInput.style.display = 'inline';
@@ -115,6 +124,7 @@ startBtn.addEventListener("click", () => {
     const spanWords = extracted_words.map(word => {
         return `<span>${word} </span>`;
     });
+
     quoteEle.innerHTML = spanWords.join('');
     quoteEle.childNodes[0].className = 'highlight';
     userInput.innerText = '';
@@ -123,6 +133,8 @@ startBtn.addEventListener("click", () => {
     startTimer(time);
 });
 
+// function to call when the session is completed 
+// either by writting all words or time goes off
 const completedSession = () => {
     const timeTaken = (new Date().getTime() - startTime) / 1000; // in seconds
     const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
@@ -136,15 +148,16 @@ const completedSession = () => {
     saveHistory();
 }
 
-let char_you_typed = 0
-// change the highlight class to the next word on user input
+// working when user types in the input box ( typing the highlighted word ) 
 userInput.addEventListener('input', () => {
     const curWord = extracted_words[wordIndex];
     const input = userInput.value;
 
+    // wrote all words or time out then complete the session
     if (timeout || (input === curWord && wordIndex === (extracted_words.length - 2))) {
         completedSession();
-    }
+    } 
+    // moving to the next word
     else if (input.endsWith(' ') && input.trim() === curWord) {
         userInput.value = '';
         char_you_typed += curWord.length;
@@ -154,9 +167,11 @@ userInput.addEventListener('input', () => {
         }
         quoteEle.childNodes[wordIndex].className = 'highlight';
     }
+    // remove all classes if user is typing correctly
     else if (curWord.startsWith(input)) {
         userInput.className = '';
     }
+    // error showing if user mistyped
     else {
         userInput.className = 'error';
     }
@@ -187,6 +202,7 @@ resetBtn.addEventListener("click", () => {
 const nameInput = document.getElementById("userName");
 const nameSubmitBtn = document.getElementById("nameSubmitBtn");
 
+// getting and setting username in localStorage
 const getAndSetUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
@@ -199,6 +215,7 @@ const getAndSetUserName = () => {
     }
 };
 
+// Function to save username to localStorage
 nameSubmitBtn.addEventListener("click", () => {
     console.log(nameInput.value);
     if (nameInput.value != null && nameInput.value != "") {
@@ -215,9 +232,10 @@ nameSubmitBtn.addEventListener("click", () => {
 document.getElementById("timingSessionChoose").addEventListener("click", (e) => {
     if (e.target.name === "time-button" && (easyLvlBtn.checked || interLvlBtn.checked || hardLvlBtn.checked)) {
         startBtn.style.display = 'block';
-        startInstruction.style.display = 'block'
+        // startInstruction.style.display = 'block'
     }
 })
+// listen for level select
 document.getElementById("levelSelector").addEventListener("click", (e) => {
     if (e.target.name === "radio-button" && (onemin.checked || twomin.checked || fivemin.checked)) {
         startBtn.style.display = 'block';
@@ -225,15 +243,17 @@ document.getElementById("levelSelector").addEventListener("click", (e) => {
     }
 })
 
-document.addEventListener('keypress', (e) => {
-    if (e.code === "Space") {
-        if (startBtn.style.display !== "none")
-            startBtn.click();
-        else if (userInput.style.display === "none")
-            resetBtn.click();
-    }
-})
+// // function to start typing session after pressing space key 
+// document.addEventListener('keypress', (e) => {
+//     if (e.code === "Space") {
+//         if (startBtn.style.display !== "none")
+//             startBtn.click();
+//         else if (userInput.style.display === "none")
+//             resetBtn.click();
+//     }
+// })
 
+// function to automatically click on submit button with Enter key
 nameInput.addEventListener('keypress', (e) => {
     if (e.code === "Enter")
         nameSubmitBtn.click()
@@ -244,15 +264,15 @@ getAndSetUserName();
 let history = [];
 let historyArray = [];
 
-// History Saver
+// Saving History of typing sessions to localStorage
 const saveHistory = () => {
     history = localStorage.getItem("typerHistory");
     if (history) {
         historyArray = JSON.parse(history);
-        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel });
+        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
     }
     else {
-        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel }]));
+        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime }]));
     }
 }
