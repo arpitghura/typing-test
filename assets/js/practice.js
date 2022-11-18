@@ -269,10 +269,10 @@ const saveHistory = () => {
     history = localStorage.getItem("typerHistory");
     if (history) {
         historyArray = JSON.parse(history);
-        historyArray.push({ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime });
+        historyArray.push({ char:char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
     }
     else {
-        localStorage.setItem("typerHistory", JSON.stringify([{ extracted_words_length, words_length, timeTaken: (new Date().getTime() - startTime) / 1000, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime }]));
+        localStorage.setItem("typerHistory", JSON.stringify([{ char:char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime }]));
     }
 }
