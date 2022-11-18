@@ -136,7 +136,7 @@ startBtn.addEventListener("click", () => {
 // function to call when the session is completed 
 // either by writting all words or time goes off
 const completedSession = () => {
-    const timeTaken = (new Date().getTime() - startTime) / 1000; // in seconds
+    const timeTaken = ((new Date().getTime() - startTime) / 1000).toFixed(2); // in seconds
     const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
     const message = `Congratulations! You have typed in ${timeTaken} seconds`;
     const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;

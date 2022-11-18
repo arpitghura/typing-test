@@ -1,5 +1,4 @@
 #  Typing Test - Practice Your Typing Skills
-![Typing test](https://img.shields.io/badge/Hacktoberfest-2022-blue?style=?style=for-the-badge&logo=Hacktoberfest&logoColor=black&link=https://hacktoberfest.com/)
 ![Typing test](https://img.shields.io/badge/Contribute-red?style=?style=for-the-badge&logo=Github&logoColor=black&link=https://github.com/arpitghura/typing-test)
 ![Typing Test](https://img.shields.io/badge/Typing-Test-brightgreen?style=?style=for-the-badge&link=https://typing-test-project.vercel.app/)
 <a href="https://github.com/arpitghura/typing-test/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348" alt="License Badge"/></a>
@@ -14,8 +13,8 @@ The Web App can be accessible from [https://typing-test-project.vercel.app/](htt
 
 ## Features 
 <ul>
-    <li>Time Based Test and Practice Sessions</li>
-    <li>Paragraph Based Test and Practice Sessions</li>
+    <li>Time Based Practice Sessions</li>
+    <li>Paragraph Based Practice Sessions (Under Development)</li>
     <li>Change Difficulty Level as per your choice: Easy, Medium & Hard</li>
     <li>History Saver with Username</li>
 </ul>
@@ -35,6 +34,10 @@ The Web App can be accessible from [https://typing-test-project.vercel.app/](htt
 Practice Page:
 
 <img src="./assets/images/practice.png">
+
+Session Completion Message:
+
+<img src="./assets/images/typing-session-completed.png">
 
 Report Generated on Completion:
 
@@ -187,5 +190,7 @@ Report Generated on Completion:
 </tr>
 </table>
 
+> This repo had been a part of HacktoberFest 2022
+
 Thanks for coming here!
-### Give a star if you liked this!
+### Give a ⭐ if you liked this!
