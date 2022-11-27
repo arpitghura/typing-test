@@ -14,6 +14,8 @@ const onemin = document.getElementById("onemin");
 const twomin = document.getElementById("twomin");
 const fivemin = document.getElementById("fivemin");
 
+import { makeSentence } from './sentence.mjs'
+
 const nameModalEle = document.querySelector(".nameModal");
 const startInstruction = document.querySelector(".startIns")
 
@@ -34,50 +36,31 @@ let startTime = Date.now();
 let selectedDifficultyLevel = "";
 let selectedTime = 0;
 let char_you_typed = 0
-
-// To encode the string
-function htmlEncode(str) {
-    return String(str).replace(/[^\w. ]/gi, function (c) {
-        return '&#' + c.charCodeAt(0) + ';';
-    });
-}
-
-// generating words
-const makeword = (length, charactersLength, characters) => {
-    let result = '';
-
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-}
+let characters;
 
 // making the quote from the words
 const makequote = () => {
     // setting up difficulty level 
     if (easyLvlBtn.checked) {
-        characters = 'abcdefghijklmnopqrstuvwxyz';
-        selectedDifficultyLevel = "Easy";
+        selectedDifficultyLevel = "easy";
         length = 4
         quoteLength = 30
     } else if (interLvlBtn.checked) {
-        characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-        selectedDifficultyLevel = "Medium";
+       
+        selectedDifficultyLevel = "medium";
         length = 6
         quoteLength = 50
     } else if (hardLvlBtn.checked) {
-        characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        selectedDifficultyLevel = "Hard";
+        
+        selectedDifficultyLevel = "hard";
         length = 8
         quoteLength = 60
     }
-    // making word and returning it 
-    let charactersLength = characters.length;
-    for (let i = 0; i < quoteLength; i++) {
-        words += makeword(length, charactersLength, characters) + " ";
-    }
-    words_length = words.length;
-    return words;
+  
+
+    
+   
+    return makeSentence(selectedDifficultyLevel);
 };
 
 // getting time choosed by user
@@ -106,7 +89,8 @@ const startTimer = (time) => {
 
 // start the typing game
 startBtn.addEventListener("click", () => {
-    const quote = makequote();
+    const quote = makequote()
+    
     const time = getTime();
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
