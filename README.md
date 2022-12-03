@@ -137,7 +137,7 @@ Report Generated on Completion:
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/imThiyagu>
+        <a href=https://github.com/trravic>
             <img src=https://avatars.githubusercontent.com/u/27724580?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thiyagarajan Ravichandran/>
             <br />
             <sub style="font-size:14px"><b>Thiyagarajan Ravichandran</b></sub>
