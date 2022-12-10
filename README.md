@@ -3,13 +3,13 @@
 ![Typing Test](https://img.shields.io/badge/Typing-Test-brightgreen?style=?style=for-the-badge&link=https://typing-test-project.vercel.app/)
 <a href="https://github.com/arpitghura/typing-test/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348" alt="License Badge"/></a>
 [![Typing Test](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
+![Typing Test participating in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)
 
-
-<img src="./assets/images/Homepage.png">
+<img src="./assets/images/kwoc'22.png">
 
 Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence.
 
-The Web App can be accessible from [https://typing-test-project.vercel.app/](https://typing-test-project.vercel.app/)</br></br>
+The Web App can be accessible from [https://typing-test-project.vercel.app](https://typing-test-project.vercel.app)</br></br>
 
 ## Features 
 <ul>
@@ -30,6 +30,8 @@ The Web App can be accessible from [https://typing-test-project.vercel.app/](htt
 > Test your Typing skills NOW!
 
 ## Practice in the web app smoothly
+
+<img src="./assets/images/Homepage.png">
 
 Practice Page:
 
