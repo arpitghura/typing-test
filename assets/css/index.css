@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@1,600&family=Poppins&display=swap');
+
 
 *{
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 main{
   padding: 20px;
@@ -160,6 +166,112 @@ li.nav-item{
 }
 .feature p{
   padding: 5px;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+
+
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 0px;
+}
+
+.col-3 img{
+  width: 100%;
+}
+
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4 img{
+  width: 100%;
+}
+
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.testimonial{
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.testimonial h1{
+  text-align: center;
+  margin-bottom: 70px;
+  
+}
+.testimonial .col-3{
+
+
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+  transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+  font-size: 34px;
+  color: #ff523b;
+}
+
+.col-3 p{
+  font-size: 12px;
+  margin: 12PX 0;
+  color: #777;
+}
+
+.testimonial .col-3 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
 }
 
 footer{
