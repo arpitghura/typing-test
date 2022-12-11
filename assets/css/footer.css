@@ -1,0 +1,55 @@
+.title {
+       text-align: center;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    border-color: rgba(5, 5, 85, 1);
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn-container {
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       margin: 1rem auto;
+}
+
+.btn {
+       font-size: 1.3rem;
+       font-weight: 800;
+       color: white;
+       background: linear-gradient(279deg, rgba(2, 0, 36, 0.7) 0%, rgba(5, 5, 85, 0.5) 52%, rgba(0, 212, 255, 0.6) 100%);
+       border: none;
+       outline: none;
+       padding: 8px 20px;
+       border-radius: 15px;
+       cursor: pointer;
+}
+
+.btn:active {
+       transform: scale(0.95);
+       box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+footer p {
+    text-align: center;
+}

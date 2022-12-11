@@ -169,8 +169,8 @@ footer{
   width: 100%;
   font-size: 18px;
   color: white;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   background: rgb(2, 0, 36);
   background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
 }
