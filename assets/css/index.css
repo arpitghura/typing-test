@@ -145,6 +145,10 @@ li.nav-item{
 .practice:hover{
   background-color: #0196e1c7;
 }
+.about {
+  padding: 50px;
+  text-align: center;
+}
 
 #features{
   justify-content: space-around;
