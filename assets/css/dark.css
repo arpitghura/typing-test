@@ -1,0 +1,15 @@
+ /* define the CSS classes for light and dark mode */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.dark-modalName{
+    background-color: black;
+}
+.light-modalName{
+    background-color: antiquewhite;
+}
