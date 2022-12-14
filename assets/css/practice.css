@@ -223,6 +223,7 @@ footer {
   border-radius: 10px;
   cursor: pointer;
   background-color: antiquewhite;
+  color: #000;
   flex-wrap: wrap;
 }
 
