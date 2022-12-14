@@ -138,7 +138,7 @@ userInput.addEventListener('input', () => {
     const input = userInput.value;
 
     // wrote all words or time out then complete the session
-    if (timeout || (input === curWord && wordIndex === (extracted_words.length - 2))) {
+    if (timeout || (input === curWord && wordIndex === (extracted_words.length - 1))) {
         completedSession();
     } 
     // moving to the next word
