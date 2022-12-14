@@ -146,8 +146,10 @@ li.nav-item{
   background-color: #0196e1c7;
 }
 .about {
-  padding: 50px;
+  padding: 10%;
   text-align: center;
+  max-width: 60vw;
+  margin: auto;
 }
 
 #features{
