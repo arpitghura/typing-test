@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@1,600&family=Poppins&display=swap');
+
 
 *{
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 main{
   padding: 20px;
@@ -161,6 +167,7 @@ li.nav-item{
 .feature p{
   padding: 5px;
 }
+
 
 footer{
   padding: 20px 0px;
