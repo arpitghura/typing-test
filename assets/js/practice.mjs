@@ -43,24 +43,15 @@ const makequote = () => {
     // setting up difficulty level 
     if (easyLvlBtn.checked) {
         selectedDifficultyLevel = "easy";
-        length = 4
         quoteLength = 30
     } else if (interLvlBtn.checked) {
-       
         selectedDifficultyLevel = "medium";
-        length = 6
         quoteLength = 50
     } else if (hardLvlBtn.checked) {
-        
         selectedDifficultyLevel = "hard";
-        length = 8
         quoteLength = 60
     }
-  
-
-    
-   
-    return makeSentence(selectedDifficultyLevel);
+    return makeSentence(selectedDifficultyLevel,quoteLength);
 };
 
 // getting time choosed by user
