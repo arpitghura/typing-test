@@ -108,7 +108,12 @@
     </div>
 
     <footer>
-        <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;</p>
+        <p>
+            Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; 
+            <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>
+        </p>
     </footer>
     
     <script type="module" src="assets/js/practice.mjs"></script>
