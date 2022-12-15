@@ -114,3 +114,11 @@ td {
     content: "";
     margin-bottom: 20px;
 }
+
+/* Media Query for Footer Section  */
+
+@media screen and (max-width : 670px) {
+    footer {
+      font-size: 12px;
+    }
+  }

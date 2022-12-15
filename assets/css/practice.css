@@ -1,5 +1,5 @@
 .content {
-  min-height: 80vh;
+  min-height: 82vh;
   /* display: grid; */
   /* grid-template-rows: auto 1fr auto; */
 }
@@ -255,4 +255,12 @@ footer {
   content: "";
   position: absolute;
   display: none;
+}
+
+/* Media Query for Footer Section  */
+
+@media screen and (max-width : 670px) {
+  footer {
+    font-size: 12px;
+  }
 }
