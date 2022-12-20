@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>About Typing Test</title>
 </head>
-<body>
+<body class="light-mode">
     <nav>
         <div class="navbar">
             <div class="brand">
@@ -25,6 +27,7 @@
             <div class="github-icon">
                 <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
             </div>
+            <button onclick="toggleLightDarkMode()" class="dark-btn">Dark Mode</button>
             <div class="mobile-nav">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -61,6 +64,7 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/dark.js"></script>
 </body>
 </html>
 

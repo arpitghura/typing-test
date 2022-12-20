@@ -109,6 +109,23 @@ li.nav-item{
   padding: 10px;
   height: max-content;
 }
+
+#about-hero{
+  background: none;
+}
+.dark-btn{
+  color: white;
+  background: #0072ff;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.dark-btn:hover{
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
 .left-section,.right-section {
   padding: 5vw;
   width: 35vw;

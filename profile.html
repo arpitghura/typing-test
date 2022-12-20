@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <link rel="stylesheet" href="assets/css/practice.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Profile - Typing Master</title>
 
 </head>
-<body>
+<body class="light-mode">
     <nav>
         <div class="navbar">
             <div class="brand">
@@ -28,6 +29,7 @@
             <div class="github-icon">
                 <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
             </div>
+            <button onclick="toggleLightDarkMode()" class="dark-btn">Dark Mode</button>
             <div class="mobile-nav">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -36,7 +38,7 @@
         </div>
     </nav>
 
-    <section id="hero">
+    <section id="hero element2">
         <div class="container">
             <h1 class="heading">Profile Details</h1>
             <h2 class="subtitle" id="userName"></h2>
@@ -85,6 +87,7 @@
     
     <script src="assets/js/profile.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/dark.js"></script>
 
 </body>
 </html>
