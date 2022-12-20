@@ -102,6 +102,13 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/ImgBotApp>
+            <img src=https://avatars.githubusercontent.com/u/31427850?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Imgbot/>
+            <br />
+            <sub style="font-size:14px"><b>Imgbot</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/sibayanmisra2002>
             <img src=https://avatars.githubusercontent.com/u/88418750?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sibayan Misra/>
             <br />
@@ -127,13 +134,6 @@ Report Generated on Completion:
             <img src=https://avatars.githubusercontent.com/u/85270991?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ayush Choubey/>
             <br />
             <sub style="font-size:14px"><b>Ayush Choubey</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/ImgBotApp>
-            <img src=https://avatars.githubusercontent.com/u/31427850?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Imgbot/>
-            <br />
-            <sub style="font-size:14px"><b>Imgbot</b></sub>
         </a>
     </td>
 </tr>
