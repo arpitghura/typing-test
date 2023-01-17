@@ -47,6 +47,10 @@ main{
   z-index: 15;
   padding: 1rem 0.2rem;
 }
+.nav-right {
+  display: flex;
+  align-items: center;
+}
 .brand-name{
   margin-left: 10px;
   text-decoration: none;
