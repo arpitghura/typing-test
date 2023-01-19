@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@1,600&family=Poppins&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  align-items: center;
+  color: white;
+  background: #0072ff;
+  box-shadow: 20px 10px 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(74, 126, 205, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 15;
+  padding: 1rem 0.2rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.brandName{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+ul.mainMenu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+li.navItem{
+  margin: 5px;
+}
+.navItem{
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  color: white;
+}
+.nav-item-link:hover {
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+.mobile-nav{
+  display: none;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+#hero,#features{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  margin: 0 30px 20px 30px;
+  padding: 10px;
+  height: max-content;
+}
+
+#about-hero{
+  background: none;
+}
+.dark-btn{
+  color: white;
+  background: #0072ff;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.dark-btn:hover{
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+.left-section,.right-section {
+  padding: 5vw;
+  width: 35vw;
+  margin: auto;
+}
+.left-section h1{
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+.subtitle{
+  padding-block: 10px;
+  font-weight: 400;
+  font-size: large;
+}
+.right-section img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+.heroBtn{
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease;
+  margin-right: 5px;
+}
+.test{
+  background-color: #f9a826;
+}
+.practice{
+  background-color: #0198e1;
+}
+.test:hover{
+  background-color: #f9a826d5;
+}
+.practice:hover{
+  background-color: #0196e1c7;
+}
+.about {
+  padding: 10%;
+  text-align: center;
+  max-width: 60vw;
+  margin: auto;
+}
+
+#features{
+  justify-content: space-around;
+  text-align: center;
+  padding-block: 20px;
+}
+.feature{
+  width: 25vw;
+}
+.feature img{
+  height: 96px;
+  width: 96px;
+}
+.feature p{
+  padding: 5px;
+}
+
+
+#footer{
+  padding: 20px 0px;
+  font-weight: 500;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* ============ Media Queries ============ */
+
+@media screen and (max-width: 524px) {
+  .navigation{
+    display: none;
+    position: absolute;
+    background-color: #0072ff;
+    top: 62px;
+    left: 0;
+    width: 100%;
+  }
+  ul.mainMenu{
+    flex-direction: column;
+  }
+  .brand{
+    flex-grow: 1;
+  }
+  .mobile-nav{
+    display: block;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .navigation {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .navItem{
+    display: inline-flex;
+  }
+  .navigation{
+    margin: auto;
+  }
+  .brandName{
+    margin-bottom: 10px;
+  }
+  #footer{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-section,.right-section{
+    width: 60vw;
+  }
+  .feature{
+    width: 60vw;
+    margin-block-end: 10px;
+  }
+  .navbar{
+    padding: 15px 20px;
+  }
+  #hero,#features{
+    margin: 0 20px 10px 20px;
+  }
+}
