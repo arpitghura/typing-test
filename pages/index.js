@@ -9,13 +9,12 @@ export default function Home() {
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon" />
-        <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="shortcut icon" href="/timer.png" type="image/x-icon" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        {/* <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> */}
         <title>Typing Test : Test and practice your typing skills</title>
       </Head>
-      <div onresize="display()">
+      <div onResize={() => display()}>
         <nav>
             <div className={styles.navbar}>
                 <div className={styles.brand}>
@@ -23,59 +22,58 @@ export default function Home() {
                 </div>
                 <div className={styles.navigation}>
                     <ul className={styles.mainMenu}>
-                        <li className={styles.navItem}><a href="practice.html" className="nav-item-link">Practice</a></li>
-                        <li className={styles.navItem}><a href="about.html" className="nav-item-link">About</a></li>
-                        <li className={styles.navItem}><a href="profile.html" className="nav-item-link">Profile</a></li>
+                        <li className={styles.navItem}><a href="practice.html" className={styles.navItemLink}>Practice</a></li>
+                        <li className={styles.navItem}><a href="about.html" className={styles.navItemLink}>About</a></li>
+                        <li className={styles.navItem}><a href="profile.html" className={styles.navItemLink}>Profile</a></li>
                     </ul>
                 </div>
-                <div className="github-icon">
-                    <a href="https://github.com/arpitghura/typing-test" className="nav-item-link"><i className='bx bx-sm bxl-github'></i></a>
+                <div className={styles.githubIcon}>
+                    <a href="https://github.com/arpitghura/typing-test" className={styles.navItemLink}><i className='bx bx-sm bxl-github'></i></a>
                 </div>
-                <div className="mobile-nav">
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
+                <div className={styles.mobileNav}>
+                    <div className={styles.bar1}></div>
+                    <div className={styles.bar2}></div>
+                    <div className={styles.bar3}></div>
                 </div>
             </div>
         </nav>
         <main>
-            <section id="hero">
-                <div className="left-section">
+            <section id={styles.hero}>
+                <div className={styles.leftSection}>
                     <h1>Master Your Typing Skills in 1 minute</h1>
-                    <p className="subtitle">We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
+                    <p className={styles.subtitle}>We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
                     {/* <a href="./practice.html" className="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a> */}
-                    <a href="./practice.html" className="heroBtn practice"> Practice </a>
+                    <a href="./practice.html" className={`${styles.heroBtn} ${styles.practice}`}> Practice </a>
                 </div>
-                <div className="right-section">
-                    <Image height={552} width={552} src="/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo" />
+                <div className={styles.rightSection}>
+                    <Image height={400} width={400} src="/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo" />
                 </div>
             </section>
 
-            <section id="features">
-                <div className="feature">
-                    <img src="/timer.png" alt="Time Based Practice Sessions" />
+            <section id={styles.features}>
+                <div className={styles.feature}>
+                    <Image height={100} width={100} src="/timer.png" alt="Time Based Practice Sessions" />
                     <h3>Time Based Practice</h3>
                     <p>You can quantify your skills in a certain interval of time by using timed practise and testing sessions.</p>
                 </div>
-                <div className="feature">
-                    <img src="/file.png" alt="Paragraph Based Practice Sessions" />
+                <div className={styles.feature}>
+                    <Image height={100} width={100} src="/file.png" alt="Paragraph Based Practice Sessions" />
                     <h3>Paragraph Based Practice</h3>
                     <p>You can assess your typing abilities without any time constraints with a paragraph-based session. </p>
                 </div>
-                <div className="feature">
-                    <img src="/growth-graph.png" alt="Difficulty and Case Selection Sessions" />
+                <div className={styles.feature}>
+                    <Image height={100} width={100} src="/growth-graph.png" alt="Difficulty and Case Selection Sessions" />
                     <h3>Difficulty and Case Selection</h3>
                     <p>There are several alternatives available to test your typing abilities based on the amount of difficulty you choose.</p>
                 </div>
             </section>
         </main>
 
-        <footer id='footer'>
+        <footer id={styles.footer}>
             <p>
-                Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; 
-                <span id="copyright">
-                    2022
-                    {/* <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> */}
+                Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;{" "}
+                <span id={styles.copyright}>
+                    {new Date().getFullYear()}
                 </span>
             </p>
         </footer>
