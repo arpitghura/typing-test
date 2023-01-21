@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,13 +19,13 @@ export default function Home() {
         <nav>
             <div className={styles.navbar}>
                 <div className={styles.brand}>
-                    <a href="./index.html" className={styles.brandName}>Typing Test</a>
+                    <Link href="/" className={styles.brandName}>Typing Test</Link>
                 </div>
                 <div className={styles.navigation}>
                     <ul className={styles.mainMenu}>
-                        <li className={styles.navItem}><a href="practice.html" className={styles.navItemLink}>Practice</a></li>
-                        <li className={styles.navItem}><a href="about.html" className={styles.navItemLink}>About</a></li>
-                        <li className={styles.navItem}><a href="profile.html" className={styles.navItemLink}>Profile</a></li>
+                        <li className={styles.navItem}><Link href="/practice" className={styles.navItemLink}>Practice</Link></li>
+                        <li className={styles.navItem}><Link href="/about" className={styles.navItemLink}>About</Link></li>
+                        <li className={styles.navItem}><Link href="/profile" className={styles.navItemLink}>Profile</Link></li>
                     </ul>
                 </div>
                 <div className={styles.githubIcon}>
@@ -43,7 +44,7 @@ export default function Home() {
                     <h1>Master Your Typing Skills in 1 minute</h1>
                     <p className={styles.subtitle}>We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
                     {/* <a href="./practice.html" className="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a> */}
-                    <a href="./practice.html" className={`${styles.heroBtn} ${styles.practice}`}> Practice </a>
+                    <Link href="/practice" className={`${styles.heroBtn} ${styles.practice}`}> Practice </Link>
                 </div>
                 <div className={styles.rightSection}>
                     <Image height={400} width={400} src="/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo" />
