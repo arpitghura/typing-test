@@ -1,6 +1,5 @@
 import Head from "next/head"
 import styles from "../styles/Practice.module.css"
-import { makeSentence } from '../public/sentence.mjs'
 
 export default function Practice() {
     return (
