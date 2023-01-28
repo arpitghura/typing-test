@@ -1,25 +1,34 @@
 #  Typing Test - Practice Your Typing Skills
-![Typing test](https://img.shields.io/badge/Contribute-red?style=?style=for-the-badge&logo=Github&logoColor=black&link=https://github.com/arpitghura/typing-test)
-![Typing Test](https://img.shields.io/badge/Typing-Test-brightgreen?style=?style=for-the-badge&link=https://typing-test-project.vercel.app/)
-<a href="https://github.com/arpitghura/typing-test/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348" alt="License Badge"/></a>
-[![Typing Test](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
-![Typing Test participating in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)
 
-<img src="./assets/images/kwoc'22.png">
+<div align="center">
 
-Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence.
+[![GitHub issues](https://img.shields.io/github/issues/arpitghura/typing-test?color=pink&logo=github)](https://github.com/arpitghura/typing-test/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/typing-test?style=social&logo=github)](https://github.com/arpitghura/typing-test/pulls)          
+![GitHub forks](https://img.shields.io/github/forks/arpitghura/typing-test?logo=git)
+[![Contributors](https://img.shields.io/github/contributors/arpitghura/typing-test?color=2b9348)](https://github.com/arpitghura/typing-test/contributors")
+[![Access Here](https://img.shields.io/badge/Access-Here-brightgreen?style=?style=for-the-badge)](https://typing-test-project.vercel.app/)
+[![License Badge](https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348)](https://github.com/arpitghura/typing-test/blob/main/LICENSE)
+[![Code of Conduct](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
+[![Typing Test participated in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)](https://kwoc.kossiitkgp.org/projects?query=typing+test)
 
-The Web App can be accessible from [https://typing-test-project.vercel.app](https://typing-test-project.vercel.app)</br></br>
+</div>
 
-## Features 
-<ul>
-    <li>Time Based Practice Sessions</li>
-    <li>Paragraph Based Practice Sessions (Under Development)</li>
-    <li>Change Difficulty Level as per your choice: Easy, Medium & Hard</li>
-    <li>History Saver with Username</li>
-</ul>
+Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence. 
 
-## Tech Stack : 
+The Web App can be accessible from [https://typing-test-project.vercel.app](https://typing-test-project.vercel.app)
+
+## Part of Diversion 2k23 Open-source Event 
+<p align="center">
+    <a href="https://diversion.tech/">
+        <img src="./assets/images/Diversion-logo.png">
+    </a>
+</p>
+
+### [Click to Know More about Contributing through Diversion 2k23](diversion-2k23.md)
+<br>
+
+### Project Domain: Web 
+### Tech Stack : 
 
 1. HTML5
 
@@ -243,7 +252,7 @@ Report Generated on Completion:
 </tr>
 </table>
 
-> This repo had been a part of HacktoberFest 2022
+> This repo had been a part of HacktoberFest 2022 and KWoC'23
 
 Thanks for coming here!
 ### Give a ⭐ if you liked this!
