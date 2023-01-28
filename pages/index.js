@@ -47,15 +47,6 @@ export default function Home() {
                 </div>
             </section>
         </main>
-
-        <footer className={styles.footer}>
-            <p>
-                Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;{" "}
-                <span id={styles.copyright}>
-                    {new Date().getFullYear()}
-                </span>
-            </p>
-        </footer>
       </div>
     </>
   )

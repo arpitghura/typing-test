@@ -35,13 +35,6 @@ export default function About () {
                     </div>
                     <Link href="/practice" className={`${homeStyles.heroBtn} ${homeStyles.practice}`}> Practice </Link>
                 </div>
-                <footer className={homeStyles.footer}>
-                    <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;
-                        <span id={styles.copyright}>
-                            {" "}{new Date().getFullYear()}
-                        </span>
-                    </p>
-                </footer>
             </div>
         </>
     )
