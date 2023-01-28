@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
+import homeStyles from "../styles/Home.module.css";
+import styles from "../styles/About.module.css";
+import darkStyles from "../styles/Dark.module.css";
 
 export default function About () {
 
@@ -9,41 +13,13 @@ export default function About () {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon" />
-                <link rel="stylesheet" href="assets/css/index.css" />
-                <link rel="stylesheet" href="assets/css/about.css" />
-                <link rel="stylesheet" href="assets/css/dark.css" />
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
                 <title>About Typing Test</title>
             </Head>
-            <div className="light-mode">
-                <nav>
-                    <div class="navbar">
-                        <div class="brand">
-                            <a href="./index.html" class="brand-name">Typing Test</a>
-                        </div>
-                        <div class="navigation">
-                            <ul class="main-menu">
-                                <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
-                                <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
-                                <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-right">
-                            <div class="github-icon">
-                                <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
-                            </div>
-                            <button onclick="toggleLightDarkMode()" class="dark-btn">Dark Mode</button>     
-                        </div>
-                        <div class="mobile-nav">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="about">
+            <div className={styles.lightMode}>
+                <div className={homeStyles.about}>
                     <h1>About</h1>
-                    <div class="subtitle">
+                    <div className={homeStyles.subtitle}>
                     <p> 
                     Typing Test is an open-source project created by <i>Arpit Ghura</i>.
                     The purpose of this community project is to collaborate with web developers from around the world.
@@ -57,12 +33,12 @@ export default function About () {
                     To advance to the next section, enter the correct characters and press the space bar. Your final score will be displayed when you reach the end.
                     </p>
                     </div>
-                    <a href="./practice.html" class="heroBtn practice"> Practice </a>
+                    <Link href="/practice" className={`${homeStyles.heroBtn} ${homeStyles.practice}`}> Practice </Link>
                 </div>
-                <footer>
+                <footer className={homeStyles.footer}>
                     <p>Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;
-                        <span id="copyright">
-                            {new Date().getFullYear()}
+                        <span id={styles.copyright}>
+                            {" "}{new Date().getFullYear()}
                         </span>
                     </p>
                 </footer>

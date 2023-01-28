@@ -16,28 +16,6 @@ export default function Home() {
         <title>Typing Test : Test and practice your typing skills</title>
       </Head>
       <div onResize={() => display()}>
-        <nav>
-            <div className={styles.navbar}>
-                <div className={styles.brand}>
-                    <Link href="/" className={styles.brandName}>Typing Test</Link>
-                </div>
-                <div className={styles.navigation}>
-                    <ul className={styles.mainMenu}>
-                        <li className={styles.navItem}><Link href="/practice" className={styles.navItemLink}>Practice</Link></li>
-                        <li className={styles.navItem}><Link href="/about" className={styles.navItemLink}>About</Link></li>
-                        <li className={styles.navItem}><Link href="/profile" className={styles.navItemLink}>Profile</Link></li>
-                    </ul>
-                </div>
-                <div className={styles.githubIcon}>
-                    <a href="https://github.com/arpitghura/typing-test" className={styles.navItemLink}><i className='bx bx-sm bxl-github'></i></a>
-                </div>
-                <div className={styles.mobileNav}>
-                    <div className={styles.bar1}></div>
-                    <div className={styles.bar2}></div>
-                    <div className={styles.bar3}></div>
-                </div>
-            </div>
-        </nav>
         <main>
             <section id={styles.hero}>
                 <div className={styles.leftSection}>
@@ -70,7 +48,7 @@ export default function Home() {
             </section>
         </main>
 
-        <footer id={styles.footer}>
+        <footer className={styles.footer}>
             <p>
                 Made with &hearts; by Arpit Ghura. All Rights Reserved &copy;{" "}
                 <span id={styles.copyright}>
