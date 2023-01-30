@@ -1,4 +1,4 @@
-#  Typing Test - Practice Your Typing Skills
+#                                                         Typing Test - Practice Your Typing Skills
 
 <div align="center">
 
