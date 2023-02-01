@@ -21,12 +21,13 @@ main{
 /* ScrollBar */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 11px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 15px #00c6ff;
+  box-shadow: inset 0 0 12px #256a7f;
+  background: rgb( 5 5 85 );
 }
 
 /* Handle */
