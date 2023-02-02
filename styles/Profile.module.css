@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+.container {
+    width: 70vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 40px;
+    align-items: center;
+    color: white;
+    background: #0072ff;
+    box-shadow: 20px 10px 40px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(74, 126, 205, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 15;
+    padding: 1rem 0.2rem;
+}
+
+.heading {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 40px !important;
+    font-size: 1.9em;
+}
+
+h2.subtitle {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#navigateUserText {
+    font-size: 20px;
+}
+
+#profileDetails {
+    padding: 30px;
+}
+
+
+.history {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.historyTable {
+    /* width: max-content; */
+    margin: 5px auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.historyTable table {
+    margin: 0 auto;
+}
+
+.historyAvg {
+    /* width: max-content; */
+    margin: 5px auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.historyAvg table {
+    margin: 0 auto;
+}
+
+.buttonGroup {
+    display: inline-block;
+    margin: 25px 20px 25px;
+}
+
+.th,
+.td {
+    padding: 0 20px;
+    border: 1px solid rgb(26, 26, 26);
+}
+
+#historyResetBtn {
+    width: max-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:rgba(0, 198, 139,0.7);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+#historyResetBtn:hover {
+    background-color: rgb(0, 198, 139);
+}
+.history,.historyHeading,.historyTable {
+    margin-block: 30px;
+}
+
+.hr{
+    height: 1px;
+    background-color: rgba(32, 32, 32, 0.774);
+    content: "";
+    margin-bottom: 20px;
+}
