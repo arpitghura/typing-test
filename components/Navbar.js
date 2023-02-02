@@ -19,7 +19,7 @@ export default function Navbar() {
                     <div className={styles.githubIcon}>
                         <a href="https://github.com/arpitghura/typing-test" className={styles.navItemLink}><i className='bx bx-sm bxl-github'></i></a>
                     </div>
-                    <button onclick="toggleLightDarkMode()" className={styles.darkBtn}>Dark Mode</button>     
+                    <button onClick="toggleLightDarkMode()" className={styles.darkBtn}>Dark Mode</button>     
                 </div>
                 <div className={styles.mobileNav}>
                     <div className={styles.bar1}></div>
