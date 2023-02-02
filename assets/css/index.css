@@ -197,17 +197,35 @@ li.nav-item{
 
 
 footer{
-  padding: 20px 0px;
+  padding: 15px 0px;
   font-weight: 500;
   bottom: 0;
   width: 100%;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   background: rgb(2, 0, 36);
   background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
+ 
 }
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-contact-icon{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+} 
+.footer-contact-icon i{
+  
+  margin: 0px 20px;
+  font-size: 25px;
+}
+
 
 /* ============ Media Queries ============ */
 
