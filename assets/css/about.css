@@ -1,0 +1,18 @@
+.about-para{
+    word-spacing: 0.35rem;
+    letter-spacing: -0.043em;
+    line-height: 26px;
+    border-left: 0.7rem solid #0072ff;
+    margin-bottom: 2rem;
+    border-top-left-radius: 1rem;
+    padding: 5px;
+}
+
+.about-about{
+    padding: 3rem;
+}
+
+.about-heading{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
