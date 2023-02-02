@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/first-interaction@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.COMMUNITY_TOKEN }}
         issue-message: "<h1>It's great having you contribute to this project</h1> Welcome to the community :nerd_face:"
         pr-message: "<h1>It's great having you contribute to this project</h1> Welcome to the community :nerd_face: Thanks for giving your time to contribute to <b>Typing Test</b> Project."
