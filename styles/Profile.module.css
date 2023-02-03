@@ -36,11 +36,11 @@ h2.subtitle {
     font-size: 1.5em;
 }
 
-#navigate-user-text {
+#navigateUserText {
     font-size: 20px;
 }
 
-#profile-details {
+#profileDetails {
     padding: 30px;
 }
 
@@ -54,35 +54,35 @@ h2.subtitle {
     text-align: center;
 }
 
-.history-table {
+.historyTable {
     /* width: max-content; */
     margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
 }
 
-.history-table table {
+.historyTable table {
     margin: 0 auto;
 }
 
-.history-avg {
+.historyAvg {
     /* width: max-content; */
     margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
 }
 
-.history-avg table {
+.historyAvg table {
     margin: 0 auto;
 }
 
-.button-group {
+.buttonGroup {
     display: inline-block;
     margin: 25px 20px 25px;
 }
 
-th,
-td {
+.th,
+.td {
     padding: 0 20px;
     border: 1px solid rgb(26, 26, 26);
 }
@@ -104,7 +104,7 @@ td {
 #historyResetBtn:hover {
     background-color: rgb(0, 198, 139);
 }
-.history,.history-heading,.history-table {
+.history,.historyHeading,.historyTable {
     margin-block: 30px;
 }
 
@@ -114,11 +114,3 @@ td {
     content: "";
     margin-bottom: 20px;
 }
-
-/* Media Query for Footer Section  */
-
-@media screen and (max-width : 670px) {
-    footer {
-      font-size: 12px;
-    }
-  }

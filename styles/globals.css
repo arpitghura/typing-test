@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main{
+  padding: 20px;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* ScrollBar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px #00c6ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0072ff;
+}

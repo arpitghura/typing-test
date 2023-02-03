@@ -619,5 +619,4 @@ export const makeSentence = (level, quoteLength) => {
   else {
     return hardLevelSentence;
   }
-
 }
