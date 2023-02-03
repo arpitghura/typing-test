@@ -1,7 +1,10 @@
 import Head from "next/head"
 import styles from "../styles/Profile.module.css"
+import { useAppContext } from "../components/context"
 
 export default function Profile() {
+    const [user, setUser] = useAppContext()
+
     return (
         <>
             <Head>
