@@ -1,23 +1,23 @@
-const startBtn = document.getElementById("startBtn");
-const resetBtn = document.getElementById("resetBtn");
-const userInput = document.getElementById("userInput");
-const messageEle = document.getElementById("message");
-const speedEle = document.getElementById("speed");
-const quoteEle = document.getElementById("quote");
-const greetEle = document.getElementById("greetUser");
-const levelSelector = document.getElementById("levelSelector");
-const easyLvlBtn = document.getElementById("easyLvlBtn");
-const interLvlBtn = document.getElementById("interLvlBtn");
-const hardLvlBtn = document.getElementById("hardLvlBtn");
-const userHeader = document.getElementById("user-header");
-const onemin = document.getElementById("onemin");
-const twomin = document.getElementById("twomin");
-const fivemin = document.getElementById("fivemin");
+const startBtn = document.getElementById( "startBtn" );
+const resetBtn = document.getElementById( "resetBtn" );
+const userInput = document.getElementById( "userInput" );
+const messageEle = document.getElementById( "message" );
+const speedEle = document.getElementById( "speed" );
+const quoteEle = document.getElementById( "quote" );
+const greetEle = document.getElementById( "greetUser" );
+const levelSelector = document.getElementById( "levelSelector" );
+const easyLvlBtn = document.getElementById( "easyLvlBtn" );
+const interLvlBtn = document.getElementById( "interLvlBtn" );
+const hardLvlBtn = document.getElementById( "hardLvlBtn" );
+const userHeader = document.getElementById( "user-header" );
+const onemin = document.getElementById( "onemin" );
+const twomin = document.getElementById( "twomin" );
+const fivemin = document.getElementById( "fivemin" );
 
 import { makeSentence } from './sentence.mjs'
 
-const nameModalEle = document.querySelector(".nameModal");
-const startInstruction = document.querySelector(".startIns")
+const nameModalEle = document.querySelector( ".nameModal" );
+const startInstruction = document.querySelector( ".startIns" )
 
 levelSelector.style.display = 'none';
 timingSessionChoose.style.display = 'none';
@@ -39,54 +39,65 @@ let char_you_typed = 0
 let characters;
 
 // making the quote from the words
-const makequote = () => {
+const makequote = () =>
+{
     // setting up difficulty level 
-    if (easyLvlBtn.checked) {
+    if ( easyLvlBtn.checked )
+    {
         selectedDifficultyLevel = "easy";
         quoteLength = 30
-    } else if (interLvlBtn.checked) {
+    } else if ( interLvlBtn.checked )
+    {
         selectedDifficultyLevel = "medium";
         quoteLength = 50
-    } else if (hardLvlBtn.checked) {
+    } else if ( hardLvlBtn.checked )
+    {
         selectedDifficultyLevel = "hard";
         quoteLength = 60
     }
-    return makeSentence(selectedDifficultyLevel,quoteLength);
+    return makeSentence( selectedDifficultyLevel, quoteLength );
 };
 
 // getting time choosed by user
-const getTime = () => {
-    if (onemin.checked){
+const getTime = () =>
+{
+    if ( onemin.checked )
+    {
         selectedTime = 1
-        return (1 * 60 * 1000);
+        return ( 1 * 60 * 1000 );
     }
-    else if (twomin.checked){
+    else if ( twomin.checked )
+    {
         selectedTime = 2
-        return (2 * 60 * 1000);
+        return ( 2 * 60 * 1000 );
     }
-    else if (fivemin.checked){
+    else if ( fivemin.checked )
+    {
         selectedTime = 5
-        return (5 * 60 * 1000);
+        return ( 5 * 60 * 1000 );
     }
 };
 
 // flag after time goes off
-const startTimer = (time) => {
-    setTimeout(() => {
+const startTimer = ( time ) =>
+{
+    setTimeout( () =>
+    {
         timeout = true
         completedSession();
-    }, time);
+    }, time );
 }
 
 // start the typing game
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener( "click", () =>
+{
     const quote = makequote()
-    
+
     const time = getTime();
-    extracted_words = quote.split(' ');
+    extracted_words = quote.split( ' ' );
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
-    
+
     userHeader.style.display = "none";
     levelSelector.style.display = 'none';
     userInputBox.style.display = 'block';
@@ -96,25 +107,27 @@ startBtn.addEventListener("click", () => {
     timingSessionChoose.style.display = "none";
     resetBtn.style.display = 'inline-block';
 
-    const spanWords = extracted_words.map(word => {
-        return `<span>${word} </span>`;
-    });
+    const spanWords = extracted_words.map( word =>
+    {
+        return `<span>${ word } </span>`;
+    } );
 
-    quoteEle.innerHTML = spanWords.join('');
-    quoteEle.childNodes[0].className = 'highlight';
+    quoteEle.innerHTML = spanWords.join( '' );
+    quoteEle.childNodes[ 0 ].className = 'highlight';
     userInput.innerText = '';
     userInput.focus();
     startTime = new Date().getTime();
-    startTimer(time);
-});
+    startTimer( time );
+} );
 
 // function to call when the session is completed 
 // either by writting all words or time goes off
-const completedSession = () => {
-    const timeTaken = ((new Date().getTime() - startTime) / 1000).toFixed(2); // in seconds
-    const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
-    const message = `Congratulations! You have typed in ${timeTaken} seconds`;
-    const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;
+const completedSession = () =>
+{
+    const timeTaken = ( ( new Date().getTime() - startTime ) / 1000 ).toFixed( 2 ); // in seconds
+    const speed_word_pm = Math.ceil( ( char_you_typed / 5 ) / ( timeTaken / 60 ) ); // formula taken from google
+    const message = `Congratulations! You have typed in ${ timeTaken } seconds`;
+    const speedMessage = `Your speed is ${ speed_word_pm } words per minutes`;
 
     messages.style.display = 'inline';
     messageEle.innerText = message;
@@ -124,36 +137,45 @@ const completedSession = () => {
 }
 
 // working when user types in the input box ( typing the highlighted word ) 
-userInput.addEventListener('input', () => {
-    const curWord = extracted_words[wordIndex];
+userInput.addEventListener( 'input', () =>
+{
+    const curWord = extracted_words[ wordIndex ];
     const input = userInput.value;
 
     // wrote all words or time out then complete the session
-    if (timeout || (input === curWord && wordIndex === (extracted_words.length - 1))) {
+    if ( timeout || ( input === curWord && wordIndex === ( extracted_words.length - 1 ) ) )
+    {
         completedSession();
-    } 
+    }
     // moving to the next word
-    else if (input.endsWith(' ') && input.trim() === curWord) {
+    else if ( input.endsWith( ' ' ) && input.trim() === curWord )
+    {
         userInput.value = '';
         char_you_typed += curWord.length;
         wordIndex++;
-        for (const wordEle of quoteEle.childNodes) {
+        for ( const wordEle of quoteEle.childNodes )
+        {
             wordEle.className = '';
         }
-        quoteEle.childNodes[wordIndex].className = 'highlight';
+        quoteEle.childNodes[ wordIndex ].className = 'highlight';
     }
     // remove all classes if user is typing correctly
-    else if (curWord.startsWith(input)) {
+    else if ( curWord.startsWith( input ) )
+    {
         userInput.className = '';
     }
     // error showing if user mistyped
-    else {
+    else
+    {
         userInput.className = 'error';
+        const audio = new Audio( "alarmSound.wav" );
+        audio.play();
     }
-});
+} );
 
 // Reset the typing game
-resetBtn.addEventListener("click", () => {
+resetBtn.addEventListener( "click", () =>
+{
     levelSelector.style.display = 'block';
     startBtn.style.display = 'block';
     startInstruction.style.display = 'block';
@@ -169,54 +191,64 @@ resetBtn.addEventListener("click", () => {
     userInput.style.display = 'none';
     userInputBox.style.display = 'none';
     messages.style.display = 'none';
-})
+} )
 
 // Popup to ask for Name of user 
 // if not entered before & display name from local Storage
 
-const nameInput = document.getElementById("userName");
-const nameSubmitBtn = document.getElementById("nameSubmitBtn");
+const nameInput = document.getElementById( "userName" );
+const nameSubmitBtn = document.getElementById( "nameSubmitBtn" );
 
 // getting and setting username in localStorage
-const getAndSetUserName = () => {
-    const name = localStorage.getItem("typerName");
-    if (name) {
-        greetEle.innerText = `Hello, ${name}!`;
+const getAndSetUserName = () =>
+{
+    const name = localStorage.getItem( "typerName" );
+    if ( name )
+    {
+        greetEle.innerText = `Hello, ${ name }!`;
         levelSelector.style.display = "block";
         timingSessionChoose.style.display = "flex";
     }
-    else {
+    else
+    {
         nameModalEle.style.display = "block";
     }
 };
 
 // Function to save username to localStorage
-nameSubmitBtn.addEventListener("click", () => {
-    console.log(nameInput.value);
-    if (nameInput.value != null && nameInput.value != "") {
-        localStorage.setItem("typerName", nameInput.value);
+nameSubmitBtn.addEventListener( "click", () =>
+{
+    console.log( nameInput.value );
+    if ( nameInput.value != null && nameInput.value != "" )
+    {
+        localStorage.setItem( "typerName", nameInput.value );
         nameModalEle.style.display = "none";
         getAndSetUserName();
     }
-    else {
-        console.log("Enter Username");
+    else
+    {
+        console.log( "Enter Username" );
     }
-})
+} )
 
 // Listen for timer select
-document.getElementById("timingSessionChoose").addEventListener("click", (e) => {
-    if (e.target.name === "time-button" && (easyLvlBtn.checked || interLvlBtn.checked || hardLvlBtn.checked)) {
+document.getElementById( "timingSessionChoose" ).addEventListener( "click", ( e ) =>
+{
+    if ( e.target.name === "time-button" && ( easyLvlBtn.checked || interLvlBtn.checked || hardLvlBtn.checked ) )
+    {
         startBtn.style.display = 'block';
         // startInstruction.style.display = 'block'
     }
-})
+} )
 // listen for level select
-document.getElementById("levelSelector").addEventListener("click", (e) => {
-    if (e.target.name === "radio-button" && (onemin.checked || twomin.checked || fivemin.checked)) {
+document.getElementById( "levelSelector" ).addEventListener( "click", ( e ) =>
+{
+    if ( e.target.name === "radio-button" && ( onemin.checked || twomin.checked || fivemin.checked ) )
+    {
         startBtn.style.display = 'block';
         startInstruction.style.display = 'block'
     }
-})
+} )
 
 // // function to start typing session after pressing space key 
 // document.addEventListener('keypress', (e) => {
@@ -229,10 +261,11 @@ document.getElementById("levelSelector").addEventListener("click", (e) => {
 // })
 
 // function to automatically click on submit button with Enter key
-nameInput.addEventListener('keypress', (e) => {
-    if (e.code === "Enter")
+nameInput.addEventListener( 'keypress', ( e ) =>
+{
+    if ( e.code === "Enter" )
         nameSubmitBtn.click()
-})
+} )
 
 getAndSetUserName();
 
@@ -240,14 +273,17 @@ let history = [];
 let historyArray = [];
 
 // Saving History of typing sessions to localStorage
-const saveHistory = () => {
-    history = localStorage.getItem("typerHistory");
-    if (history) {
-        historyArray = JSON.parse(history);
-        historyArray.push({ char:char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime });
-        localStorage.setItem("typerHistory", JSON.stringify(historyArray));
+const saveHistory = () =>
+{
+    history = localStorage.getItem( "typerHistory" );
+    if ( history )
+    {
+        historyArray = JSON.parse( history );
+        historyArray.push( { char: char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime } );
+        localStorage.setItem( "typerHistory", JSON.stringify( historyArray ) );
     }
-    else {
-        localStorage.setItem("typerHistory", JSON.stringify([{ char:char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime }]));
+    else
+    {
+        localStorage.setItem( "typerHistory", JSON.stringify( [ { char: char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime } ] ) );
     }
 }

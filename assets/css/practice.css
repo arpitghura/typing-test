@@ -193,6 +193,7 @@ footer {
   background: rgb(2, 0, 36);
   background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
 }
+
 /* 
 .startIns {
   animation: Blink 1s linear infinite;
@@ -214,11 +215,11 @@ footer {
 } */
 
 /* ----------------Timimg session css ---------------- */
-#timingSessionChoose{
+#timingSessionChoose {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding:30px 10px ;
+  padding: 30px 10px;
   margin: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -227,14 +228,14 @@ footer {
   flex-wrap: wrap;
 }
 
-.timerListUL{
+.timerListUL {
   list-style: none;
   color: #000;
 }
 
-.timerSelector{
+.timerSelector {
   border-radius: 10px;
-  background-color: rgba(0, 198, 139,0.8);
+  background-color: rgba(0, 198, 139, 0.8);
   margin: 10px;
   padding: 15px 20px;
   font-size: 1.1em;
@@ -242,12 +243,12 @@ footer {
   float: left;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
 /* When the checkbox is checked, add a blue background */
-.timerSelector input:checked{
+.timerSelector input:checked {
   background-color: #2196F3;
 }
 
