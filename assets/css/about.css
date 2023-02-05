@@ -8,6 +8,11 @@
     padding: 5px;
 }
 
+.about-para span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 .about-about{
     padding: 3rem;
 }
