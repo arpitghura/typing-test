@@ -1,8 +1,10 @@
+/* import fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@1,600&family=Poppins&display=swap');
 
-
+/* all */
 *{
   /* margin: 0; */
   padding: 0;
@@ -12,6 +14,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body{
   /* fill window */
   min-height:100vh; 
@@ -20,6 +23,7 @@ body{
   justify-content:space-between;
 
 }
+
 .index{
   background: #00c6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff); /* Chrome 10-25, Safari 5.1-6 */
@@ -29,6 +33,7 @@ body{
 main{
   padding: 30px;
 }
+
 /* ScrollBar */
 /* width */
 ::-webkit-scrollbar {
@@ -44,6 +49,7 @@ main{
 ::-webkit-scrollbar-thumb {
   background: #0072ff;
 }
+/* Navbar ---------------------------------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -112,6 +118,9 @@ li.nav-item{
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+
+/* ============ Hero ============ */
+
 #hero,#features{
   display: flex;
   justify-content: space-between;
@@ -128,19 +137,7 @@ li.nav-item{
 #about-hero{
   background: none;
 }
-.dark-btn{
-  color: white;
-  background: #0072ff;
-  font-weight: 700;
-  padding: 10px;
-  margin-right: 10px;
-  border: none;
-}
-.dark-btn:hover{
-  border: 1px solid black;
-  border-radius: 40px;
-  background-color: black;
-}
+
 .left-section,.right-section {
   padding: 5vw;
   width: 35vw;
@@ -207,6 +204,22 @@ li.nav-item{
 }
 
 
+/* ============ Dark mode button ============ */
+.dark-btn{
+  color: white;
+  background: #0072ff;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.dark-btn:hover{
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: black;
+}
+
+/* ============ Footer ============ */
 footer{
   padding: 20px 0px;
   font-weight: 500;
@@ -221,6 +234,7 @@ footer{
 }
 
 /* ============ Media Queries ============ */
+
 
 @media screen and (max-width: 524px) {
   .navigation{
