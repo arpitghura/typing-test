@@ -1,4 +1,7 @@
+
 .content {
+  background-color: #06091a;
+  color: white;
   min-height: 82vh;
   /* display: grid; */
   /* grid-template-rows: auto 1fr auto; */
@@ -40,6 +43,7 @@
 }
 
 .heading {
+  color:#10e1e6;
   width: max-content;
   margin: auto;
   margin-bottom: 20px;

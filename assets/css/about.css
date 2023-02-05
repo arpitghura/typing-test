@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+
+.about {
+    padding: 10%;
+    text-align: center;
+    max-width: 60vw;
+    margin: auto;
+  }
+
+body.light-mode{
+    background-color: #06091a;
+  color: white;
+}
+
+#intro,#application{
+  color:#10e1e6;
+}

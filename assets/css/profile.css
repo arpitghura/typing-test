@@ -15,14 +15,17 @@
     padding: 15px 40px;
     align-items: center;
     color: white;
-    background: #0072ff;
+    background: #041e3d;
     box-shadow: 20px 10px 40px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(74, 126, 205, 0.5);
     backdrop-filter: blur(5px);
     z-index: 15;
     padding: 1rem 0.2rem;
 }
-
+body.light-mode{
+    background-color: #06091a;
+  color: white;
+}
 .heading {
     width: max-content;
     margin: auto;
@@ -50,7 +53,7 @@ h2.subtitle {
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(34, 123, 133);
     text-align: center;
 }
 
@@ -107,7 +110,9 @@ td {
 .history,.history-heading,.history-table {
     margin-block: 30px;
 }
-
+.history-heading{
+    color: rgb(22, 237, 169);
+}
 .hr{
     height: 1px;
     background-color: rgba(32, 32, 32, 0.774);
