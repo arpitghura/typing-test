@@ -86,11 +86,15 @@ li.nav-item{
   transition: all 0.15s ease;
   border: 1px solid transparent;
   color: white;
+  border-radius: 40px;
+  
+}
+.nav-item:hover{
+  scale:1.2;
 }
 .nav-item-link:hover {
-  border: 1px solid black;
   border-radius: 40px;
-  background-color: black;
+  background-color: #0067d4;
 }
 .mobile-nav{
   display: none;
@@ -137,9 +141,9 @@ li.nav-item{
   border: none;
 }
 .dark-btn:hover{
-  border: 1px solid black;
+  border: 1px solid #0067d4;
   border-radius: 40px;
-  background-color: black;
+  background-color: #0067d4;
 }
 .left-section,.right-section {
   padding: 5vw;
