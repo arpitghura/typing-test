@@ -1,80 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Typing Test : Test and practice your typing skills</title>
-</head>
-<body onresize="display()" class="index">
-    <nav>
-        <div class="navbar">
-            <div class="brand">
-                <a href="./index.html" class="brand-name">Typing Test</a>
-            </div>
-            <div class="navigation">
-                <ul class="main-menu">
-                    <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
-                    <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
-                </ul>
-            </div>
-            <div class="github-icon">
-                <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
-            </div>
- 
-            <div class="mobile-nav">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section id="hero">
-            <div class="left-section">
-                <h1>Master Your Typing Skills in 1 minute</h1>
-                <p class="subtitle">We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
-                <!-- <a href="./practice.html" class="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a> -->
-                <a href="./practice.html" class="heroBtn practice"> Practice </a>
-            </div>
-            <div class="right-section">
-                <img src="./assets/images/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo">
-            </div>
-        </section>
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <section id="features">
-            <div class="feature">
-                <img src="./assets/images/timer.png" alt="Time Based Practice Sessions">
-                <h3>Time Based Practice</h3>
-                <p>You can quantify your skills in a certain interval of time by using timed practise and testing sessions.</p>
-            </div>
-            <div class="feature">
-                <img src="./assets/images/file.png" alt="Paragraph Based Practice Sessions">
-                <h3>Paragraph Based Practice</h3>
-                <p>You can assess your typing abilities without any time constraints with a paragraph-based session. </p>
-            </div>
-            <div class="feature">
-                <img src="./assets/images/growth-graph.png" alt="Difficulty and Case Selection Sessions">
-                <h3>Difficulty and Case Selection</h3>
-                <p>There are several alternatives available to test your typing abilities based on the amount of difficulty you choose.</p>
-            </div>
-        </section>
-    </main>
+        <!-- Linking Assets -->
+        <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <footer>
-        <p>
-            Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; 
-            <span id="copyright">
-                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-            </span>
-        </p>
-    </footer>
+        <!-- Title -->
+        <title>Typing Test : Test and practice your typing skills</title>
+    </head>
 
-    <script src="assets/js/index.js"></script>
-</body>
+    <body onresize="display()" class="index">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navbar">
+                <!-- Website Brand/Logo -->
+                <div class="brand">
+                    <a href="./index.html" class="brand-name">Typing Test</a>
+                </div>
+                <!-- Navigation Links (Centered) -->
+                <div class="navigation">
+                    <ul class="main-menu">
+                        <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
+                        <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
+                    </ul>
+                </div>
+                <!-- Github Repository Link -->
+                <div class="github-icon">
+                    <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
+                </div>
+                <!-- Mobile Navigation Icon -->
+                <div class="mobile-nav">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <main>
+
+            <!-- Webstie Description -->
+            <section id="hero">
+                <div class="left-section">
+                    <h1>Master Your Typing Skills in 1 minute</h1>
+                    <p class="subtitle">We have large variety of test and practice sessions which you can perform to practice and test your typing skills. Based on your performance your report will be generated.</p>
+                    <!-- <a href="./practice.html" class="heroBtn test"> Test Skills <span>&RightArrowBar;</span></a> -->
+                    <a href="./practice.html" class="heroBtn practice"> Practice </a>
+                </div>
+                <div class="right-section">
+                    <img src="./assets/images/heroImage.jpg" alt="Women Typing on the computer. Image by christina morillo">
+                </div>
+            </section>
+            <!-- End of Website Description -->
+
+            <!-- Features -->
+            <section id="features">
+                <div class="feature">
+                    <img src="./assets/images/timer.png" alt="Time Based Practice Sessions">
+                    <h3>Time Based Practice</h3>
+                    <p>You can quantify your skills in a certain interval of time by using timed practise and testing sessions.</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/images/file.png" alt="Paragraph Based Practice Sessions">
+                    <h3>Paragraph Based Practice</h3>
+                    <p>You can assess your typing abilities without any time constraints with a paragraph-based session. </p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/images/growth-graph.png" alt="Difficulty and Case Selection Sessions">
+                    <h3>Difficulty and Case Selection</h3>
+                    <p>There are several alternatives available to test your typing abilities based on the amount of difficulty you choose.</p>
+                </div>
+            </section>
+            <!-- End of Features -->
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Copyright -->
+            <p>
+                Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; 
+                <span id="copyright">
+                </span>
+            </p>
+        </footer>
+        <!-- End of Footer -->
+
+        <!-- Scripts -->
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        <script src="assets/js/index.js"></script>
+
+    </body>
 </html>
