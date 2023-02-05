@@ -10,6 +10,8 @@
 [![License Badge](https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348)](https://github.com/arpitghura/typing-test/blob/main/LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
 [![Typing Test participated in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)](https://kwoc.kossiitkgp.org/projects?query=typing+test)
+[![Typing Test participating in DIVERSION 2023](https://img.shields.io/badge/DIVERSION-2023-blue?style=?style=for-the-badge)](https://diversion.tech/)
+[![Typing Test participating in IWOC 2023](https://img.shields.io/badge/IWOC-2023-blue?style=?style=for-the-badge)](https://iwoc.live/project)
 
 </div>
 
@@ -266,7 +268,7 @@ Report Generated on Completion:
 </tr>
 </table>
 
-> This repo had been a part of HacktoberFest 2022 and KWoC'23
+> This repo had been a part of HacktoberFest 2022 and KWoC'22
 
 Thanks for coming here!
 ### Give a ⭐ if you liked this!
