@@ -42,9 +42,20 @@ The Web App can be accessible from [https://typing-test-project.vercel.app](http
 
 <img src="./assets/images/Homepage.png">
 
+About Page:
+
+<img src="./assets/images/About_datails.png">
+
+Typing Test Page:
+
+<img src="./assets/images/Typing_test.png">
+
 Practice Page:
 
 <img src="./assets/images/practice.png">
+
+
+
 
 Session Completion Message:
 
