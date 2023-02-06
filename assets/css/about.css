@@ -22,3 +22,31 @@
     font-size: 3rem;
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 525px){
+    .about-about{
+        max-width: 100vw;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .about-about{
+        max-width: 95vw;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-about{
+        max-width: 87.5vw;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .about-about{
+        max-width: 80vw;
+        padding: 5%;
+    }
+}
