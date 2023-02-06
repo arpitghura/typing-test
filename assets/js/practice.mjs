@@ -38,18 +38,44 @@ let selectedTime = 0;
 let char_you_typed = 0
 let characters;
 
+const getwpm = () => {
+    history = localStorage.getItem("typerHistory");
+    if (history != null) {
+        historyArray = JSON.parse(history);
+        let avgSpeed = 0;
+        historyArray.forEach((item) => {
+            avgSpeed +=  Math.ceil((item.char / 5) / (item.timeSession));
+            
+        });
+        avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
+        console.log('Avg Speed:',avgSpeed);
+        return avgSpeed;
+        
+    }
+    else {
+        console.log('no history')
+        return 0;
+        
+    }
+};
+
+
 // making the quote from the words
 const makequote = () => {
+    // get wpm of user
+    let wpm = getwpm();
+    console.log('wpm',wpm);
+
     // setting up difficulty level 
     if (easyLvlBtn.checked) {
         selectedDifficultyLevel = "easy";
-        quoteLength = 30
+        quoteLength = 80
     } else if (interLvlBtn.checked) {
         selectedDifficultyLevel = "medium";
-        quoteLength = 50
+        quoteLength = 75
     } else if (hardLvlBtn.checked) {
         selectedDifficultyLevel = "hard";
-        quoteLength = 60
+        quoteLength = 70
     }
     return makeSentence(selectedDifficultyLevel,quoteLength);
 };
