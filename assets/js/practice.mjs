@@ -42,14 +42,17 @@ const getwpm = () => {
     history = localStorage.getItem("typerHistory");
     if (history != null) {
         historyArray = JSON.parse(history);
-        let avgSpeed = 0;
+        let highestSpeed = 0;
+        let speed = 0;
         historyArray.forEach((item) => {
-            avgSpeed +=  Math.ceil((item.char / 5) / (item.timeSession));
+            speed =  Math.ceil((item.char / 5) / (item.timeSession));
+            if (speed > highestSpeed) {
+                highestSpeed = speed;
+            }
             
         });
-        avgSpeed = (avgSpeed / historyArray.length).toFixed(1);
-        console.log('Avg Speed:',avgSpeed);
-        return avgSpeed;
+        console.log('Highest Speed:',highestSpeed);
+        return highestSpeed;
         
     }
     else {
@@ -93,7 +96,7 @@ const makequote = () => {
             quoteLength = wpm + 6
         }
     }
-
+    console.log('Qoute Length:',quoteLength);
     return makeSentence(selectedDifficultyLevel,quoteLength);
 };
 
