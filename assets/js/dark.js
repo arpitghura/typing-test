@@ -1,9 +1,9 @@
-// Changes icon of dark mode button to sun when dark mode is enabled and moon when dark mode is disabled
-
+// Function changes icon of dark mode button to sun when dark mode is enabled 
+//and moon when dark mode is disabled
 function change (iconID){
-	if(document.getElementById(iconID).className=="bx bx-moon dark-btn"){
+	if (document.getElementById(iconID).className == "bx bx-moon dark-btn") {
 		document.getElementById(iconID).className = "bx bx-sun dark-btn";
-	}else{
+	} else {
 		document.getElementById(iconID).className = "bx bx-moon dark-btn";
 	}
 }
