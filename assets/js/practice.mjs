@@ -39,24 +39,25 @@ let char_you_typed = 0
 let characters;
 
 const getwpm = () => {
+    // access history from local storage
     history = localStorage.getItem("typerHistory");
     if (history != null) {
+        // parse history into array
         historyArray = JSON.parse(history);
+        // initialize variables
         let highestSpeed = 0;
         let speed = 0;
+        // loop through history array to find highest speed
         historyArray.forEach((item) => {
             speed =  Math.ceil((item.char / 5) / (item.timeSession));
+            // if speed is higher than highest speed, set it as highest speed
             if (speed > highestSpeed) {
                 highestSpeed = speed;
             }
-            
         });
-        console.log('Highest Speed:',highestSpeed);
         return highestSpeed;
-        
-    }
-    else {
-        console.log('no history')
+    } else {
+        // if user has no history, return 0
         return 0;
         
     }
@@ -65,13 +66,12 @@ const getwpm = () => {
 
 // making the quote from the words
 const makequote = () => {
-    // get wpm of user
+    // get highest wpm of user
     let wpm = getwpm();
-    console.log('wpm',wpm);
 
-    // if user has no history
+    // if user has no history ie. new user
     if (wpm == 0) {
-        // setting up default difficulty level 
+        // setting up default difficulty level for new user
         if (easyLvlBtn.checked) {
             selectedDifficultyLevel = "easy";
             quoteLength = 70
@@ -96,7 +96,6 @@ const makequote = () => {
             quoteLength = wpm + 6
         }
     }
-    console.log('Qoute Length:',quoteLength);
     return makeSentence(selectedDifficultyLevel,quoteLength);
 };
 
