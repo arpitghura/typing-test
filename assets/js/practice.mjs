@@ -66,17 +66,34 @@ const makequote = () => {
     let wpm = getwpm();
     console.log('wpm',wpm);
 
-    // setting up difficulty level 
-    if (easyLvlBtn.checked) {
-        selectedDifficultyLevel = "easy";
-        quoteLength = 80
-    } else if (interLvlBtn.checked) {
-        selectedDifficultyLevel = "medium";
-        quoteLength = 75
-    } else if (hardLvlBtn.checked) {
-        selectedDifficultyLevel = "hard";
-        quoteLength = 70
+    // if user has no history
+    if (wpm == 0) {
+        // setting up default difficulty level 
+        if (easyLvlBtn.checked) {
+            selectedDifficultyLevel = "easy";
+            quoteLength = 70
+        } else if (interLvlBtn.checked) {
+            selectedDifficultyLevel = "medium";
+            quoteLength = 60
+        } else if (hardLvlBtn.checked) {
+            selectedDifficultyLevel = "hard";
+            quoteLength = 50
+        }
     }
+    else {
+        // setting up difficulty level according to user's wpm
+        if (easyLvlBtn.checked) {
+            selectedDifficultyLevel = "easy";
+            quoteLength = wpm + 12
+        } else if (interLvlBtn.checked) {
+            selectedDifficultyLevel = "medium";
+            quoteLength = wpm + 9
+        } else if (hardLvlBtn.checked) {
+            selectedDifficultyLevel = "hard";
+            quoteLength = wpm + 6
+        }
+    }
+
     return makeSentence(selectedDifficultyLevel,quoteLength);
 };
 
