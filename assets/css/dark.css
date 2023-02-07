@@ -1,5 +1,8 @@
  /* define the CSS classes for light and dark mode */
-.light-mode {
+ :root {
+    color-scheme: light dark; /* both supported */
+  }
+ .light-mode {
     background-color: white;
     color: black;
 }
