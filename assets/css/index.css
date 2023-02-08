@@ -84,6 +84,7 @@ ul.main-menu{
 }
 li.nav-item{
   margin: 5px;
+  transition: 0.3s ease;
 }
 .nav-item-link{
   text-decoration: none;
@@ -92,11 +93,15 @@ li.nav-item{
   transition: all 0.15s ease;
   border: 1px solid transparent;
   color: white;
+  border-radius: 40px;
+}
+.nav-item:hover{
+  scale:1.2;
+  transition: all 0.2s ease-in;
 }
 .nav-item-link:hover {
-  border: 1px solid black;
   border-radius: 40px;
-  background-color: black;
+  background-color: #0067d4;
 }
 .mobile-nav{
   display: none;
@@ -119,6 +124,20 @@ li.nav-item{
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.dark-btn{
+  color: white;
+  background: #0072ff;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.dark-btn:hover{
+  border: 1px solid #0067d4;
+  border-radius: 40px;
+  background-color: #0067d4;
+}
+
 /* ============ Hero ============ */
 
 #hero,#features{
@@ -137,6 +156,7 @@ li.nav-item{
 #about-hero{
   background: none;
 }
+
 
 .left-section,.right-section {
   padding: 5vw;

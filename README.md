@@ -10,6 +10,8 @@
 [![License Badge](https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348)](https://github.com/arpitghura/typing-test/blob/main/LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
 [![Typing Test participated in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)](https://kwoc.kossiitkgp.org/projects?query=typing+test)
+[![Typing Test participating in DIVERSION 2023](https://img.shields.io/badge/DIVERSION-2023-blue?style=?style=for-the-badge)](https://diversion.tech/)
+[![Typing Test participating in IWOC 2023](https://img.shields.io/badge/IWOC-2023-blue?style=?style=for-the-badge)](https://iwoc.live/project)
 
 </div>
 
@@ -81,6 +83,13 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/niladrix719>
+            <img src=https://avatars.githubusercontent.com/u/91966855?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Niladri Adhikary />
+            <br />
+            <sub style="font-size:14px"><b>Niladri Adhikary </b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Giriraj-Roy>
             <img src=https://avatars.githubusercontent.com/u/88903134?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Giriraj Roy/>
             <br />
@@ -94,6 +103,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Imgbot</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Riya14-dangra>
             <img src=https://avatars.githubusercontent.com/u/84792579?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Riya Dangra/>
@@ -101,8 +112,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Riya Dangra</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/alexsam29>
             <img src=https://avatars.githubusercontent.com/u/69481177?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Alexander Samaniego/>
@@ -138,6 +147,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>amitsethii</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/mdhinesh>
             <img src=https://avatars.githubusercontent.com/u/58901210?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dhinesh M/>
@@ -145,8 +156,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Dhinesh M</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/zemetskiym>
             <img src=https://avatars.githubusercontent.com/u/122832270?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Matthew Zemetskiy/>
@@ -182,6 +191,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Harsh Yadav</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/maciek04786>
             <img src=https://avatars.githubusercontent.com/u/105375946?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Maciek S/>
@@ -189,8 +200,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Maciek S</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Nupoor10>
             <img src=https://avatars.githubusercontent.com/u/92589912?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Nupoor10/>
@@ -226,6 +235,8 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Dissy Ulina</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/emday4prez>
             <img src=https://avatars.githubusercontent.com/u/35363144?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Emerson/>
@@ -233,8 +244,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Emerson</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/priyanshu2k3>
             <img src=https://avatars.githubusercontent.com/u/100031428?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Priyanshu/>
@@ -266,7 +275,7 @@ Report Generated on Completion:
 </tr>
 </table>
 
-> This repo had been a part of HacktoberFest 2022 and KWoC'23
+> This repo had been a part of HacktoberFest 2022 and KWoC'22
 
 Thanks for coming here!
 ### Give a ⭐ if you liked this!
