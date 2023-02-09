@@ -1,4 +1,7 @@
+// initialize variables
 let verbs, nouns, adjectives, adverbs, preposition
+
+// set of nouns
 nouns = [
   'bird',
   'clock',
@@ -101,6 +104,8 @@ nouns = [
   'glass',
   'stage',
 ]
+
+// set of verbs
 verbs = [
   'be',
   'have',
@@ -203,6 +208,8 @@ verbs = [
   'kill',
   'remain',
 ]
+
+// set of adjectives
 adjectives = [
   'accurate',
   'agreeable',
@@ -305,6 +312,8 @@ adjectives = [
   'willing',
   'youthful'
 ]
+
+// set of adverbs
 adverbs = [
   'accidentally',
   'always',
@@ -407,6 +416,8 @@ adverbs = [
   'quickly',
   'quietly'
 ]
+
+// set of prepositions
 preposition = [
   'about',
   'above',
@@ -510,7 +521,9 @@ preposition = [
   'is due to'
 ]
 
+// function to make a sentence
 export const makeSentence = (level, quoteLength) => {
+  // get random numbers
   let rand1 = Math.floor(Math.random() * 100)
   let rand2 = Math.floor(Math.random() * 100)
   let rand3 = Math.floor(Math.random() * 100)
@@ -518,6 +531,7 @@ export const makeSentence = (level, quoteLength) => {
   let rand5 = Math.floor(Math.random() * 100)
   let rand6 = Math.floor(Math.random() * 100)
 
+  // create a easy sentence
   let easySentence =
     'the ' +
     adjectives[rand1] +
@@ -538,6 +552,7 @@ export const makeSentence = (level, quoteLength) => {
     ' ' +
     nouns[rand5]
 
+  // create a medium sentence
   let mediumSentence =
     'the ' +
     adjectives[rand1] +
@@ -567,6 +582,7 @@ export const makeSentence = (level, quoteLength) => {
     nouns[rand6] +
     '.'
 
+  // create a hard sentence
   let hardSentence =
     'The ' +
     adjectives[rand1] +
@@ -610,6 +626,7 @@ export const makeSentence = (level, quoteLength) => {
     hardLevelSentence += hardSentence + " "
   }
 
+  // return the sentence
   if (level === "easy") {
     return easyLevelSentence;
   }
