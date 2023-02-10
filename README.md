@@ -12,6 +12,7 @@
 [![Typing Test participated in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)](https://kwoc.kossiitkgp.org/projects?query=typing+test)
 [![Typing Test participating in DIVERSION 2023](https://img.shields.io/badge/DIVERSION-2023-blue?style=?style=for-the-badge)](https://diversion.tech/)
 [![Typing Test participating in IWOC 2023](https://img.shields.io/badge/IWOC-2023-blue?style=?style=for-the-badge)](https://iwoc.live/project)
+[![Discord](https://img.shields.io/badge/Discord-blueviolet?style=?style=for-the-badge)](https://discord.gg/7c3VGDutmS)   
 
 </div>
 
