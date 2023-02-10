@@ -1,0 +1,52 @@
+.about-para{
+    word-spacing: 0.35rem;
+    letter-spacing: -0.043em;
+    line-height: 26px;
+    border-left: 0.7rem solid #0072ff;
+    margin-bottom: 2rem;
+    border-top-left-radius: 1rem;
+    padding: 5px;
+}
+
+.about-para span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0072ff;
+}
+
+.about-about{
+    padding: 3rem;
+}
+
+.about-heading{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 525px){
+    .about-about{
+        max-width: 100vw;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .about-about{
+        max-width: 95vw;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-about{
+        max-width: 87.5vw;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .about-about{
+        max-width: 80vw;
+        padding: 5%;
+    }
+}
