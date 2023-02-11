@@ -69,6 +69,9 @@ const makequote = () => {
     // get highest wpm of user
     let wpm = getwpm();
 
+    // get time choosed by user
+    const time = getTime();
+
     // if user has no history ie. new user
     if (wpm == 0) {
         // setting up default difficulty level for new user
@@ -103,15 +106,15 @@ const makequote = () => {
 const getTime = () => {
     if (onemin.checked){
         selectedTime = 1
-        return (1 * 60 * 1000);
+        return selectedTime;
     }
     else if (twomin.checked){
         selectedTime = 2
-        return (2 * 60 * 1000);
+        return selectedTime;
     }
     else if (fivemin.checked){
         selectedTime = 5
-        return (5 * 60 * 1000);
+        return selectedTime;
     }
 };
 
@@ -127,7 +130,12 @@ const startTimer = (time) => {
 startBtn.addEventListener("click", () => {
     const quote = makequote()
     
-    const time = getTime();
+    // get time choosed by user
+    var time = getTime();
+
+    // convert into seconds
+    time = time * 60 * 1000;
+
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
