@@ -130,11 +130,9 @@ const startTimer = (time) => {
 startBtn.addEventListener("click", () => {
     const quote = makequote()
     
-    // get time choosed by user
-    var time = getTime();
+    // get time choosed by user and convert it into milliseconds
+    const time = getTime() * 60 * 1000;
 
-    // convert into seconds
-    time = time * 60 * 1000;
 
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
