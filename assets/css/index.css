@@ -21,18 +21,18 @@ main{
 /* ScrollBar */
 /* width */
 ::-webkit-scrollbar {
-  width: 11px;
+  width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 12px #256a7f;
-  background: rgb( 5 5 85 );
+  box-shadow: inset 0 0 10px #256a7f;
+  background: rgba(10, 10, 230, 0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0072ff;
+  background: #0547cc;
 }
 .navbar {
   display: flex;
