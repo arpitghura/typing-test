@@ -42,12 +42,13 @@ main{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 15px #00c6ff;
+  box-shadow: inset 0 0 10px #256a7f;
+  background: rgba(10, 10, 230, 0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0072ff;
+  background: #0547cc;
 }
 /* Navbar ---------------------------------------- */
 .navbar {
