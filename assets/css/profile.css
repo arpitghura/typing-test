@@ -1,5 +1,9 @@
+/* ============ Fonts ============ */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+/* ============ Profile ============ */
 
 .container {
     width: 70vw;
@@ -23,6 +27,8 @@
     padding: 1rem 0.2rem;
 }
 
+/* ============ Heading and User Details ============ */
+
 .heading {
     width: max-content;
     margin: auto;
@@ -44,6 +50,7 @@ h2.subtitle {
     padding: 30px;
 }
 
+/* ============ History tables ============ */
 
 .history {
     width: 80%;
@@ -76,16 +83,36 @@ h2.subtitle {
     margin: 0 auto;
 }
 
-.button-group {
-    display: inline-block;
-    margin: 25px 20px 25px;
-}
-
 th,
 td {
     padding: 0 20px;
     border: 1px solid rgb(26, 26, 26);
 }
+
+#historyResetBtn:hover {
+    background-color: rgb(0, 198, 139);
+}
+.history,.history-heading,.history-table {
+    margin-block: 30px;
+}
+
+/* ============ Horizontal Line ============ */
+
+.hr{
+    height: 1px;
+    background-color: rgba(32, 32, 32, 0.774);
+    content: "";
+    margin-bottom: 20px;
+}
+
+/* ============ Buttons: Reset  ============ */
+
+.button-group {
+    display: inline-block;
+    margin: 25px 20px 25px;
+}
+
+
 
 #historyResetBtn {
     width: max-content;
@@ -101,19 +128,6 @@ td {
     border: none;
 }
 
-#historyResetBtn:hover {
-    background-color: rgb(0, 198, 139);
-}
-.history,.history-heading,.history-table {
-    margin-block: 30px;
-}
-
-.hr{
-    height: 1px;
-    background-color: rgba(32, 32, 32, 0.774);
-    content: "";
-    margin-bottom: 20px;
-}
 
 /* Media Query for Footer Section  */
 

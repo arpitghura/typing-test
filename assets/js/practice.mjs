@@ -1,3 +1,4 @@
+// get elements from DOM
 const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
 const userInput = document.getElementById("userInput");
@@ -14,11 +15,14 @@ const onemin = document.getElementById("onemin");
 const twomin = document.getElementById("twomin");
 const fivemin = document.getElementById("fivemin");
 
+// import functions
 import { makeSentence } from './sentence.mjs'
 
+// get elements from DOM
 const nameModalEle = document.querySelector(".nameModal");
 const startInstruction = document.querySelector(".startIns")
 
+// hiding elements in DOM
 levelSelector.style.display = 'none';
 timingSessionChoose.style.display = 'none';
 nameModalEle.style.display = 'none';
@@ -28,6 +32,7 @@ resetBtn.style.display = 'none';
 startBtn.style.display = 'none';
 startInstruction.style.display = 'none';
 
+// initializing variables
 let extracted_words = [];
 let words = "";
 let timeout = false
@@ -66,6 +71,7 @@ const getwpm = () => {
 
 // making the quote from the words
 const makequote = () => {
+
     // get highest wpm of user
     let wpm = getwpm();
 
@@ -128,16 +134,18 @@ const startTimer = (time) => {
 
 // start the typing game
 startBtn.addEventListener("click", () => {
+    // getting quote and time
     const quote = makequote()
     
     // get time choosed by user and convert it into milliseconds
     const time = getTime() * 60 * 1000;
 
-
+    // splitting quote into words
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
     
+    // hiding and showing elements in DOM
     userHeader.style.display = "none";
     levelSelector.style.display = 'none';
     userInputBox.style.display = 'block';
@@ -147,14 +155,18 @@ startBtn.addEventListener("click", () => {
     timingSessionChoose.style.display = "none";
     resetBtn.style.display = 'inline-block';
 
+    // making the quote in span tags
     const spanWords = extracted_words.map(word => {
         return `<span>${word} </span>`;
     });
 
+    // setting up the quote in DOM
     quoteEle.innerHTML = spanWords.join('');
     quoteEle.childNodes[0].className = 'highlight';
     userInput.innerText = '';
     userInput.focus();
+
+    // setting up the timer
     startTime = new Date().getTime();
     startTimer(time);
 });
@@ -162,11 +174,13 @@ startBtn.addEventListener("click", () => {
 // function to call when the session is completed 
 // either by writting all words or time goes off
 const completedSession = () => {
+    // calculating speed
     const timeTaken = ((new Date().getTime() - startTime) / 1000).toFixed(2); // in seconds
     const speed_word_pm = Math.ceil((char_you_typed / 5) / (timeTaken / 60)); // formula taken from google
     const message = `Congratulations! You have typed in ${timeTaken} seconds`;
     const speedMessage = `Your speed is ${speed_word_pm} words per minutes`;
 
+    // display results
     messages.style.display = 'inline';
     messageEle.innerText = message;
     speedEle.innerText = speedMessage;
@@ -205,17 +219,20 @@ userInput.addEventListener('input', () => {
 
 // Reset the typing game
 resetBtn.addEventListener("click", () => {
+    // hiding and showing elements in DOM
     levelSelector.style.display = 'block';
     startBtn.style.display = 'block';
     startInstruction.style.display = 'block';
     timingSessionChoose.style.display = "flex";
     userHeader.style.display = "block"
 
+    // resetting variables
     quoteEle.innerText = "";
     timeout = false;
     words = "";
     userInput.value = '';
 
+    // hiding elements
     resetBtn.style.display = 'none';
     userInput.style.display = 'none';
     userInputBox.style.display = 'none';
@@ -232,6 +249,7 @@ const nameSubmitBtn = document.getElementById("nameSubmitBtn");
 const getAndSetUserName = () => {
     const name = localStorage.getItem("typerName");
     if (name) {
+        // greet user
         greetEle.innerText = `Hello, ${name}!`;
         levelSelector.style.display = "block";
         timingSessionChoose.style.display = "flex";
@@ -261,6 +279,7 @@ document.getElementById("timingSessionChoose").addEventListener("click", (e) => 
         // startInstruction.style.display = 'block'
     }
 })
+
 // listen for level select
 document.getElementById("levelSelector").addEventListener("click", (e) => {
     if (e.target.name === "radio-button" && (onemin.checked || twomin.checked || fivemin.checked)) {
@@ -293,7 +312,11 @@ let historyArray = [];
 // Saving History of typing sessions to localStorage
 const saveHistory = () => {
     history = localStorage.getItem("typerHistory");
+    // check if history is already present
+    // if yes then parse the history and push the new session
+    // else create a new history
     if (history) {
+        // parse the history and push the new session
         historyArray = JSON.parse(history);
         historyArray.push({ char:char_you_typed, difficultyLevel: selectedDifficultyLevel, timeSession: selectedTime });
         localStorage.setItem("typerHistory", JSON.stringify(historyArray));
