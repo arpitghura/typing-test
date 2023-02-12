@@ -86,23 +86,23 @@ const makequote = () => {
             quoteLength = 70 * time
         } else if (interLvlBtn.checked) {
             selectedDifficultyLevel = "medium";
-            quoteLength = 60 * time
+            quoteLength = 55 * time
         } else if (hardLvlBtn.checked) {
             selectedDifficultyLevel = "hard";
-            quoteLength = 50 * time
+            quoteLength = 40 * time
         }
     }
     else {
         // setting up difficulty level according to user's wpm
         if (easyLvlBtn.checked) {
             selectedDifficultyLevel = "easy";
-            quoteLength = (wpm + 12) * time 
+            quoteLength = (wpm + 8) * time 
         } else if (interLvlBtn.checked) {
             selectedDifficultyLevel = "medium";
-            quoteLength = (wpm + 9) * time
+            quoteLength = (wpm + 4) * time
         } else if (hardLvlBtn.checked) {
             selectedDifficultyLevel = "hard";
-            quoteLength = (wpm + 6) * time
+            quoteLength = (wpm + 2) * time
         }
     }
     return makeSentence(selectedDifficultyLevel,quoteLength);
