@@ -13,7 +13,8 @@
 [![Typing Test participated in KWoC 22](https://img.shields.io/badge/KWoC-2022-blue?style=?style=for-the-badge)](https://kwoc.kossiitkgp.org/projects?query=typing+test)
 [![Typing Test participating in DIVERSION 2023](https://img.shields.io/badge/DIVERSION-2023-blue?style=?style=for-the-badge)](https://diversion.tech/)
 [![Typing Test participating in IWOC 2023](https://img.shields.io/badge/IWOC-2023-blue?style=?style=for-the-badge)](https://iwoc.live/project)
-[![Discord](https://img.shields.io/discord/1050391184217997422?label=Join%20Discord%20&logo=discord&style=?style=for-the-badge)](https://discord.gg/7c3VGDutmS)
+[![Discord](https://img.shields.io/discord/1050391184217997422?label=Join%20Discord%20&logo=discord&style=for-the-badge)](https://discord.gg/7c3VGDutmS)
+
 </div>
 
 Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence. 
