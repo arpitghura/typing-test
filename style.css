@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px; 
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: blue;
+    font-size: 27px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+body{
+    background-color: grey;
+}
+
+ul li a:hover{
+    color: blue;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: blue;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: blue;
+}
+
+.content span{
+    color: blue;
+    font-size: 65px
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+ 
+  }
+  
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.nav-item-link{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.15s ease;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 40px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin:  55px;
+    
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000; 
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.container .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s; 
+    z-index: 1;
+}
+.container .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .box .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+.container .box .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+.container .box:hover .icon .fa{
+    font-size: 40px;
+}
+.container .box .content2{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .box:hover .content2{
+    top: 100px;
+    opacity: 1;
+}
+.container .box .content2 h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.container .box .content2 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.container .box .content2 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.container .box:nth-child(1) .icon{
+    
+    background-image: url(clock.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+.container .box:nth-child(2) .icon{
+    background-image: url(para.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+.container .box:nth-child(3) .icon{
+    background-image: url(diff.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+@media only screen and (max-width: 815px) {
+    .content h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 742px) {
+    .content h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 702px) {
+    .content h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 702px) {
+    .content p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 668px) {
+    .content p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 595px) {
+    .content p{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 524px) {
+    .content p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 485px) {
+    .content p{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 449px) {
+    .content p{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 413px) {
+    .content p{
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width: 377px) {
+    .content p{
+        font-size: 6px;
+    }
+}
+@media only screen and (max-width: 341px) {
+    .content p{
+        font-size: 5px;
+    }
+}
+@media only screen and (max-width: 305px) {
+    .content p{
+        font-size: 4px;
+    }
+}
+@media only screen and (max-width: 269px) {
+    .content p{
+        font-size: 3px;
+    }
+}
+
+@media only screen and (max-width: 233px) {
+    .content p{
+        font-size: 2px;
+    }
+}
+@media only screen and (max-width: 197px) {
+    .content p{
+        font-size: 1px;
+    }
+}
+@media only screen and (max-width: 518px) {
+    .content h1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 372px) {
+    .content h1{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 314px) {
+    .content h1{
+        font-size: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
