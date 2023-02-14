@@ -268,12 +268,21 @@ Report Generated on Completion:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Shantanu-Meta>
+            <img src=https://avatars.githubusercontent.com/u/117648930?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shantanu Dutta/>
+            <br />
+            <sub style="font-size:14px"><b>Shantanu Dutta</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ShivanshAr97>
             <img src=https://avatars.githubusercontent.com/u/96040322?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shivansh Arora/>
             <br />
             <sub style="font-size:14px"><b>Shivansh Arora</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/SubhamChoudhury>
             <img src=https://avatars.githubusercontent.com/u/55877612?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Subham Choudhury/>
@@ -281,8 +290,6 @@ Report Generated on Completion:
             <sub style="font-size:14px"><b>Subham Choudhury</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/V35HR4J>
             <img src=https://avatars.githubusercontent.com/u/54109630?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Veshraj Ghimire/>
