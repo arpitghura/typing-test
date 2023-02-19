@@ -52,7 +52,7 @@ Following are the steps to guide you:
 
 ## 🔑Guidelines
 
-1. Welcome to this repository, if you are here as open source program participant/contributor.
+1. Welcome to this repository, if you are here as an open source program participant/contributor.
 2. Participants / contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
 4. Participants / Contributors can also **open their issues** using [issue_template](https://github.com/arpitghura/typing-test/tree/main/.github/ISSUE_TEMPLATE),
