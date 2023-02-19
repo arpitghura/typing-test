@@ -56,7 +56,7 @@ Following are the steps to guide you:
 2. Participants / contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
 4. Participants / Contributors can also **open their issues** using [issue_template](https://github.com/arpitghura/typing-test/tree/main/.github/ISSUE_TEMPLATE),
-but it needs to be verified and labelled by a mentor or PA. Please discuss with the team once before opening your issues. We respect all your contributions, whether 
+but it needs to be verified and labeled by a mentor or PA. Please discuss this with the team once before opening your issues. We respect all your contributions, whether 
 it is an Issue or a Pull Request.
 6. When you raise a issue, make sure you get it assigned to you, before you start working on that project.
 7. Each participant / contributor will be **assigned 1 issue (max)** at a time to work.
