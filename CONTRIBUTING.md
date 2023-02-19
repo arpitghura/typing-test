@@ -33,7 +33,7 @@ Following are the steps to guide you:
     ```
 * Step 5: Commit all the changes (Write commit message as "Small Message")
     ```
-    git commit -m "Write a meaningfull but small commit message"
+    git commit -m "Write a meaningful but small commit message"
     ```
 * Step 6: Push the changes for review
     ```
