@@ -22,7 +22,10 @@ Any contribution is accepted, from fixing grammatical mistakes to implementing c
 Following are the steps to guide you:
 
 * Step 1: Fork into your account
-* Step 2: Clone the repo in your machine using `git clone https://github.com/<your_username>/typing-test.git`
+* Step 2: Clone the repo in your machine using
+  ```
+  git clone https://github.com/<your_username>/typing-test.git
+  ```
 * Step 3: Replace the `<your_username>` with your github username.
 * Step 4: Create your feature branch
     ```
@@ -79,7 +82,7 @@ another person in the queue.
 1. You must add your script into the respective **places**.
 2. Your work must be original, written by you not copied from other resources.
 3. Follow the proper [style guides](https://google.github.io/styleguide/) for your work.
-4. For any queries or discussions, please feel free to join and drop a message over Discord channel.
+4. For any queries or discussions, please feel free to join and drop a message over [Discord](https://discord.gg/64purUVq88) channel.
 
 
 ## 📖Resources
