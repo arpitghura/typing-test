@@ -9,7 +9,7 @@ I'm happy to welcome all the contributions from anyone willing to add new script
 ## 💻Before Contributing
 
 Welcome to [arpitghura/typing-test](https://github.com/arpitghura/typing-test/). Before sending your pull requests, make sure that you **read the whole
-guidelines**. If you have any doubt on the contributing guide, please feel free to reach out on [Discord](https://discord.gg/64purUVq88)
+guidelines**. If you have any doubts about the contributing guide, please feel free to reach out on [Discord](https://discord.gg/64purUVq88)
 
 
 ## 🙌Contribution
