@@ -47,10 +47,10 @@
   margin-bottom: 20px;
 }
 
-h2.subtitle {
+/* h2.subtitle {
   text-align: center;
   margin-bottom: 5px;
-}
+} */
 
 /* ============ Quote box ============ */
 
@@ -273,8 +273,8 @@ footer {
 
 /* Media Query for Footer Section  */
 
-@media screen and (max-width : 670px) {
+/* @media screen and (max-width : 670px) {
   footer {
     font-size: 12px;
   }
-}
+} */

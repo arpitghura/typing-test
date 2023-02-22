@@ -62,29 +62,31 @@ h2.subtitle {
     text-align: center;
 }
 
-.history-table {
+.history-table,
+.history-avg{
     /* width: max-content; */
     margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
 }
 
-.history-table table {
+.history-table table,
+.history-avg table{
     margin: 0 auto;
     border-collapse: collapse;
 }
 
-.history-avg {
+ /* {
     /* width: max-content; */
-    margin: 5px auto;
+    /* margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
-}
-
-.history-avg table {
+/* } */
+/* 
+ {
     margin: 0 auto;
     border-collapse: collapse;
-}
+} */
 
 th,
 td {
@@ -137,8 +139,8 @@ td {
 
 /* Media Query for Footer Section  */
 
-@media screen and (max-width : 670px) {
+/* @media screen and (max-width : 670px) {
     footer {
       font-size: 12px;
     }
-  }
+  } */
