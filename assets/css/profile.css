@@ -135,6 +135,18 @@ td {
 }
 
 
+.reset-userName{
+    background-color: #0072ff;
+    padding: 1em 1em;
+    border-radius: 10%;
+    box-shadow: 10px 0px 50px 0px skyblue;
+}
+.reset-userName:hover{
+    color: rgb(22, 14, 14);
+    background-color: white;
+}
+
+
 /* Media Query for Footer Section  */
 
 @media screen and (max-width : 670px) {

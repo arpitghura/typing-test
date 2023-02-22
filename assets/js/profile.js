@@ -120,13 +120,23 @@ historyResetBtn.addEventListener("click", () => {
    checkIfUserData("to play again")
 })
 
-//after click on delete username button
+//after click on delete username button 
 const deleteUserName=document.querySelector(".reset-userName")
   deleteUserName.addEventListener("click",(e)=>{
     localStorage.removeItem("typerName");
     e.target.style.display="none"
-    checkIfUserData("to set your name and  play again")
+    checkIfUserData(" to set up your name and for play again")
     getUserName()
 })
+
+
+//hide username 
+const usernamefromLocal = localStorage.getItem("typerName");
+if(usernamefromLocal==null){
+    deleteUserName.style.display="none"
+    checkIfUserData(" to set up your name and for play again")
+
+}
+
 
 
