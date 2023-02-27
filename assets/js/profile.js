@@ -15,7 +15,7 @@ const checkIfUserData = (msg) => {
         const linktoprofile = document.createElement('a');
         linktoprofile.innerText = "Click here";
         linktoprofile.href = "./practice.html";
-        navigateEle.innerText = "to play again";
+        navigateEle.innerText = "practice again";
         navigateEle.insertAdjacentElement('afterbegin', linktoprofile);
     }
 }
@@ -117,7 +117,7 @@ historyResetBtn.addEventListener("click", () => {
     showHistory();
    // window.location.reload();
    //to show msg after delete data
-   checkIfUserData("to play again")
+   checkIfUserData(" to practice again")
 })
 
 //after click on delete username button 
@@ -125,7 +125,7 @@ const deleteUserName=document.querySelector(".reset-userName")
   deleteUserName.addEventListener("click",(e)=>{
     localStorage.removeItem("typerName");
     e.target.style.display="none"
-    checkIfUserData(" to set up your name and for play again")
+    checkIfUserData(" to set up your name and practice again")
     getUserName()
 })
 
@@ -134,7 +134,7 @@ const deleteUserName=document.querySelector(".reset-userName")
 const usernamefromLocal = localStorage.getItem("typerName");
 if(usernamefromLocal==null){
     deleteUserName.style.display="none"
-    checkIfUserData(" to set up your name and for play again")
+    checkIfUserData(" to set up your name and practice again")
 
 }
 
