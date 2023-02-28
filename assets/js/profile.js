@@ -3,13 +3,19 @@ const userNameEle = document.getElementById("userName");
 const navigateEle = document.getElementById("navigate-user-text");
 
 // Navigate to practice.html if no data in local storage
-const checkIfUserData = () => {
+const checkIfUserData = (msg) => {
     const name = localStorage.getItem("typerName");
     if(!name){
         const linktoprofile = document.createElement('a');
         linktoprofile.innerText = "Click here";
         linktoprofile.href = "./practice.html";
-        navigateEle.innerText = " to set up your profile";
+        navigateEle.innerText = `${msg}`;
+        navigateEle.insertAdjacentElement('afterbegin', linktoprofile);
+    }else{
+        const linktoprofile = document.createElement('a');
+        linktoprofile.innerText = "Click here";
+        linktoprofile.href = "./practice.html";
+        navigateEle.innerText = "practice again";
         navigateEle.insertAdjacentElement('afterbegin', linktoprofile);
     }
 }
@@ -20,7 +26,8 @@ const getUserName = () => {
     if (name) {
         userNameEle.innerText = "User Name: " + `${name}`;
     }else{
-        checkIfUserData();
+        //checkIfUserData();
+        userNameEle.innerText = "";
     }
 };
 
@@ -105,8 +112,31 @@ showHistory();
 // History Reset Button
 const historyResetBtn = document.getElementById("historyResetBtn");
 historyResetBtn.addEventListener("click", () => {
-    localStorage.removeItem("typerName");
+    //localStorage.removeItem("typerName");
     localStorage.removeItem("typerHistory");
     showHistory();
-    window.location.reload();
+   // window.location.reload();
+   //to show msg after delete data
+   checkIfUserData(" to set up your name and practice again")
 })
+
+//after click on delete username button 
+const deleteUserName=document.querySelector(".reset-userName")
+  deleteUserName.addEventListener("click",(e)=>{
+    localStorage.removeItem("typerName");
+    e.target.style.display="none"
+    checkIfUserData("  to set up your name and practice again")
+    getUserName()
+})
+
+
+//hide username 
+const usernamefromLocal = localStorage.getItem("typerName");
+if(usernamefromLocal==null){
+    deleteUserName.style.display="none"
+    checkIfUserData(" to practice typing")
+
+}
+
+
+

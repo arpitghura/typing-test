@@ -137,6 +137,23 @@ td {
 }
 
 
+.reset-userName{
+    width: max-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(134, 122, 122, 0.82);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    box-shadow: 4px 5px 15px 0px black;
+}
+
+
+
 /* Media Query for Footer Section  */
 
 /* @media screen and (max-width : 670px) {
