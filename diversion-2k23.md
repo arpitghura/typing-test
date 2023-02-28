@@ -43,6 +43,7 @@ Welcome to Typing Test project. The webapp to test and practice your typing skil
 [![Contributors](https://img.shields.io/github/contributors/arpitghura/typing-test?color=2b9348)](https://github.com/arpitghura/typing-test/contributors")
 [![License Badge](https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348)](https://github.com/arpitghura/typing-test/blob/main/LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Codeof-Conduct-brightgreen?style=?style=for-the-badge)](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
+
 </div>
 
 ### 🗣 DIVERSION 2k23 encourages participation in the open source community, which grows bigger every year. Complete the challenge and win amazing rewards.
@@ -50,7 +51,13 @@ Welcome to Typing Test project. The webapp to test and practice your typing skil
 📢 **Register [here](https://diversion.tech/) for DIVERSION 2k23 and start contributing to the projects.**
 
 ## Features to be developed during the event.
-   [Will Update Soon...]
+   1. About Section Improvement
+   2. Documentation of Source Code
+   3. Improve README file content
+   4. Fix footer problem
+   5. Generate Enough words for typing test.
+   6. Update Profile Section 
+   7. Refactor Source Code
    
 ## DIVERSION 2k23 Contribution Rules
 - Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
@@ -62,7 +69,7 @@ Welcome to Typing Test project. The webapp to test and practice your typing skil
 # Contribute
    ## There are DIVERSION 2k23 contributor guidelines as well as individual project guidelines. 
    ### Do Read - [Code of Conduct](https://github.com/arpitghura/typing-test/blob/main/CODE_OF_CONDUCT.md)
-   ### Jump to - [DIVERSION 2k23 guidelines](https://docs.google.com/document/d/1D7bn0rLv1dP6DAmEnsI8qBLjQrWTdhp0e5ZVy8OFHjc/edit?usp=sharing)
+   ### Jump to - [DIVERSION 2k23 guidelines](https://docs.google.com/document/d/1D7bn0rLv1dP6DAmEnsI8qBLjQrWTdhp0e5ZVy8OFHjc/edit)
 Why not start your open source journey by merging some codes here. It will be very great if you review the code and  find some bugs and issues.
 
 ## Steps for a successful commit :zap:
@@ -79,10 +86,51 @@ Why not start your open source journey by merging some codes here. It will be ve
   *  Create documentation like site structure, how to write a blog,etc
   *  Indent/Beautify/Modify codes.
 
-### List of Contributors
-   After a successful PR merge during the event add the contributor name to this list.
-   
-   
+### List of Contributors & PR Details
+
+<ol>
+    <li>Fixed Footer Bug (#90)</li>
+    <li>Changed UI of About Section (#92)</li>
+    <li>Change in colors and width of the scroll bar (#96)</li>
+    <li>Documentation of Source Code (#109)</li>
+    <li>Quote Length Generation (#113)</li>
+    <li>Update the profile section (#121)</li>
+</ol>
+
+<table>
+    <tr>
+        <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+            <a href=https://github.com/aviiciii>
+                <img src=https://avatars.githubusercontent.com/u/88141521?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Laaveshwaran Parthiban/>
+                <br />
+                <sub style="font-size:14px"><b>Laaveshwaran Parthiban</b></sub>
+            </a>
+        </td>
+        <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+            <a href=https://github.com/niladrix719>
+                <img src=https://avatars.githubusercontent.com/u/91966855?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Niladri Adhikary />
+                <br />
+                <sub style="font-size:14px"><b>Niladri Adhikary </b></sub>
+            </a>
+        </td>
+        <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+            <a href=https://github.com/Tapo41>
+                <img src=https://avatars.githubusercontent.com/u/121812218?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Tapojita Kar/>
+                <br />
+                <sub style="font-size:14px"><b>Tapojita Kar</b></sub>
+            </a>
+        </td>
+        <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Shantanu-Meta>
+            <img src=https://avatars.githubusercontent.com/u/117648930?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shantanu Dutta/>
+            <br />
+            <sub style="font-size:14px"><b>Shantanu Dutta</b></sub>
+        </a>
+    </td>
+    </tr>
+</table>
+
+
 ### Live project link
 * Vercel - [https://typing-test-project.vercel.app](https://typing-test-project.vercel.app)
 

@@ -4,6 +4,8 @@
   /* grid-template-rows: auto 1fr auto; */
 }
 
+/* ============ Selectors ============ */
+
 .difficultyLevelSelectorBtn {
   display: inline-block;
   padding: 10px;
@@ -50,6 +52,8 @@ h2.subtitle {
   margin-bottom: 5px;
 }
 
+/* ============ Quote box ============ */
+
 .dynamic-text-box {
   width: 100%;
   margin: 15px 0;
@@ -67,6 +71,8 @@ h2.subtitle {
   letter-spacing: 1.1px;
   color: rgb(61, 61, 61);
 }
+
+/* ============ Buttons ============ */
 
 .start-btn {
   width: max-content;
@@ -93,6 +99,8 @@ h2.subtitle {
   background-color: red;
 }
 
+/* ============ Messages and Result ============ */
+
 #message,
 #speed {
   font-size: larger;
@@ -103,6 +111,8 @@ h2.subtitle {
 #speed {
   color: green;
 }
+
+/* ============ Typing input box ============ */
 
 .user-input-box {
   width: 70vw;
@@ -143,6 +153,8 @@ h2.subtitle {
   text-align: center;
 }
 
+/* ============ Name Modal ============ */
+
 .nameModal {
   background-color: antiquewhite;
   width: 50%;
@@ -181,6 +193,7 @@ h2.subtitle {
   border: 1px solid black;
 }
 
+/* ============ Footer ============ */
 footer {
   padding: 20px 0px;
   font-weight: 500;
@@ -213,7 +226,7 @@ footer {
   }
 } */
 
-/* ----------------Timimg session css ---------------- */
+/* ============ Session Timimg  ============ */
 #timingSessionChoose{
   display: flex;
   align-items: center;
@@ -260,8 +273,8 @@ footer {
 
 /* Media Query for Footer Section  */
 
-@media screen and (max-width : 670px) {
+/* @media screen and (max-width : 670px) {
   footer {
     font-size: 12px;
   }
-}
+} */

@@ -1,96 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/profile.css">
-    <link rel="stylesheet" href="assets/css/practice.css">
-    <link rel="stylesheet" href="assets/css/dark.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Profile - Typing Master</title>
 
-</head>
-<body class="light-mode">
-    <nav>
-        <div class="navbar">
-            <div class="brand">
-                <a href="./index.html" class="brand-name">Typing Test</a>
-            </div>
-            <div class="navigation">
-                <ul class="main-menu">
-                    <li class="nav-item"><a href="practice.html" class="nav-item-link">Practice</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
-                    <li class="nav-item"><a href="profile.html" class="nav-item-link">Profile</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <div class="github-icon">
-                    <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Linking Assets -->
+        <link rel="shortcut icon" href="assets/images/timer.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/profile.css">
+        <link rel="stylesheet" href="assets/css/practice.css">
+        <link rel="stylesheet" href="assets/css/dark.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!-- Title -->
+        <title>Profile - Typing Master</title>
+
+    </head>
+
+    <body class="light-mode">
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navbar">
+                <!-- Website Brand/Logo -->
+                <div class="brand">
+                    <a href="./index.html" class="brand-name">Typing Test</a>
                 </div>
-          
-                <i id="icon1" onclick="toggleLightDarkMode()" class="bx bx-moon dark-btn" style="font-size: x-large;"></i>
-            </div>
-            <div class="mobile-nav">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-    </nav>
 
-    <section id="hero element2">
-        <div class="container">
-            <h1 class="heading">Profile Details</h1>
-            <h2 class="subtitle" id="userName"></h2>
-            <p id="navigate-user-text"></p>
-        </div>
-        <div class="history">
-            <h2 class="history-heading">History</h2>
-            <div class="history-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Speed (wpm)</th>
-                            <th>Time Taken (Minutes)</th>
-                            <th>Difficulty Level</th>
-                        </tr>
-                    </thead>
-                    <tbody id="historyTableBody">
-                    </tbody>
-                </table>
-            </div>
-            <div class="hr"></div>
-            <div class="history-avg">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Average Speed (wpm)</th>
-                            <th>Average Time Taken (Minutes)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="avgTableBody">
-                    </tbody>
-                </table>
-            </div>
-            <button id="historyResetBtn">Reset Data</button>
-        </div>
-    </section>
+                <!-- Navigation Menu -->
+                <div class="navigation">
+                    <ul class="main-menu">
+                        <li class="nav-item"><a href="practice.html" class="nav-item-link"><i class="fas fa-keyboard"></i> Practice</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-item-link"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li class="nav-item"><a href="profile.html" class="nav-item-link"><i class="fas fa-user"></i> Profile</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <p>
-            Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; 
-            <span id="copyright">
-                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-            </span>
-        </p>
-    </footer>
-    
-    <script src="assets/js/profile.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/dark.js"></script>
+                <div class="nav-right">
+                    <!-- Github Repo Link -->
+                    <div class="github-icon">
+                        <a href="https://github.com/arpitghura/typing-test" class="nav-item-link"><i class='bx bx-sm bxl-github'></i></a>
+                    </div>
 
-</body>
+                    <!-- Dark mode button -->
+                    <i id="icon1" onclick="toggleLightDarkMode()" class="bx bx-moon dark-btn" style="font-size: x-large;"></i>
+                </div>
+                <!-- Mobile Navigation Menu -->
+                <div class="mobile-nav">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <!-- Profile Content -->
+        <section id="hero element2">
+            <!-- User Details -->
+            <div class="container">
+                <h1 class="heading">Profile Details</h1>
+                <h2 class="subtitle" id="userName"></h2>
+                <p id="navigate-user-text"></p>
+            </div>
+            <!-- End of User Details -->
+            
+            <div class="history">
+                <!-- Typing History Table-->
+                <h2 class="history-heading">History</h2>
+                <div class="history-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Speed (wpm)</th>
+                                <th>Time Taken (Minutes)</th>
+                                <th>Difficulty Level</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of Typing History Table -->
+
+
+                <!-- Horizontal Line -->
+                <div class="hr"></div>
+                
+                <!-- Typing Average Table -->
+                <div class="history-avg">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Average Speed (wpm)</th>
+                                <th>Average Time Taken (Minutes)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="avgTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of Typing Average Table -->
+
+                <!-- Reset Data Button -->
+                <button id="historyResetBtn">Reset Data</button>
+            </div>
+        </section>
+        <!-- End of Profile Content -->
+
+        <!-- Footer -->
+        <footer>
+            <!-- Copyright -->
+            <p>
+                Made with &hearts; by Arpit Ghura. All Rights Reserved &copy; <span id="copyright"></span>
+            </p>
+        </footer>
+        <!-- End of Footer -->
+
+
+        <!-- Scripts -->
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        <script src="assets/js/profile.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/dark.js"></script>
+
+    </body>
 </html>

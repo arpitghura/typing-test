@@ -1,5 +1,9 @@
+/* ============ Fonts ============ */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+/* ============ Profile ============ */
 
 .container {
     width: 70vw;
@@ -23,6 +27,8 @@
     padding: 1rem 0.2rem;
 }
 
+/* ============ Heading and User Details ============ */
+
 .heading {
     width: max-content;
     margin: auto;
@@ -44,61 +50,50 @@ h2.subtitle {
     padding: 30px;
 }
 
+/* ============ History tables ============ */
 
 .history {
     width: 80%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background: linear-gradient(279deg, rgba(2, 0, 80, 1) 0%, rgba(10, 3, 800, 1) 52%, rgba(0, 212, 255, 1) 100%);
+    color: white;
     text-align: center;
 }
 
-.history-table {
+.history-table,
+.history-avg{
     /* width: max-content; */
     margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
 }
 
-.history-table table {
+.history-table table,
+.history-avg table{
     margin: 0 auto;
+    border-collapse: collapse;
 }
 
-.history-avg {
+ /* {
     /* width: max-content; */
-    margin: 5px auto;
+    /* margin: 5px auto;
     border-collapse: collapse;
     overflow-x: auto;
-}
-
-.history-avg table {
+/* } */
+/* 
+ {
     margin: 0 auto;
-}
-
-.button-group {
-    display: inline-block;
-    margin: 25px 20px 25px;
-}
+    border-collapse: collapse;
+} */
 
 th,
 td {
     padding: 0 20px;
     border: 1px solid rgb(26, 26, 26);
-}
-
-#historyResetBtn {
-    width: max-content;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color:rgba(0, 198, 139,0.7);
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease;
-    border: none;
+    height: 30px;
+    font-size: 17px;
 }
 
 #historyResetBtn:hover {
@@ -108,6 +103,8 @@ td {
     margin-block: 30px;
 }
 
+/* ============ Horizontal Line ============ */
+
 .hr{
     height: 1px;
     background-color: rgba(32, 32, 32, 0.774);
@@ -115,10 +112,35 @@ td {
     margin-bottom: 20px;
 }
 
+/* ============ Buttons: Reset  ============ */
+
+.button-group {
+    display: inline-block;
+    margin: 25px 20px 25px;
+}
+
+
+
+#historyResetBtn {
+    width: max-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 82%);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    box-shadow: 4px 5px 15px 0px black;
+}
+
+
 /* Media Query for Footer Section  */
 
-@media screen and (max-width : 670px) {
+/* @media screen and (max-width : 670px) {
     footer {
       font-size: 12px;
     }
-  }
+  } */
