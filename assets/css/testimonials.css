@@ -11,7 +11,7 @@ body{
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 
 }
 
@@ -21,7 +21,7 @@ body{
   position: relative;
   line-height: 60px;
   color: #555;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 
 }
 
@@ -62,13 +62,14 @@ body{
 
 /* ============ Testimonial Card Profile Picture ============ */
 
-.col-3 img{
-  width: 100%;
-}
-
+.col-3 img,
 .col-4 img{
   width: 100%;
 }
+
+/* {
+  width: 100%;
+} */
 
 .testimonial .col-3 img{
   width: 50px;
