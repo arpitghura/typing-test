@@ -43,18 +43,67 @@ let selectedTime = 0;
 let char_you_typed = 0
 let characters;
 
+const getwpm = () => {
+    // access history from local storage
+    history = localStorage.getItem("typerHistory");
+    if (history != null) {
+        // parse history into array
+        historyArray = JSON.parse(history);
+        // initialize variables
+        let highestSpeed = 0;
+        let speed = 0;
+        // loop through history array to find highest speed
+        historyArray.forEach((item) => {
+            speed =  Math.ceil((item.char / 5) / (item.timeSession));
+            // if speed is higher than highest speed, set it as highest speed
+            if (speed > highestSpeed) {
+                highestSpeed = speed;
+            }
+        });
+        return highestSpeed;
+    } else {
+        // if user has no history, return 0
+        return 0;
+        
+    }
+};
+
+
 // making the quote from the words
 const makequote = () => {
-    // setting up difficulty level and quote length
-    if (easyLvlBtn.checked) {
-        selectedDifficultyLevel = "easy";
-        quoteLength = 50
-    } else if (interLvlBtn.checked) {
-        selectedDifficultyLevel = "medium";
-        quoteLength = 60
-    } else if (hardLvlBtn.checked) {
-        selectedDifficultyLevel = "hard";
-        quoteLength = 70
+
+    // get highest wpm of user
+    let wpm = getwpm();
+
+    // get time choosed by user
+    const time = getTime();
+
+    // if user has no history ie. new user
+    if (wpm == 0) {
+        // setting up default difficulty level for new user
+        if (easyLvlBtn.checked) {
+            selectedDifficultyLevel = "easy";
+            quoteLength = 70 * time
+        } else if (interLvlBtn.checked) {
+            selectedDifficultyLevel = "medium";
+            quoteLength = 55 * time
+        } else if (hardLvlBtn.checked) {
+            selectedDifficultyLevel = "hard";
+            quoteLength = 40 * time
+        }
+    }
+    else {
+        // setting up difficulty level according to user's wpm
+        if (easyLvlBtn.checked) {
+            selectedDifficultyLevel = "easy";
+            quoteLength = (wpm + 8) * time 
+        } else if (interLvlBtn.checked) {
+            selectedDifficultyLevel = "medium";
+            quoteLength = (wpm + 4) * time
+        } else if (hardLvlBtn.checked) {
+            selectedDifficultyLevel = "hard";
+            quoteLength = (wpm + 2) * time
+        }
     }
     return makeSentence(selectedDifficultyLevel,quoteLength);
 };
@@ -63,15 +112,15 @@ const makequote = () => {
 const getTime = () => {
     if (onemin.checked){
         selectedTime = 1
-        return (1 * 60 * 1000);
+        return selectedTime;
     }
     else if (twomin.checked){
         selectedTime = 2
-        return (2 * 60 * 1000);
+        return selectedTime;
     }
     else if (fivemin.checked){
         selectedTime = 5
-        return (5 * 60 * 1000);
+        return selectedTime;
     }
 };
 
@@ -87,7 +136,9 @@ const startTimer = (time) => {
 startBtn.addEventListener("click", () => {
     // getting quote and time
     const quote = makequote()
-    const time = getTime();
+    
+    // get time choosed by user and convert it into milliseconds
+    const time = getTime() * 60 * 1000;
 
     // splitting quote into words
     extracted_words = quote.split(' ');

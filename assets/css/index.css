@@ -294,9 +294,9 @@ footer{
   .brand-name{
     margin-bottom: 10px;
   }
-  footer{
+  /* footer{
     font-size: 12px;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
