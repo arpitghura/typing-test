@@ -72,9 +72,9 @@ Report Generated on Completion:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/aviiciii>
-            <img src=https://avatars.githubusercontent.com/u/88141521?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=P Laaveshwaran/>
+            <img src=https://avatars.githubusercontent.com/u/88141521?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Laaveshwaran P/>
             <br />
-            <sub style="font-size:14px"><b>P Laaveshwaran</b></sub>
+            <sub style="font-size:14px"><b>Laaveshwaran P</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
