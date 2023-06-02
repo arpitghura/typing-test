@@ -63,7 +63,7 @@ h2.subtitle {
 }
 
 #quote {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: larger;
   font-weight: 600;
   text-align: center;
@@ -79,7 +79,7 @@ h2.subtitle {
   margin: auto;
 }
 
-.start-btn>button {
+.start-btn > button {
   border-radius: 5px;
   padding: 10px;
   color: white;
@@ -115,6 +115,10 @@ h2.subtitle {
 /* ============ Typing input box ============ */
 
 .user-input-box {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 70vw;
   margin: 10px auto;
   padding: 14px;
@@ -124,7 +128,7 @@ h2.subtitle {
 }
 
 #userInput {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
   font-size: medium;
   text-align: center;
@@ -204,7 +208,12 @@ footer {
   display: flex;
   justify-content: center;
   background: rgb(2, 0, 36);
-  background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgba(5, 5, 85, 1) 52%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(
+    279deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(5, 5, 85, 1) 52%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 /* 
 .startIns {
@@ -227,11 +236,11 @@ footer {
 } */
 
 /* ============ Session Timimg  ============ */
-#timingSessionChoose{
+#timingSessionChoose {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding:30px 10px ;
+  padding: 30px 10px;
   margin: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -240,14 +249,14 @@ footer {
   flex-wrap: wrap;
 }
 
-.timerListUL{
+.timerListUL {
   list-style: none;
   color: #000;
 }
 
-.timerSelector{
+.timerSelector {
   border-radius: 10px;
-  background-color: rgba(0, 198, 139,0.8);
+  background-color: rgba(0, 198, 139, 0.8);
   margin: 10px;
   padding: 15px 20px;
   font-size: 1.1em;
@@ -255,13 +264,13 @@ footer {
   float: left;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
 /* When the checkbox is checked, add a blue background */
-.timerSelector input:checked{
-  background-color: #2196F3;
+.timerSelector input:checked {
+  background-color: #2196f3;
 }
 
 /* Create the radio-label/indicator (hidden when not checked) */
