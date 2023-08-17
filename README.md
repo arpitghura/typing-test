@@ -17,19 +17,9 @@
 
 </div>
 
-Typing Test is a webapp to test and practice your typing skills in order to enhance them. In the App, words and sentences are generated randomly to ensure no repetition of a word or a sentence. 
+Typing Test is a web app to test and practice your typing skills. Users can practice and improve their typing speed by practicing multiple times. The App generates a set of words (real words that we use in daily life) to practice so that the user will be able to type all types of words. Also, the App stores the session history of all the practice sessions the user takes, along with the time taken to complete the practice session and the efficiency (words per minute). The user has the functionality to reset all the stored values. 
 
 The Web App can be accessible from [https://typing-test-project.vercel.app](https://typing-test-project.vercel.app)
-
-## Part of Diversion 2k23 Open-source Event 
-<p align="center">
-    <a href="https://diversion.tech/">
-        <img src="./assets/images/Diversion-logo.png">
-    </a>
-</p>
-
-### [Click to Know More about Contributing through Diversion 2k23](diversion-2k23.md)
-<br>
 
 ### Project Domain: Web 
 ### Tech Stack : 
@@ -337,7 +327,11 @@ Report Generated on Completion:
 </tr>
 </table>
 
-> This repo had been a part of HacktoberFest 2022 and KWoC'22
+## Open-source Event 
+1. Diversion 2K23
+2. InnoGeeks Winter of Code'23
+3. Kharagpur Winter of Code'22
+4. HacktoberFest 2022
 
 Thanks for coming here!
 ### Give a ⭐ if you liked this!
