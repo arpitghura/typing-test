@@ -34,19 +34,27 @@ The Web App can be accessible from [https://typing-test-project.vercel.app](http
 
 ## Practice in the web app smoothly
 
-<img src="./assets/images/Homepage.png">
+<img src="./assets/images/homePage.png">
+
+About Page:
+
+<img src="./assets/images/about.png">
 
 Practice Page:
 
-<img src="./assets/images/practice.png">
+<img src="./assets/images/practicePage.png">
 
 Session Completion Message:
 
-<img src="./assets/images/typing-session-completed.png">
+<img src="./assets/images/typingSession.png">
 
 Report Generated on Completion:
 
-<img src="./assets/images/Report.png">
+<img src="./assets/images/report.png">
+
+Dark theme:
+
+<img src="./assets/images/darkTheme.png">
 
 ---
 ## Contributors <br>  Thanks to all the contributors for their efforts 💖
@@ -335,10 +343,11 @@ Report Generated on Completion:
 </table>
 
 ## Open-source Event 
-1. Diversion 2K23
-2. InnoGeeks Winter of Code'23
-3. Kharagpur Winter of Code'22
-4. HacktoberFest 2022
+1. Code Peak'23
+2. Diversion 2K23
+3. InnoGeeks Winter of Code'23
+4. Kharagpur Winter of Code'22
+5. HacktoberFest 2022
 
 Thanks for coming here!
 ### Give a ⭐ if you liked this!
