@@ -34,27 +34,27 @@ The Web App can be accessible from [https://typing-test-project.vercel.app](http
 
 ## Practice in the web app smoothly
 
-<img src="./assets/images/homePage.png">
+<img src="./assets/images/homePage.jpeg">
 
 About Page:
 
-<img src="./assets/images/about.png">
+<img src="./assets/images/about.jpeg">
 
 Practice Page:
 
-<img src="./assets/images/practicePage.png">
+<img src="./assets/images/practicePage.jpeg">
 
 Session Completion Message:
 
-<img src="./assets/images/typingSession.png">
+<img src="./assets/images/typingSession.jpeg">
 
 Report Generated on Completion:
 
-<img src="./assets/images/report.png">
+<img src="./assets/images/report.jpeg">
 
 Dark theme:
 
-<img src="./assets/images/darkTheme.png">
+<img src="./assets/images/darkTheme.jpeg">
 
 ---
 ## Contributors <br>  Thanks to all the contributors for their efforts 💖
