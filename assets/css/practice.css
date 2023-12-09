@@ -114,7 +114,30 @@ h2.subtitle {
 
 /* ============ Typing input box ============ */
 
-.user-input-box {
+.user-input-box-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: static;
+  
+  width: 70vw;
+  margin: 10px auto;
+  padding: 14px;
+  text-align: center;
+  border-radius: 14px;
+  background-color: antiquewhite;
+}
+#inputOne {
+font-family: 'Inconsolata', monospace;
+font-weight: bold;
+font-size: medium;
+text-align: center;
+padding: 5px;
+min-width: 50%;
+}
+.user-input-box-two {
+  display: none;
   position: fixed;
   top: 90%;
   left: 50%;
@@ -128,7 +151,7 @@ h2.subtitle {
   background-color: antiquewhite;
 }
 
-#userInput {
+#inputTwo {
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
   font-size: medium;
@@ -136,7 +159,6 @@ h2.subtitle {
   padding: 5px;
   min-width: 50%;
 }
-
 .highlight {
   background-color: yellow;
   color: black;
