@@ -1,6 +1,7 @@
 // get elements from DOM
 const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
+// const userInput = document.getElementById("userInput");
 let userInput = document.getElementById('inputOne');
 let userInputBox  = document.querySelector('.user-input-box-one');
 const messageEle = document.getElementById("message");
@@ -187,7 +188,7 @@ startBtn.addEventListener("click", () => {
     userHeader.style.display = "none";
     levelSelector.style.display = 'none';
     userInputBox.style.display = 'block';
-    userInput.style.display = 'inline'; // textbox
+    userInput.style.display = 'inline'; 
     startBtn.style.display = 'none';
     startInstruction.style.display = 'none';
     timingSessionChoose.style.display = "none";
