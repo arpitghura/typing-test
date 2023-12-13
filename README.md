@@ -34,11 +34,11 @@ The Web App can be accessible from [https://typing-test-project.vercel.app](http
 
 ## Practice in the web app smoothly
 
-<img src="./assets/images/home-new.jpeg">
+<img src="./assets/images/home-new.png">
 
 About Page:
 
-<img src="./assets/images/about-new.jpeg">
+<img src="./assets/images/about-new.png">
 
 Practice Page:
 
