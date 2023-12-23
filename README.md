@@ -289,6 +289,13 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/sarthakvermaa>
+            <img src=https://avatars.githubusercontent.com/u/114106172?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sarthak Verma/>
+            <br />
+            <sub style="font-size:14px"><b>Sarthak Verma</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/dissyulina>
             <img src=https://avatars.githubusercontent.com/u/80319559?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Dissy Ulina/>
             <br />
@@ -316,6 +323,8 @@ Dark theme:
             <sub style="font-size:14px"><b>Shivansh Arora</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/SubhamChoudhury>
             <img src=https://avatars.githubusercontent.com/u/55877612?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Subham Choudhury/>
@@ -323,8 +332,6 @@ Dark theme:
             <sub style="font-size:14px"><b>Subham Choudhury</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/V35HR4J>
             <img src=https://avatars.githubusercontent.com/u/54109630?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Veshraj Ghimire/>
