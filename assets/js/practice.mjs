@@ -1,7 +1,9 @@
 // get elements from DOM
 const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
-const userInput = document.getElementById("userInput");
+// const userInput = document.getElementById("userInput");
+let userInput = document.getElementById('inputOne');
+let userInputBox  = document.querySelector('.user-input-box-one');
 const messageEle = document.getElementById("message");
 const speedEle = document.getElementById("speed");
 const quoteEle = document.getElementById("quote");
@@ -14,6 +16,10 @@ const userHeader = document.getElementById("user-header");
 const onemin = document.getElementById("onemin");
 const twomin = document.getElementById("twomin");
 const fivemin = document.getElementById("fivemin");
+const inputOne = document.getElementById('inputOne');
+const inputTwo = document.getElementById('inputTwo');
+const userInputBox1 = document.querySelector('.user-input-box-one');
+const userInputBox2 = document.querySelector('.user-input-box-two');
 
 // import functions
 import { makeSentence } from './sentence.mjs'
@@ -144,16 +150,6 @@ startBtn.addEventListener("click", () => {
     extracted_words = quote.split(' ');
     extracted_words_length = extracted_words.length;
     wordIndex = 0;
-    
-    // hiding and showing elements in DOM
-    userHeader.style.display = "none";
-    levelSelector.style.display = 'none';
-    userInputBox.style.display = 'block';
-    userInput.style.display = 'inline';
-    startBtn.style.display = 'none';
-    startInstruction.style.display = 'none';
-    timingSessionChoose.style.display = "none";
-    resetBtn.style.display = 'inline-block';
 
     // making the quote in span tags
     const spanWords = extracted_words.map(word => {
@@ -165,6 +161,38 @@ startBtn.addEventListener("click", () => {
     quoteEle.childNodes[0].className = 'highlight';
     userInput.innerText = '';
     userInput.focus();
+
+    const dynamicTextBox = document.querySelector('.dynamic-text-box');
+    // Get the viewport height
+    const viewportHeight = window.innerHeight;
+    // Get the height of the dynamic-text-box
+    const dynamicTextBoxHeight = dynamicTextBox.offsetHeight;
+    // Calculate 80% of the viewport height
+    const eightyPercentViewportHeight = 0.8 * viewportHeight;
+
+    // Compare the dynamic-text-box height with 80% of the viewport height
+    if (dynamicTextBoxHeight < eightyPercentViewportHeight) {
+        // Perform actions if the dynamic-text-box height is less than 80% of the viewport height
+        console.log("Dynamic text box height is less than 80% of viewport height.");
+        
+        userInput = inputOne;
+        userInputBox = userInputBox1;
+    } else {
+        // Perform actions if the dynamic-text-box height is greater than or equal to 80% of the viewport height
+        console.log("Dynamic text box height is greater than or equal to 80% of viewport height.");
+        
+        userInput = inputTwo;
+        userInputBox = userInputBox2;
+    }
+    // hiding and showing elements in DOM
+    userHeader.style.display = "none";
+    levelSelector.style.display = 'none';
+    userInputBox.style.display = 'block';
+    userInput.style.display = 'inline'; 
+    startBtn.style.display = 'none';
+    startInstruction.style.display = 'none';
+    timingSessionChoose.style.display = "none";
+    resetBtn.style.display = 'inline-block';
 
     // setting up the timer
     startTime = new Date().getTime();
