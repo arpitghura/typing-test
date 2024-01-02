@@ -106,13 +106,6 @@ Dark theme:
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/niladrix719>
-            <img src=https://avatars.githubusercontent.com/u/91966855?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Niladri Adhikary />
-            <br />
-            <sub style="font-size:14px"><b>Niladri Adhikary </b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Giriraj-Roy>
             <img src=https://avatars.githubusercontent.com/u/88903134?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Giriraj Roy/>
             <br />
@@ -120,17 +113,24 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/weberankit>
-            <img src=https://avatars.githubusercontent.com/u/94105514?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ANKIT KUMAR/>
+        <a href=https://github.com/niladrix719>
+            <img src=https://avatars.githubusercontent.com/u/91966855?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Niladri Adhikary />
             <br />
-            <sub style="font-size:14px"><b>ANKIT KUMAR</b></sub>
+            <sub style="font-size:14px"><b>Niladri Adhikary </b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/ImgBotApp>
-            <img src=https://avatars.githubusercontent.com/u/31427850?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Imgbot/>
+        <a href=https://github.com/chikkibum>
+            <img src=https://avatars.githubusercontent.com/u/71315985?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bhaskar Pandey/>
             <br />
-            <sub style="font-size:14px"><b>Imgbot</b></sub>
+            <sub style="font-size:14px"><b>Bhaskar Pandey</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/alexsam29>
+            <img src=https://avatars.githubusercontent.com/u/69481177?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Alexander Samaniego/>
+            <br />
+            <sub style="font-size:14px"><b>Alexander Samaniego</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -141,19 +141,19 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/alexsam29>
-            <img src=https://avatars.githubusercontent.com/u/69481177?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Alexander Samaniego/>
+        <a href=https://github.com/ImgBotApp>
+            <img src=https://avatars.githubusercontent.com/u/31427850?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Imgbot/>
             <br />
-            <sub style="font-size:14px"><b>Alexander Samaniego</b></sub>
+            <sub style="font-size:14px"><b>Imgbot</b></sub>
         </a>
     </td>
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/chikkibum>
-            <img src=https://avatars.githubusercontent.com/u/71315985?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bhaskar Pandey/>
+        <a href=https://github.com/weberankit>
+            <img src=https://avatars.githubusercontent.com/u/94105514?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ANKIT KUMAR/>
             <br />
-            <sub style="font-size:14px"><b>Bhaskar Pandey</b></sub>
+            <sub style="font-size:14px"><b>ANKIT KUMAR</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -201,24 +201,10 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Ayush4web>
-            <img src=https://avatars.githubusercontent.com/u/85270991?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ayush Choubey/>
+        <a href=https://github.com/Tapo41>
+            <img src=https://avatars.githubusercontent.com/u/121812218?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Tapojita Kar/>
             <br />
-            <sub style="font-size:14px"><b>Ayush Choubey</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/TheXro>
-            <img src=https://avatars.githubusercontent.com/u/84002250?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ravi Yadav/>
-            <br />
-            <sub style="font-size:14px"><b>Ravi Yadav</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/kalosFestus>
-            <img src=https://avatars.githubusercontent.com/u/79145625?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Festus Adeyemi/>
-            <br />
-            <sub style="font-size:14px"><b>Festus Adeyemi</b></sub>
+            <sub style="font-size:14px"><b>Tapojita Kar</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -229,40 +215,47 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Tapo41>
-            <img src=https://avatars.githubusercontent.com/u/121812218?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Tapojita Kar/>
+        <a href=https://github.com/kalosFestus>
+            <img src=https://avatars.githubusercontent.com/u/79145625?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Festus Adeyemi/>
             <br />
-            <sub style="font-size:14px"><b>Tapojita Kar</b></sub>
+            <sub style="font-size:14px"><b>Festus Adeyemi</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/TheXro>
+            <img src=https://avatars.githubusercontent.com/u/84002250?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ravi Yadav/>
+            <br />
+            <sub style="font-size:14px"><b>Ravi Yadav</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Ayush4web>
+            <img src=https://avatars.githubusercontent.com/u/85270991?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ayush Choubey/>
+            <br />
+            <sub style="font-size:14px"><b>Ayush Choubey</b></sub>
         </a>
     </td>
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/ajayanuragi>
-            <img src=https://avatars.githubusercontent.com/u/92710715?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ajay Anuragi/>
+        <a href=https://github.com/sarthakvermaa>
+            <img src=https://avatars.githubusercontent.com/u/114106172?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sarthak Verma/>
             <br />
-            <sub style="font-size:14px"><b>Ajay Anuragi</b></sub>
+            <sub style="font-size:14px"><b>Sarthak Verma</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/harshyadavcs>
-            <img src=https://avatars.githubusercontent.com/u/108284583?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Harsh Yadav/>
+        <a href=https://github.com/mallickboy>
+            <img src=https://avatars.githubusercontent.com/u/96945731?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TAMAL MALLICK/>
             <br />
-            <sub style="font-size:14px"><b>Harsh Yadav</b></sub>
+            <sub style="font-size:14px"><b>TAMAL MALLICK</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/maciek04786>
-            <img src=https://avatars.githubusercontent.com/u/105375946?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Maciek S/>
+        <a href=https://github.com/ananyakushal>
+            <img src=https://avatars.githubusercontent.com/u/123202108?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=A_Kushal/>
             <br />
-            <sub style="font-size:14px"><b>Maciek S</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Nupoor10>
-            <img src=https://avatars.githubusercontent.com/u/92589912?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Nupoor Shetye/>
-            <br />
-            <sub style="font-size:14px"><b>Nupoor Shetye</b></sub>
+            <sub style="font-size:14px"><b>A_Kushal</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -273,26 +266,33 @@ Dark theme:
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/ananyakushal>
-            <img src=https://avatars.githubusercontent.com/u/123202108?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=A_Kushal/>
+        <a href=https://github.com/Nupoor10>
+            <img src=https://avatars.githubusercontent.com/u/92589912?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Nupoor Shetye/>
             <br />
-            <sub style="font-size:14px"><b>A_Kushal</b></sub>
+            <sub style="font-size:14px"><b>Nupoor Shetye</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/maciek04786>
+            <img src=https://avatars.githubusercontent.com/u/105375946?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Maciek S/>
+            <br />
+            <sub style="font-size:14px"><b>Maciek S</b></sub>
         </a>
     </td>
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/mallickboy>
-            <img src=https://avatars.githubusercontent.com/u/96945731?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TAMAL MALLICK/>
+        <a href=https://github.com/harshyadavcs>
+            <img src=https://avatars.githubusercontent.com/u/108284583?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Harsh Yadav/>
             <br />
-            <sub style="font-size:14px"><b>TAMAL MALLICK</b></sub>
+            <sub style="font-size:14px"><b>Harsh Yadav</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/sarthakvermaa>
-            <img src=https://avatars.githubusercontent.com/u/114106172?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Sarthak Verma/>
+        <a href=https://github.com/ajayanuragi>
+            <img src=https://avatars.githubusercontent.com/u/92710715?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ajay Anuragi/>
             <br />
-            <sub style="font-size:14px"><b>Sarthak Verma</b></sub>
+            <sub style="font-size:14px"><b>Ajay Anuragi</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
