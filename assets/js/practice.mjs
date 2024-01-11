@@ -74,45 +74,50 @@ const getwpm = () => {
     }
 };
 
-
 // making the quote from the words
 const makequote = () => {
-
     // get highest wpm of user
     let wpm = getwpm();
 
-    // get time choosed by user
+    // get time chosen by the user
     const time = getTime();
 
-    // if user has no history ie. new user
-    if (wpm == 0) {
-        // setting up default difficulty level for new user
+    // if the user has no history, i.e., new user
+    if (wpm === 0) {
+        // setting up default difficulty level for a new user
         if (easyLvlBtn.checked) {
             selectedDifficultyLevel = "easy";
-            quoteLength = 70 * time
+            quoteLength = 70 * time;
         } else if (interLvlBtn.checked) {
             selectedDifficultyLevel = "medium";
-            quoteLength = 55 * time
+            quoteLength = 55 * time;
         } else if (hardLvlBtn.checked) {
             selectedDifficultyLevel = "hard";
-            quoteLength = 40 * time
+            quoteLength = 40 * time;
         }
-    }
-    else {
+    } else {
         // setting up difficulty level according to user's wpm
         if (easyLvlBtn.checked) {
             selectedDifficultyLevel = "easy";
-            quoteLength = (wpm + 8) * time 
+            quoteLength = (wpm + 8) * time;
         } else if (interLvlBtn.checked) {
             selectedDifficultyLevel = "medium";
-            quoteLength = (wpm + 4) * time
+            quoteLength = (wpm + 4) * time;
         } else if (hardLvlBtn.checked) {
             selectedDifficultyLevel = "hard";
-            quoteLength = (wpm + 2) * time
+            quoteLength = (wpm + 2) * time;
         }
     }
-    return makeSentence(selectedDifficultyLevel,quoteLength);
+
+    // generate sentences
+    const sentences = Array.from({ length: 5 }, () => makeSentence(selectedDifficultyLevel, quoteLength));
+
+    // join sentences with line breaks
+    const formattedQuote = sentences.join('<br>');
+
+    return formattedQuote;
 };
+
 
 // getting time choosed by user
 const getTime = () => {
