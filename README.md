@@ -290,9 +290,9 @@ Dark theme:
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ajayanuragi>
-            <img src=https://avatars.githubusercontent.com/u/92710715?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ajay Anuragi/>
+            <img src=https://avatars.githubusercontent.com/u/92710715?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ajay anuragi/>
             <br />
-            <sub style="font-size:14px"><b>Ajay Anuragi</b></sub>
+            <sub style="font-size:14px"><b>ajay anuragi</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
